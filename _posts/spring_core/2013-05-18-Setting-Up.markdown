@@ -13,7 +13,7 @@ tags: spring_core
 
 In this tutorial, we'll learn how to set up our Eclipse development environment to write Spring code.
 
-{% youtube Z5gubdHLJIc%}
+{% include youtube.html param="Z5gubdHLJIc" %}
  
 ###Summary
 
