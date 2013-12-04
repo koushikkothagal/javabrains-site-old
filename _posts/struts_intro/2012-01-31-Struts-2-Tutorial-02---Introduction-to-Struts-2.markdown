@@ -1,0 +1,15 @@
+---           
+layout: post
+title: Introduction to Struts 2
+date: 2012-01-31 02:40:36 UTC
+updated: 2012-01-31 02:39:36 UTC
+permalink: 2012/01/struts-2-tutorial-02-introduction-to.html
+comments: false
+categories: struts2
+tags: struts2_intro
+
+---
+
+We'll try to understand what an MVC framework should typically do, and what components any such framework should have. We'll then have a high level look at some of the core Struts 2 modules.
+
+{% youtube 9BvQpf7JcOI %}

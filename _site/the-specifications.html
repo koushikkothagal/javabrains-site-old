@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Java Brains</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+<link href="/css/flat-ui.css" rel="stylesheet">
+<link href="/css/jb-styles.css" rel="stylesheet">
+<link href="/css/syntax.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+p {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  padding: 5px;
+  line-height: 1.4em;
+  max-width: 900px;
+}
+#topnavbar {
+  height: 50px;
+  border-bottom-color: #000000;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 0px;
+}
+@media ( min-width : 768px) {
+  .navbar .nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #topnavbar {
+    height: 37px;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 0px;
+  }
+  #collapsemenu {
+    background-color: #FFFFFF;
+    border-bottom-color: #000000;
+  }
+  body {
+    padding-bottom: 0px;
+  }
+  .mtl,.mvl,.mal {
+    margin-top: 20px;
+  }
+  .bottom-menu-inverse {
+    background-color: #34495E;
+    color: #677786;
+  }
+  .bottom-menu {
+    padding: 40px 0;
+  }
+  .bottom-menu .brand {
+    font-size: 23.996px;
+    margin-bottom: -6px;
+    margin-top: -8px;
+  }
+  .span8 {
+    width: 770px;
+  }
+  .span-footer {
+    float: left;
+    margin-left: 0px;
+    min-height: 1px;
+  }
+  .bottom-links,.bottom-icons {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+  }
+  .bottom-links li,.bottom-icons li {
+    display: block;
+    float: left;
+    margin: 0 18px 0 0;
+  }
+  li {
+    line-height: 20px;
+  }
+  .bottom-menu a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+  }
+}
+</style>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse clearfix topmenu">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="groups.html">Groups</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Header Title -->
+  <section class="cta">
+    <div class="page-header text-center Header">
+      <h1>Java Brains</h1>
+    </div>
+  </section>
+  <!-- End Header Title -->
+
+
+
+  <div class="site">
+
+
+    
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+    
+    
+	
+
+	
+
+
+
+
+
+
+
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+		
+				
+		
+		
+			
+			
+    	
+    	
+    	
+			
+			
+    	
+    	
+	
+
+	
+	
+  	
+
+	
+
+
+
+
+
+
+
+
+    <!-- Header Title 
+    <section class="cta">
+      <div class="page-header text-center Header">
+    	  <h1>Java Brains</h1>
+    	</div>
+    </section>
+    End Header Title -->
+
+<!-- <div class="bs-sidebar affix">
+    <div class="row listing tut-listing">
+    <ul class="nav nav-list">
+            <li class="nav-header">TUTORIALS</li>
+            
+            
+            <li>
+              <a href="/introduction-to-javaee.html"> 
+                1.&nbsp; Course Introduction
+              </a>
+            </li>
+            
+            <li>
+              <a href="/the-specifications.html"> 
+                2.&nbsp; The Specifications
+              </a>
+            </li>
+            
+            <li>
+              <a href="/server-side-java.html"> 
+                3.&nbsp; Server side Java
+              </a>
+            </li>
+            
+          </ul>
+          
+  </div>
+</div> -->
+
+ <!-- Post Container -->
+    <div class="container">
+      <ul style="margin-bottom: 5px;" class="breadcrumb">
+        <li><a href="/courses.html">Courses</a></li>
+        <li><a id="section" href="/javaee">Java EE</a></li>
+        <li><a class="courseName" href="/javaee/intro">Introduction to Java EE &nbsp; </a></li> <span id="vcount" class="badge">3</span>
+      </ul> 
+      
+      <div class="post-title">
+        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate">  02  . &nbsp;</small>The Specifications</h1>
+      </div>
+
+
+
+      
+		<p>In this tutorial, we&#39;ll understand what the specifications mean in the Java world, and how they influence the Java development process.</p>
+
+<h4>Java SE elements</h4>
+
+<p>Before we get into Java EE, let&#39;s look at Java SE in a little bit more detail. When someone talks about Java SE, or Core Java as it is so often called, they are most likely referring to a simple Java environment, running typically on a desktop or laptop. The Java SE platform itself consists of two important elements.</p>
+
+<ol>
+<li>The Java Development Kit</li>
+<li>The Java Virtual Machine</li>
+</ol>
+
+<p>Before you start writing Java code, you need a <em>Java Development Kit</em> (or JDK) installed on your machine. This kit includes the Java compiler, among other things, that let you write and compile Java code. </p>
+
+<p>Once you are done writing and compiling code, you need a <em>Java Virtual Machine</em> (or JVM) to run it. Well, a JDK usually comes bundled with a JVM, because obviously, someone writing code would surely need to test it by running it. So why make them download the JVM separately? So, these are the two important pieces of any Java development process. One to write programs and another to run them on.</p>
+
+<p>What is interesting to note, that a lot of new comers don&#39;t realize, is that there are multiple options to choose from for these two elements. So, you want to download a JDK. Which JDK? Yes, that is valid question. There is no one standard de-facto JDK to use. There are many! Of course, there is the official Oracle JDK from Oracle. Which is what you&#39;d most likely use. I think that&#39;s the most popular one. But you don&#39;t <em>have</em> to use that. </p>
+
+<p>Here is the list of JDKs from Wikipedia:</p>
+
+<p><strong>In development or in maintenance mode:</strong></p>
+
+<ul>
+<li>OpenJDK / IcedTea</li>
+<li>GNU&#39;s Classpath and GCJ</li>
+<li>Aicas JamaicaVM</li>
+<li>IBM J9 JDK</li>
+<li>Oracle Corporation&#39;s JRockit JDK</li>
+</ul>
+
+<p><strong>Not being maintained or discontinued:</strong></p>
+
+<ul>
+<li>Apache Harmony</li>
+<li>Apple&#39;s Mac OS Runtime for Java JVM/JDK for Classic Mac OS</li>
+<li>Blackdown Java</li>
+</ul>
+
+<p>As for JVMs, the list is <em>huge</em>. Go to <a href="http://en.wikipedia.org/wiki/List_of_Java_virtual_machines">this Wikipedia page</a> for all available Java Virtual Machine implementations. That&#39;s quite a list, huh? The best part is, you can actually write your own JDK or JVM if you&#39;d like. And if it&#39;s good, people might end up using it! It would only take about 20 years of your life to implement it, but if you decide to do it, then good luck!</p>
+
+<h4>What would you trust?</h4>
+
+<p>This brings up a question. Let us say I asked you to pick a random JDK and a random JVM and then write and run some Java code using them. How comfortable would you be while using them? Especially if it&#39;s a name you do not recognize! How would you know they works exactly like you expect them to? If you write a simple line of code in Java like <code>i++</code>, what&#39;s the guarantee that it actually post-increments <code>i</code> and not do something crazy like multiply <code>i</code> by <code>1000</code>?</p>
+
+<p>Thankfully none of the JDKs and JVMs would do something crazy like this. And yes, they do guarantee it. The guarantee comes in the form of standard Java specifications.</p>
+
+<h4>The way it works</h4>
+
+<p>We know Java. We know how the syntax works. When you see a piece of code, you can tell what the code does. And anyone else who knows Java would provide the exact same answer. </p>
+
+<p>The way Java works, the programming language, is documented in minute detail in a document called the Java Language Specification. This document contains every excruciating little detail about every Java language feature that you&#39;ve known and learned, or that you had no idea existed. If it&#39;s in the document, it&#39;s in Java. If it&#39;s not, don&#39;t even bother about it. <em>This is the definitive source.</em> </p>
+
+<p><a href="http://docs.oracle.com/javase/specs/jls/se7/html/index.html">This is the link</a> to the latest version of the specification, at the time of making this tutorial. </p>
+
+<p>That&#39;s great, but why am I mentioning this now? Well, if you are writing a JDK, this is the rulebook to follow! If you do not follow it, what you are writing is not a JDK. It might be awesome; a great, innovative and groundbreaking new language development kit. But it isn&#39;t JDK. </p>
+
+<p>Similarly, for JVMs, there is a specification document called the Java Virtual Machine Specification that documents how a JVM should work in fine detail. <a href="http://docs.oracle.com/javase/specs/jvms/se7/html/">This</a> is the link to the latest JVM specification if you are interested.</p>
+
+<p>Since all the necessary details of the language are documented as specifications, and every JDK or JVM needs to follow these specifications, you <em>know</em> that they work. For the statement <code>i++</code>, no JDK or JVM would do anything other than post-increment <code>i</code>. Because the specifications say so!</p>
+
+<h4>What, not how!</h4>
+
+<p>But then why have so many JDKs and JVMs if they all do exactly the same thing? It&#39;s not like they are easy things to implement. 20 years, remember? The reason why we have so many options available is this: The specifications just mention <em>what</em> the JDKs and JVMs should do. They do not enforce any rules on <em>how</em> to actually implement them! One JVM could choose to perform <code>i++</code> by shifting bits. Another could use counters. They all end up doing the same thing. But how they do it could greatly differ from one implementation to another.</p>
+
+<p>This is why the specifications model has worked really well for the Java platform. The two specifications I mentioned are just two of the many many specifications that you&#39;ll encounter in your Java learning path. We&#39;ll look at more of them later in this course. But I hope the concept of specifications is clear to you now. This is a very important concept to understand Java EE, and also in fact a lot of other areas in Java. </p>
+  
+		<div class="container">
+		 <p class="text-center">_____</p> 
+		</div>
+		  
+    </div>
+    <!-- End Post Container -->
+    
+     <!-- Social Media Icons -->
+    
+    <div class="container cta-pad">
+      <div class="row text-center">
+        <img src="/img/email-32.png">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/the-specifications.html&p[title]=The Specifications">
+          <img src="/img/facebook-32.png">
+        </a>
+        <a href="https://plus.google.com/share?url=/the-specifications.html">
+          <img src="/img/googleplus-32.png">
+        </a>
+        <a href="http://twitter.com/home?status=/the-specifications.html">
+          <img src="/img/twitter-32.png">
+        </a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=/the-specifications.html&title=The Specifications">
+          <img src="/img/linkedin-32.png">
+        </a>
+      </div>
+    </div>
+    <!-- End Social Media Icons -->
+    
+    
+<!-- Watch next -->
+    
+    <section class="cta text-center carrot texture1">
+      <div class="row cta-pad">
+      <div class="col-md-4 text-right cta-pad">
+        <img alt="Compass" src="/img/compas.svg">
+      </div>
+      
+      <div class="col-md-4 text-left cta-pad-text watch-next-text">
+        <p class="img-comment">Next tutorial</p>
+        <a id="nextVname" href="/server-side-java.html"> <h4 id="nextVname"> Server side Java </a> <br/>
+        <small class="nextVnameCourse"><a id="nextVnameCourse" href="/javaee/intro">Introduction to Java EE</a> - Tutorial   3 </small>
+        </h4>
+        
+        <p>In this tutorial, we'll understand one of the basic forms of Java on the server side - as a servlet container.
+
+</p>
+       
+      </div>
+      </div>
+    </section>
+
+<!-- End Watch next -->
+    
+  <div class="container comments">
+  <div class="row">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'javabrains'; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+    </div>
+<!--
+    <section class="cta cta-pad text-center">
+      <div class="row cta-pad text-center">
+        <img class="text-center" alt="Map" src="img/map.svg">
+      </div>
+        <p class="lead">Other Tutorials</p>
+        <p>Navigate to other tutorials in this course.</p>
+          <div class="cta text-center">
+      
+      <div class="cta pagination">
+            <ul>
+              <li id="prev" class="previous"><a class="fui-arrow-left prev-next" href="#fakelink">
+
+              <div class="col-md-12">
+                <div class="row text-right">
+                  <h6 class="vprev">< PREV</h6>
+                </div>
+                <div class="row">
+                  <p id="prevCourseNav" class="vprev"></p>
+                  
+                </div>
+                
+              </div>
+              
+              </a></li>
+              <li><a id="1" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="2" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="3" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="4" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="5" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="6" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="7" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="8" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="9" data-style="primary" href="#fakelink"></a></li>
+              <li class= "next" id="next"><a class="fui-arrow-right prev-next" href="#fakelink">
+              
+                <div class="col-md-12">
+                <div class="row text-left">
+                  <h6 class="vnext">NEXT ></h6>
+                </div>
+                <div class="row">
+                  <p id="nextCourseNav" class="vnext"></p>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+              
+              </a></li>
+            </ul>
+          </div>
+    -->
+    
+    </div>
+  
+        
+      
+      
+      
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    
+  </body>
+
+
+
+
+
+
+
+    <div class="mtl pbl">
+      <div class="bottom-menu bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="span2 brand span-footer">
+              <a class="fui-flat" href="#fakelink"></a>
+            </div>
+
+            <div class="span8 span-footer">
+              <ul class="bottom-links">
+                <li><a href="#fakelink">About</a></li>
+                <li><a href="#fakelink">Community</a></li>
+                <li><a href="#fakelink">Site</a></li>
+                <li><a href="#fakelink">Follow</a></li>
+
+                <li><a href="#fakelink">Links</a></li>
+              </ul>
+            </div>
+
+            <div class="span2 span-footer">
+              <ul class="bottom-icons">
+                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
+                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
+                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
+                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
+               
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

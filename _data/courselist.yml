@@ -1,0 +1,66 @@
+course:
+    - tag:      servlets_intro
+      name:     Introduction to Servlets
+      url:      /servlets.html#servlets_intro
+      tech:     JSPs and Servlets
+      techUrl:  /servlets.html
+
+    - tag:      jsps_intro
+      name:     Java Server Pages
+      url:      /servlets.html#jsps_intro
+      tech:     JSPs and Servlets
+      techUrl:  /servlets.html
+
+    - tag:      maven_intro
+      name:     Introduction to Maven
+      url:      /maven.html#maven_intro
+      tech:     Apache Maven
+      techUrl:  /maven.html
+
+    - tag:      spring_core
+      name:     Learning Spring Core
+      url:      /spring.html#spring_core
+      tech:     Spring Framework
+      techUrl:  /spring.html
+
+    - tag:      spring_aop
+      name:     Understanding Spring AOP
+      url:      /spring.html#spring_aop
+      tech:     Spring Framework
+      techUrl:  /spring.html
+
+    - tag:      spring_data
+      name:     Data access in Spring
+      url:      /spring.html#spring_data
+      tech:     Spring Framework
+      techUrl:  /spring.html
+      
+    - tag:      struts2_intro
+      name:     Beginning Struts 2
+      url:      /struts2.html#struts2_intro
+      tech:     Struts 2
+      techUrl:  /struts2.html
+
+    - tag:      hibernate_intro
+      name:     Introduction to Hibernate
+      url:      /hibernate.html#hibernate_intro
+      tech:     Hibernate
+      techUrl:  /hibernate.html
+      
+    - tag:      hibernate_run
+      name:     Hibernate - APIs and Runtime
+      url:      /hibernate.html#hibernate_run
+      tech:     Hibernate
+      techUrl:  /hibernate.html      
+      
+    - tag:      javaee_intro
+      name:     Introduction to Java EE
+      url:      /javaee/intro
+      tech:     Java EE
+      techUrl:  /javaee
+
+    - tag:      javaee_jaxws
+      name:     SOAP Web Services with JAX-WS
+      url:      /javaee.html#javaee_jaxws
+      tech:     Java EE
+      techUrl:  /javaee.html

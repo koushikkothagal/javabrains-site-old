@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Java Brains</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+<link href="/css/flat-ui.css" rel="stylesheet">
+<link href="/css/jb-styles.css" rel="stylesheet">
+<link href="/css/syntax.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+p {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  padding: 5px;
+  line-height: 1.4em;
+  max-width: 900px;
+}
+#topnavbar {
+  height: 50px;
+  border-bottom-color: #000000;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 0px;
+}
+@media ( min-width : 768px) {
+  .navbar .nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #topnavbar {
+    height: 37px;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 0px;
+  }
+  #collapsemenu {
+    background-color: #FFFFFF;
+    border-bottom-color: #000000;
+  }
+  body {
+    padding-bottom: 0px;
+  }
+  .mtl,.mvl,.mal {
+    margin-top: 20px;
+  }
+  .bottom-menu-inverse {
+    background-color: #34495E;
+    color: #677786;
+  }
+  .bottom-menu {
+    padding: 40px 0;
+  }
+  .bottom-menu .brand {
+    font-size: 23.996px;
+    margin-bottom: -6px;
+    margin-top: -8px;
+  }
+  .span8 {
+    width: 770px;
+  }
+  .span-footer {
+    float: left;
+    margin-left: 0px;
+    min-height: 1px;
+  }
+  .bottom-links,.bottom-icons {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+  }
+  .bottom-links li,.bottom-icons li {
+    display: block;
+    float: left;
+    margin: 0 18px 0 0;
+  }
+  li {
+    line-height: 20px;
+  }
+  .bottom-menu a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+  }
+}
+</style>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse clearfix topmenu">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="groups.html">Groups</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Header Title -->
+  <section class="cta">
+    <div class="page-header text-center Header">
+      <h1>Java Brains</h1>
+    </div>
+  </section>
+  <!-- End Header Title -->
+
+
+
+  <div class="site">
+
+
+    <style>
+body {
+color: #34495E;
+background:url("img/java.png") no-repeat;
+background-position: 90% 15%;
+background-size: 400px;
+
+}
+p {
+font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+background-color: #34495e;
+color: #FFFFFF;
+cursor: pointer;
+}
+
+.table, .listing a {
+font-size:16px;
+color: #34495E !important;
+}
+.glyphicon-play {
+	color:#FFFFFF;
+	margin-right: 10px;
+}
+
+.nav-header {
+    color: #AEB6BF;
+    font-size: 20px;
+    text-transform: uppercase;
+}  
+
+.nav-counter {
+    background-color: #7f8c8d;
+    border-radius: 5px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 12.992px;
+    font-weight: 500;
+    margin: 1px -4px -1px 0;
+    padding: 0 8px;
+}
+
+.nav-list > li.divider {
+    border-bottom: medium none;
+    height: 2px;
+    margin: 13px -13px 17px 0;
+}
+
+.nav-list a {
+	font-size: 17px;
+}
+
+
+div.listing ul.nav li a:hover {
+	background-color: #7f8c8d;
+	color: #FFFFFF !important;
+}
+
+div.course-listing a {
+  border-bottom: 1px solid #95a5a6;
+}
+
+.demo-title {
+    float: left;
+    font-size: 24.5px;
+    line-height: 40px;
+    margin: -10px 20px 10px;
+    width: 240px;
+}
+
+.demo-content {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 580px;
+}
+
+.sub-title {
+	font-size: 30px;
+}
+
+.fadeout {
+    position: relative; 
+    bottom: 8em;
+    height: 8em;
+    background: -webkit-radial-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    ); 
+    background-image: -moz-radial-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -o-radial-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    background-image: -ms-radial-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+} 
+.tut-listing {
+	height:200px;
+	overflow: hidden;
+}
+.tut-listing li > a {
+	padding:3px 5px;
+}
+.expand-link {
+	cursor: pointer;
+}
+
+</style>
+
+<div class="container">
+	<div class="row">
+		<h2 style="color:#c0392b">Java EE</h2>
+	</div>
+
+	<div class="row">
+		<div class="demo-title">
+          <h3 class="demo-panel-title">About</h3>
+        </div>
+        <div class="demo-content">
+        	<p>Java EE is the platform for Enterprise Java. The EE stands for <b>Enterprise Edition</b> (as opposed to the <b>Standard Edition</b> Java SE, which primarily focuses on desktop and workstation applications). Java EE provides APIs that can be used for Java developers to implement features that Enterprise application typically need. And secondly, it provides a platform to run the applications on. Code written with Java EE APIs will run on any Java EE certified application server.</p>
+        	<p>The courses on this page cover various technologies and APIs that can be used to write Enterprise Java applications. </p>
+        </div>
+	</div>
+	<div class="row">
+		<div class="demo-title">
+          <h3 class="demo-panel-title">Courses</h3>
+        </div>
+	<div class="demo-content">
+	<div class="listing course-listing">
+		<ul class="nav nav-list">
+            <li class="nav-header">Java EE</li>
+            <li>
+              <a href="#javaee_jaxws"> 
+                SOAP Web Services with JAX-WS
+                <span class="nav-counter">17</span>
+              </a>
+            </li>
+            <li class="divider"></li>
+          </ul>
+	</div>
+	</div>
+	</div>
+	
+	<hr style="height:3px;"/>
+
+	<!-- <div class="row">
+		<h3 >Available courses</h3>
+	</div> -->
+	
+	<div class="container">
+	<a name="javaee_jaxws"></a>
+	<div class="row">
+          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">01.</span>&nbsp; SOAP Web Services with JAX-WS</h3>
+	</div>
+	<div class="row">
+		<div class="demo-title">
+          <h3 class="sub-title">Details</h3>
+        </div>
+        <div class="demo-content">
+        	<p style="font-size:18px;">This course introduces you to SOAP Web Services using the JAX-WS standard specification. You will learn what SOAP web services are and how to write them. You will be writing a web service application, deploying, running and testing it on Glassfish. You will also learn to consume SOAP web services.</p>
+        </div>
+	</div>
+	
+		<div class="row">
+		<div class="demo-title">
+          <h3 class="sub-title">Tutorials</h3>
+        </div>
+	<div class="demo-content">
+	<div class="row listing tut-listing">
+		<ul class="nav nav-list">
+            <li class="nav-header">SOAP Web Services with JAX-WS</li>
+            
+            
+            <li>
+              <a href="/2013/06/ws01-introduction-to-web-services.html"> 
+                <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction to Web Services
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/06/web-service-jargon.html"> 
+                <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Web Service Jargon
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/06/writing-web-service-client-stub.html"> 
+                <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Writing a Web service Client - Stub generation
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/06/writing-web-service-client-calling.html"> 
+                <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing a Web service Client - Calling the Service
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/06/setting-up-java-ee-7-sdk.html"> 
+                <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Setting up Java EE 7 SDK
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/07/download-soap-web-services-06-writing.html"> 
+                <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Writing a Web Service - Eclipse setup
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/07/writing-web-service-code-and-deploy.html"> 
+                <span class="glyphicon glyphicon-play"></span> 7.&nbsp; Writing a Web Service - Code and Deploy
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/07/adding-input-arguments.html"> 
+                <span class="glyphicon glyphicon-play"></span> 8.&nbsp; Adding Input Arguments
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/08/service-first-and-contract-first-web.html"> 
+                <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Service First and Contract First Web Services
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/08/understanding-wsdl.html"> 
+                <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Understanding the WSDL
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/08/customizing-wsdl.html"> 
+                <span class="glyphicon glyphicon-play"></span> 11.&nbsp; Customizing the WSDL
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/08/schema-types-and-binding-styles.html"> 
+                <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Schema Types and Binding Styles
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/08/service-interface-and-custom-types.html"> 
+                <span class="glyphicon glyphicon-play"></span> 13.&nbsp; Service Interface and Custom Types
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/09/using-jaxb-annotations-part-1.html"> 
+                <span class="glyphicon glyphicon-play"></span> 14.&nbsp; Using JAXB Annotations Part 1
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/09/using-jaxb-annotations-part-2.html"> 
+                <span class="glyphicon glyphicon-play"></span> 15.&nbsp; Using JAXB Annotations Part 2
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/09/handling-faults.html"> 
+                <span class="glyphicon glyphicon-play"></span> 16.&nbsp; Handling Faults
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2013/10/using-soapui.html"> 
+                <span class="glyphicon glyphicon-play"></span> 17.&nbsp; Using SoapUI
+              </a>
+            </li>
+            
+          </ul>
+          
+	</div>
+	<div class="fadeout"></div>
+	<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
+	
+	
+	</div>
+	</div>
+	
+	
+	</div>
+	
+	<hr style="height:3px;"/>
+	
+	
+	</div>
+</div>
+
+<script>
+
+
+$('.expand-link').click(function() {
+$(this).parent().parent().siblings('div.tut-listing').height('100%');
+$(this).parent().parent().siblings('div.fadeout').hide();
+$(this).hide();
+});
+
+</script>
+
+
+
+
+
+
+
+    <div class="mtl pbl">
+      <div class="bottom-menu bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="span2 brand span-footer">
+              <a class="fui-flat" href="#fakelink"></a>
+            </div>
+
+            <div class="span8 span-footer">
+              <ul class="bottom-links">
+                <li><a href="#fakelink">About</a></li>
+                <li><a href="#fakelink">Community</a></li>
+                <li><a href="#fakelink">Site</a></li>
+                <li><a href="#fakelink">Follow</a></li>
+
+                <li><a href="#fakelink">Links</a></li>
+              </ul>
+            </div>
+
+            <div class="span2 span-footer">
+              <ul class="bottom-icons">
+                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
+                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
+                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
+                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
+               
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

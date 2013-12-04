@@ -1,0 +1,237 @@
+---
+layout: default
+---
+
+{% assign postTag = page.tags[0] %}
+
+{% for course in site.data.courselist.course %}
+	{% if course.tag == postTag %}
+		{% assign courseName = course.name %}
+		{% assign techName = course.tech %}
+    {% assign courseUrl = course.url %}
+    {% assign techUrl = course.techUrl %}
+	{% endif %}
+{% endfor %}
+
+{% assign course1 = site.tags[postTag] | sort: 'date' %}
+
+{% assign the_starry_counter = '' %}
+
+
+{% for tut in course1 %}
+	
+	{% capture temp %}{{ the_starry_counter }}*{% endcapture %}
+  	{% assign the_starry_counter = temp %}
+
+	{% if tut.url contains page.url %}
+		{% if forloop.index < 10 %}
+				{% capture videoNumber %} {{ forloop.index | prepend:'0' }}  {% endcapture %}
+		{% else %}
+			{% assign videoNumber = forloop.index %}
+		{% endif %}
+		{% if forloop.last %}
+			{% assign lastVideo = true %}
+		{% else %}
+			{% capture nextVideoNumber %}  {{ forloop.index | plus:1 }} {% endcapture %}
+			{% assign nextVideo = course1[the_starry_counter.size] %}
+    	{% endif %}
+    	
+    	{% if forloop.first %}
+			{% assign firstVideo = true %}
+		{% else %}
+			{% capture prevVideoNumber %}  {{ forloop.index0 | plus:1 }} {% endcapture %}
+			{% assign prevVideo = course1[forloop.index0] %}
+    	{% endif %}
+    	
+	{% endif %}
+{% endfor %}
+
+
+
+
+
+
+
+    <!-- Header Title 
+    <section class="cta">
+      <div class="page-header text-center Header">
+    	  <h1>{{ site.name }}</h1>
+    	</div>
+    </section>
+    End Header Title -->
+
+<!-- <div class="bs-sidebar affix">
+    <div class="row listing tut-listing">
+    <ul class="nav nav-list">
+            <li class="nav-header">TUTORIALS</li>
+            
+            {% for tut in course1 %}
+            <li>
+              <a href="{{tut.url}}"> 
+                {{forloop.index}}.&nbsp; {{tut.title}}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          
+  </div>
+</div> -->
+
+ <!-- Post Container -->
+    <div class="container">
+      <ul style="margin-bottom: 5px;" class="breadcrumb">
+        <li><a href="/courses.html">Courses</a></li>
+        <li><a id="section" href="{{techUrl}}">{{ techName }}</a></li>
+        <li><a class="courseName" href="{{courseUrl}}">{{ courseName }} &nbsp; </a></li> <span id="vcount" class="badge">{{ course1.size }}</span>
+      </ul> 
+      
+      <div class="post-title">
+        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate"> {{ videoNumber }}. &nbsp;</small>{{ page.title }}</h1>
+      </div>
+
+
+
+      
+		{{ content }}  
+		<div class="container">
+		 <p class="text-center">_____</p> 
+		</div>
+		  
+    </div>
+    <!-- End Post Container -->
+    
+     <!-- Social Media Icons -->
+    
+    <div class="container cta-pad">
+      <div class="row text-center">
+        <img src="/img/email-32.png">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]={{ page.url }}&p[title]={{ page.title }}">
+          <img src="/img/facebook-32.png">
+        </a>
+        <a href="https://plus.google.com/share?url={{ page.url }}">
+          <img src="/img/googleplus-32.png">
+        </a>
+        <a href="http://twitter.com/home?status={{ page.url }}">
+          <img src="/img/twitter-32.png">
+        </a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url }}&title={{ page.title }}">
+          <img src="/img/linkedin-32.png">
+        </a>
+      </div>
+    </div>
+    <!-- End Social Media Icons -->
+    
+    
+<!-- Watch next -->
+    
+    <section class="cta text-center carrot texture1">
+      <div class="row cta-pad">
+      <div class="col-md-4 text-right cta-pad">
+        <img alt="Compass" src="/img/compas.svg">
+      </div>
+      {% if lastVideo %}
+      	<h4> You have reached the last video in this course. </h4>
+      {% else %}
+      <div class="col-md-4 text-left cta-pad-text watch-next-text">
+        <p class="img-comment">Next tutorial</p>
+        <a id="nextVname" href="{{ nextVideo.url }}"> <h4 id="nextVname"> {{ nextVideo.title }} </a> <br/>
+        <small class="nextVnameCourse"><a id="nextVnameCourse" href="{{courseUrl}}">{{ courseName }}</a> - Tutorial {{ nextVideoNumber }}</small>
+        </h4>
+        
+        <p>{{ nextVideo.excerpt }}</p>
+       {% endif %}
+      </div>
+      </div>
+    </section>
+
+<!-- End Watch next -->
+    
+  <div class="container comments">
+  <div class="row">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'javabrains'; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+    </div>
+<!--
+    <section class="cta cta-pad text-center">
+      <div class="row cta-pad text-center">
+        <img class="text-center" alt="Map" src="img/map.svg">
+      </div>
+        <p class="lead">Other Tutorials</p>
+        <p>Navigate to other tutorials in this course.</p>
+          <div class="cta text-center">
+      
+      <div class="cta pagination">
+            <ul>
+              <li id="prev" class="previous"><a class="fui-arrow-left prev-next" href="#fakelink">
+
+              <div class="col-md-12">
+                <div class="row text-right">
+                  <h6 class="vprev">< PREV</h6>
+                </div>
+                <div class="row">
+                  <p id="prevCourseNav" class="vprev"></p>
+                  
+                </div>
+                
+              </div>
+              
+              </a></li>
+              <li><a id="1" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="2" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="3" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="4" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="5" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="6" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="7" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="8" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="9" data-style="primary" href="#fakelink"></a></li>
+              <li class= "next" id="next"><a class="fui-arrow-right prev-next" href="#fakelink">
+              
+                <div class="col-md-12">
+                <div class="row text-left">
+                  <h6 class="vnext">NEXT ></h6>
+                </div>
+                <div class="row">
+                  <p id="nextCourseNav" class="vnext"></p>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+              
+              </a></li>
+            </ul>
+          </div>
+    -->
+    
+    </div>
+  
+        
+      
+      
+      
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    
+  </body>
+
+
+

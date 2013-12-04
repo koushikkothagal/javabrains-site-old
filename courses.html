@@ -1,0 +1,130 @@
+--- 
+layout: default 
+title: Java Brains - Courses
+---
+
+<style>
+body {
+  color: #34495E;
+}
+.caption {
+  color: rgb(218, 89, 76);
+  font-family: "MenschRegular", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.techLogo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100px;
+}
+.tile-title {
+  padding: 10px;
+}
+.tech-cell {
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+@media ( min-width : 768px) {
+  .view-courses-btn {
+    display: none;
+  }
+}
+p {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+</style>
+
+<div class="container">
+  <h2>Contents</h2>
+  <p class="lead">Click on a course topic to see available courses.</p>
+  <div>
+    <span class="caption">Java frameworks and tools</span>
+    <div class="container" style="padding-top: 20px;">
+      <div class="row demo-tiles">
+        <div class="col-md-4 tech-cell">
+          <div class="tile" onclick="location.href='spring.html';" style="cursor: pointer;">
+            <img class="big-illustration techLogo" src="http://4.bp.blogspot.com/-_KFDM9brcnA/UVuXdwhvsfI/AAAAAAAABw4/PKAUg7MbIkM/s1600/icon_Spring.png">
+            <h3 class="tile-title">Spring framework</h3>
+            <p>Learn about one of the most popular application frameworks in Java.</p>
+            <a href="spring.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>
+            &nbsp; View Courses</a>
+          </div>
+        </div>
+        <div class="col-md-4 tech-cell">
+          <div class="tile" onclick="location.href='hibernate.html';" style="cursor: pointer;">
+            <img class="big-illustration techLogo"
+              src="http://3.bp.blogspot.com/-mv-aVJU9DyY/UVuycsLWf9I/AAAAAAAABx0/J4iB34shyYI/s1600/Hibernate_logo_a.png">
+            <h3 class="tile-title">Hibernate</h3>
+            <p>Understand ORM and write robust data applications.</p>
+            <a href="hibernate.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
+              Courses</a>
+          </div>
+        </div>
+        <div class="col-md-4 tech-cell">
+          <div class="tile" onclick="location.href='struts2.html';" style="cursor: pointer;">
+            <img class="big-illustration techLogo"
+              src="http://2.bp.blogspot.com/-lKLJHyqM1J8/UVuyI-O0b-I/AAAAAAAABxs/UGm5KixxAGw/s1600/struts2-merger2.png">
+            <h3 class="tile-title">Struts 2</h3>
+            <p>Learn and implement MVC concepts with the Struts 2 framework.</p>
+            <a href="/struts2.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
+              Courses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row demo-tiles">
+        <div class="col-md-4 tech-cell">
+          <div class="tile" onclick="location.href='maven.html';" style="cursor: pointer;">
+            <img class="big-illustration techLogo" src="http://2.bp.blogspot.com/-hX7M8uZpBzc/UVuxcFtRpJI/AAAAAAAABxk/Pe_NT9j0V8E/s1600/Maven_logo.gif">
+            <h3 class="tile-title">Maven</h3>
+            <p>Simplify your application's build and dependency management.</p>
+            <a href="/maven.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
+              Courses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3 class="caption">Standard Java</h3>
+  <div class="container" style="padding-top: 20px;">
+    <div class="row demo-tiles">
+      <div class="col-md-4 tech-cell">
+        <div class="tile" onclick="location.href='servlets.html';" style="cursor: pointer;">
+          <img class="big-illustration techLogo" src="http://4.bp.blogspot.com/-SebYoOCO-0I/UVuXdhg5ngI/AAAAAAAABw0/Q64igvVJVAM/s1600/Tomcat-logo.png">
+          <h3 class="tile-title">Servlets and JSPs</h3>
+          <p>Server side web programming in Java.</p>
+          <a href="/servlets.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
+            Courses</a>
+        </div>
+      </div>
+      <div class="col-md-4 tech-cell">
+        <div class="tile" onclick="location.href='javaee.html';" style="cursor: pointer;">
+          <img class="big-illustration techLogo"
+            src="http://2.bp.blogspot.com/-XxE-_9g52II/UVuXdunIoUI/AAAAAAAABww/KHNkE69mtvU/s1600/JavaIcon.png">
+          <h3 class="tile-title">Java EE</h3>
+          <p>Enterprise Java programming courses.</p>
+          <a href="/javaee.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
+            Courses</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<script>
+  $("div.tech-cell").mouseenter(function() {
+    $(this).css('color', '#e74c3c');
+    $(this).children('div.tile').css('background-color', '#F0F2F4').addClass('shadow');
+  });
+
+  $("div.tech-cell").mouseleave(function() {
+    $(this).css('color', '#2c3e50');
+    $(this).children('div.tile').css('background-color', '#F0F2F4').removeClass('shadow');
+  });
+</script>

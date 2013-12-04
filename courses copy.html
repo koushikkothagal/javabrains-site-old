@@ -1,0 +1,257 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<style>
+body {
+color: #34495E;
+
+}
+.caption { border-color: rgb(218, 89, 76); color: rgb(218, 89, 76); font-family: "MenschRegular",Helvetica,Arial,sans-serif; font-size: 25px; font-weight: 600; height: auto; line-height: 50px; margin-bottom: 0px; margin-top: 0px; perspective-origin: 50% 50%; transform-origin: 50% 50% 0px; width: auto;text-transform:uppercase; }
+.subCaption { border-color: rgb(131, 131, 131); color: rgb(131, 131, 131); display: block; font-family: "MenschRegular",Helvetica,Arial,sans-serif; font-size: 22px; height: 27px; line-height: 27px; perspective-origin: 500px 13.5px; text-align: left; transform-origin: 500px 13.5px 0px; width: 1000px; }
+
+.techLogo {
+padding-top: 20px;
+padding-bottom: 20px;
+height: 100px;
+
+}
+
+.techName {
+text-align: left;
+font-weight:bold;
+padding-bottom: 5px;
+}
+
+.techTable td {
+padding-left: 10px;
+padding-right: 10px;
+align: center;
+text-align: center;
+width: 33%
+
+}
+
+.techTable td:hover {
+background-color: #f0f0f0;
+}
+.techTable .empty:hover {
+background-color: #ffffff;
+width:"33%";
+}
+
+.techTable a {
+color: #777777;
+}
+.tile-title {
+	padding:10px;
+}
+.tech-cell {
+	padding-bottom: 15px;
+	padding-top: 5px;
+}
+
+
+
+ @media (min-width: 768px) {
+.view-courses-btn {
+	display: none;
+}
+}
+div.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    vertical-align: middle;
+    display:none;
+    z-index: 10;
+}
+
+
+
+h4.overlay {
+	color:#FFFFFF;
+	padding-bottom: 90px;
+}
+
+.valign-center {
+	margin: auto; padding: auto;
+	vertical-align: middle;
+}
+
+.hover-btn {
+	padding: 10px;
+	margin: 2px;
+}
+
+p {
+font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+</style>
+
+
+
+<div class="container">
+<h2>Contents</h2>
+<p class="lead">
+Click on a course topic to see available courses.</p>
+
+
+<div>
+	<span class="caption">Java frameworks and tools</span>
+	<div class="container" style="padding-top:20px;">
+	<div class="row demo-tiles">
+        <div class="col-md-4 tech-cell">
+          <div class="tile">
+            <img class="big-illustration techLogo" alt="Compas" src="http://4.bp.blogspot.com/-_KFDM9brcnA/UVuXdwhvsfI/AAAAAAAABw4/PKAUg7MbIkM/s1600/icon_Spring.png">
+            <h3 class="tile-title" >Spring framework</h3>
+            <p>Learn about one of the most popular application frameworks in Java.</p>
+            <a href="spring.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          </div>
+          <div class="tile overlay shadow">
+          	<div class="row">
+          		<h4 class="overlay">Spring Framework</h4>
+          	</div>
+          	<div class="row">
+          	<a href="spring.html" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          	<a href="#" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-play"></span>&nbsp; Go to first tutorial</a>
+          	</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 tech-cell">
+          <div class="tile">
+            <img class="big-illustration techLogo" alt="Infinity-Loop" src="http://3.bp.blogspot.com/-mv-aVJU9DyY/UVuycsLWf9I/AAAAAAAABx0/J4iB34shyYI/s1600/Hibernate_logo_a.png">
+            <h3 class="tile-title">Hibernate</h3>
+            <p>Understand ORM and write robust data applications.</p>
+            <a href="hibernate.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          </div>
+          <div class="tile overlay shadow">
+          	<div class="row">
+          		<h4 class="overlay">Hibernate</h4>
+          	</div>
+          	<div class="row">
+          	<a href="hibernate.html" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          	<a href="http://designmodo.com/flat" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-play"></span>&nbsp; Go to first tutorial</a>
+          	</div>
+          </div>
+        </div>
+
+		
+		<div class="col-md-4 tech-cell">
+          <div class="tile">
+            <img class="big-illustration techLogo" alt="Infinity-Loop" src="http://2.bp.blogspot.com/-lKLJHyqM1J8/UVuyI-O0b-I/AAAAAAAABxs/UGm5KixxAGw/s1600/struts2-merger2.png">
+            <h3 class="tile-title">Struts 2</h3>
+            <p>Learn and implement MVC concepts with the Struts 2 framework.</p>
+            <a href="/struts2.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          </div>
+          <div class="tile overlay shadow">
+          	<div class="row">
+          		<h4 class="overlay">Struts 2</h4>
+          	</div>
+          	<div class="row">
+          	<a href="/struts2.html" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          	<a href="http://designmodo.com/flat" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-play"></span>&nbsp; Go to first tutorial</a>
+          	</div>
+          </div>
+        </div>
+	</div>
+
+</div>
+	<div class="container" style="padding-top:20px;">
+	<div class="row demo-tiles">
+        <div class="col-md-4 tech-cell">
+          <div class="tile">
+            <img class="big-illustration techLogo" alt="Compas" src="http://2.bp.blogspot.com/-hX7M8uZpBzc/UVuxcFtRpJI/AAAAAAAABxk/Pe_NT9j0V8E/s1600/Maven_logo.gif">
+            <h3 class="tile-title" >Maven</h3>
+            <p>Simplify your application's build and dependency management.</p>
+            <a href="/maven.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          </div>
+          <div class="tile overlay shadow">
+          	<div class="row">
+          		<h4 class="overlay">Maven</h4>
+          	</div>
+          	<div class="row">
+          	<a href="/maven.html" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          	<a href="http://designmodo.com/flat" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-play"></span>&nbsp; Go to first tutorial</a>
+          	</div>
+          </div>
+        </div>
+
+       
+	</div>
+
+</div>
+</div>
+
+
+<div>
+	<h3 class="caption">Standard Java</h3>
+	<div class="container" style="padding-top:20px;">
+	<div class="row demo-tiles">
+        <div class="col-md-4 tech-cell">
+          <div class="tile">
+            <img class="big-illustration techLogo" alt="Compas" src="http://4.bp.blogspot.com/-SebYoOCO-0I/UVuXdhg5ngI/AAAAAAAABw0/Q64igvVJVAM/s1600/Tomcat-logo.png">
+            <h3 class="tile-title" >Servlets and JSPs</h3>
+            <p>Server side web programming in Java.</p>
+            <a href="/servlets.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          </div>
+          <div class="tile overlay shadow">
+          	<div class="row">
+          		<h4 class="overlay"> Servlets and JSPs </h4>
+          	</div>
+          	<div class="row">
+          	<a href="/servlets.html" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          	<a href="http://designmodo.com/flat" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-play"></span>&nbsp; Go to first tutorial</a>
+          	</div>
+          </div>
+        </div>
+
+        <div class="col-md-4 tech-cell" >
+          <div class="tile">
+            <img class="big-illustration techLogo" alt="Infinity-Loop" src="http://2.bp.blogspot.com/-XxE-_9g52II/UVuXdunIoUI/AAAAAAAABww/KHNkE69mtvU/s1600/JavaIcon.png">
+            <h3 class="tile-title">Java EE</h3>
+            <p>Enterprise Java programming courses.</p>
+            <a href="/javaee.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          </div>
+          <div class="tile overlay shadow">
+          	<div class="row">
+          		<h4 class="overlay">Java EE</h4>
+          	</div>
+          	<div class="row">
+          	<a href="/javaee.html" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View Courses</a>
+          	<a href="http://designmodo.com/flat" class="btn btn-primary valign-center hover-btn"><span class="glyphicon glyphicon-play"></span>&nbsp; Go to first tutorial</a>
+          	</div>
+          </div>
+        </div>
+		</div>
+       
+      
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+<script>
+
+
+$("div.tech-cell").mouseenter(function() {
+$(this).children('div.overlay').show("fade", 250);
+});
+
+$("div.tech-cell").mouseleave(function() {
+$(this).children('div.overlay').hide("fade", 250);
+});
+
+
+</script>

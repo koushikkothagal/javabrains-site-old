@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Java Brains</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/jumbotron-narrow.css" rel="stylesheet">
+<link href="/css/flat-ui.css" rel="stylesheet">
+<link href="/css/jb-styles.css" rel="stylesheet">
+<link href="/css/syntax.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+p {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  padding: 5px;
+  line-height: 1.4em;
+  max-width: 900px;
+}
+#topnavbar {
+  height: 50px;
+  border-bottom-color: #000000;
+  box-shadow: 2px 2px 2px #888888;
+  border-radius: 0px;
+}
+@media ( min-width : 768px) {
+  .navbar .nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #topnavbar {
+    height: 37px;
+    box-shadow: 2px 2px 2px #888888;
+    border-radius: 0px;
+  }
+  #collapsemenu {
+    background-color: #FFFFFF;
+    border-bottom-color: #000000;
+  }
+  body {
+    padding-bottom: 0px;
+  }
+  .mtl,.mvl,.mal {
+    margin-top: 20px;
+  }
+  .bottom-menu-inverse {
+    background-color: #34495E;
+    color: #677786;
+  }
+  .bottom-menu {
+    padding: 40px 0;
+  }
+  .bottom-menu .brand {
+    font-size: 23.996px;
+    margin-bottom: -6px;
+    margin-top: -8px;
+  }
+  .span8 {
+    width: 770px;
+  }
+  .span-footer {
+    float: left;
+    margin-left: 0px;
+    min-height: 1px;
+  }
+  .bottom-links,.bottom-icons {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+  }
+  .bottom-links li,.bottom-icons li {
+    display: block;
+    float: left;
+    margin: 0 18px 0 0;
+  }
+  li {
+    line-height: 20px;
+  }
+  .bottom-menu a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+  }
+}
+</style>
+
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse clearfix topmenu">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="groups.html">Groups</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Header Title -->
+  <section class="cta">
+    <div class="page-header text-center Header">
+      <h1>Java Brains</h1>
+    </div>
+  </section>
+  <!-- End Header Title -->
+
+
+
+  <div class="site">
+
+
+    
+
+
+	
+
+	
+
+	
+
+	
+		
+		
+    
+    
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+		
+			
+		
+		
+			
+			
+    	
+    	
+    	
+			
+			
+    	
+    	
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+
+
+
+
+
+
+
+    <!-- Header Title 
+    <section class="cta">
+      <div class="page-header text-center Header">
+    	  <h1>Java Brains</h1>
+    	</div>
+    </section>
+    End Header Title -->
+
+<!-- <div class="bs-sidebar affix">
+    <div class="row listing tut-listing">
+    <ul class="nav nav-list">
+            <li class="nav-header">TUTORIALS</li>
+            
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-01-understanding.html"> 
+                1.&nbsp; Understanding Dependency Injection
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-02-setting-up.html"> 
+                2.&nbsp; Setting Up
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-03-understanding-spring.html"> 
+                3.&nbsp; Understanding Spring Bean Factory
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-04-writing-code-using.html"> 
+                4.&nbsp; Writing Code Using the Bean Factory
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-05-applicationcontext.html"> 
+                5.&nbsp; ApplicationContext and Property Initialization
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-06-using-constructor.html"> 
+                6.&nbsp; Using Constructor Injection
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-07-injecting-objects.html"> 
+                7.&nbsp; Injecting Objects
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-08-inner-beans-aliases.html"> 
+                8.&nbsp; Inner Beans, Aliases and idref
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-09-initializing.html"> 
+                9.&nbsp; Initializing Collections
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-10-bean-autowiring.html"> 
+                10.&nbsp; Bean Autowiring
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-11-understanding-bean.html"> 
+                11.&nbsp; Understanding Bean Scopes
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-12-using.html"> 
+                12.&nbsp; Using ApplicationContextAware
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-13-bean-definition.html"> 
+                13.&nbsp; Bean Definition Inheritance
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-14-lifecycle-callbacks.html"> 
+                14.&nbsp; Lifecycle Callbacks
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-15-writing.html"> 
+                15.&nbsp; Writing a BeanPostProcessor
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-16-writing.html"> 
+                16.&nbsp; Writing a BeanFactoryPostProcessor
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-17-coding-to-interfaces.html"> 
+                17.&nbsp; Coding To Interfaces
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-18-introduction-to.html"> 
+                18.&nbsp; Introduction to Annotations and the Required Annotation
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-19-autowired-annotation.html"> 
+                19.&nbsp; The Autowired Annotation
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-20-some-jsr-250.html"> 
+                20.&nbsp; Some JSR-250 Annotations
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-21-component-and.html"> 
+                21.&nbsp; Component and Stereotype Annotations
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-22-using-messagesource.html"> 
+                22.&nbsp; Using MessageSource To Get Text From Property Files
+              </a>
+            </li>
+            
+            <li>
+              <a href="/2011/08/spring-tutorial-23-event-handling-in.html"> 
+                23.&nbsp; Event Handling in Spring
+              </a>
+            </li>
+            
+          </ul>
+          
+  </div>
+</div> -->
+
+ <!-- Post Container -->
+    <div class="container">
+      <ul style="margin-bottom: 5px;" class="breadcrumb">
+        <li><a href="/courses.html">Courses</a></li>
+        <li><a id="section" href="/spring.html">Spring Framework</a></li>
+        <li><a class="courseName" href="/spring.html#spring_core">Learning Spring Core &nbsp; </a></li> <span id="vcount" class="badge">23</span>
+      </ul> 
+      
+      <div class="post-title">
+        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate"> 11. &nbsp;</small>Understanding Bean Scopes</h1>
+      </div>
+
+
+
+      
+		<p>This tutorial covers the concepts of Bean Scopes in Spring. We&#39;ll understand when beans are created and how to configure different scopes for the beans. </p>
+
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+
+<div class="bt-video-container shadow" style="position:relative;padding-bottom:75.00%;padding-top:30px;height:0;overflow:hidden"><iframe width="480" height="360" src="http://www.youtube.com/embed/NnNvDknQJt0?rel=0" frameborder="0" allowfullscreen></iframe></div>
+  
+		<div class="container">
+		 <p class="text-center">_____</p> 
+		</div>
+		  
+    </div>
+    <!-- End Post Container -->
+    
+     <!-- Social Media Icons -->
+    
+    <div class="container cta-pad">
+      <div class="row text-center">
+        <img src="/img/email-32.png">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/2011/08/spring-tutorial-11-understanding-bean.html&p[title]=Understanding Bean Scopes">
+          <img src="/img/facebook-32.png">
+        </a>
+        <a href="https://plus.google.com/share?url=/2011/08/spring-tutorial-11-understanding-bean.html">
+          <img src="/img/googleplus-32.png">
+        </a>
+        <a href="http://twitter.com/home?status=/2011/08/spring-tutorial-11-understanding-bean.html">
+          <img src="/img/twitter-32.png">
+        </a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=/2011/08/spring-tutorial-11-understanding-bean.html&title=Understanding Bean Scopes">
+          <img src="/img/linkedin-32.png">
+        </a>
+      </div>
+    </div>
+    <!-- End Social Media Icons -->
+    
+    
+<!-- Watch next -->
+    
+    <section class="cta text-center carrot texture1">
+      <div class="row cta-pad">
+      <div class="col-md-4 text-right cta-pad">
+        <img alt="Compass" src="/img/compas.svg">
+      </div>
+      
+      <div class="col-md-4 text-left cta-pad-text watch-next-text">
+        <p class="img-comment">Next tutorial</p>
+        <a id="nextVname" href="/2011/08/spring-tutorial-12-using.html"> <h4 id="nextVname"> Using ApplicationContextAware </a> <br/>
+        <small class="nextVnameCourse"><a id="nextVnameCourse" href="/spring.html#spring_core">Learning Spring Core</a> - Tutorial   12 </small>
+        </h4>
+        
+        <p>We'll provide our beans with access to the ApplicationContext object by implementing the ApplicationContextAware interface. We'll also use BeanNameAware interface to get the name of the bean configured in the Spring XML. 
+
+</p>
+       
+      </div>
+      </div>
+    </section>
+
+<!-- End Watch next -->
+    
+  <div class="container comments">
+  <div class="row">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'javabrains'; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </div>
+    </div>
+<!--
+    <section class="cta cta-pad text-center">
+      <div class="row cta-pad text-center">
+        <img class="text-center" alt="Map" src="img/map.svg">
+      </div>
+        <p class="lead">Other Tutorials</p>
+        <p>Navigate to other tutorials in this course.</p>
+          <div class="cta text-center">
+      
+      <div class="cta pagination">
+            <ul>
+              <li id="prev" class="previous"><a class="fui-arrow-left prev-next" href="#fakelink">
+
+              <div class="col-md-12">
+                <div class="row text-right">
+                  <h6 class="vprev">< PREV</h6>
+                </div>
+                <div class="row">
+                  <p id="prevCourseNav" class="vprev"></p>
+                  
+                </div>
+                
+              </div>
+              
+              </a></li>
+              <li><a id="1" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="2" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="3" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="4" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="5" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="6" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="7" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="8" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="9" data-style="primary" href="#fakelink"></a></li>
+              <li class= "next" id="next"><a class="fui-arrow-right prev-next" href="#fakelink">
+              
+                <div class="col-md-12">
+                <div class="row text-left">
+                  <h6 class="vnext">NEXT ></h6>
+                </div>
+                <div class="row">
+                  <p id="nextCourseNav" class="vnext"></p>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+              
+              </a></li>
+            </ul>
+          </div>
+    -->
+    
+    </div>
+  
+        
+      
+      
+      
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    
+  </body>
+
+
+
+
+
+
+
+    <div class="mtl pbl">
+      <div class="bottom-menu bottom-menu-inverse">
+        <div class="container">
+          <div class="row">
+            <div class="span2 brand span-footer">
+              <a class="fui-flat" href="#fakelink"></a>
+            </div>
+
+            <div class="span8 span-footer">
+              <ul class="bottom-links">
+                <li><a href="#fakelink">About</a></li>
+                <li><a href="#fakelink">Community</a></li>
+                <li><a href="#fakelink">Site</a></li>
+                <li><a href="#fakelink">Follow</a></li>
+
+                <li><a href="#fakelink">Links</a></li>
+              </ul>
+            </div>
+
+            <div class="span2 span-footer">
+              <ul class="bottom-icons">
+                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
+                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
+                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
+                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
+               
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+var courseContent = {
+   "section": "Spring Framework",
+   "sectionUrl": "",
+   "course": "Spring Basics &nbsp; ",
+   "courseUrl": "",
+   "bindings": [
+        {"name": "Understanding Dependency Injection", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-01-understanding.html", "desc": ""},
+        {"name": "Setting Up", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-02-setting-up.html", "desc": ""},
+        {"name": "Understanding Spring Bean Factory", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-03-understanding-spring.html", "desc": ""},
+        {"name": "Writing Code Using the Bean Factory", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-04-writing-code-using.html", "desc": ""},
+        {"name": "ApplicationContext and Property Initialization", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-05-applicationcontext.html", "desc": ""},
+        {"name": "Using Constructor Injection", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-06-using-constructor.html", "desc": ""},
+        {"name": "Injecting Objects", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-07-injecting-objects.html", "desc": ""},
+        {"name": "Inner Beans, Aliases and idref", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-08-inner-beans-aliases.html", "desc": ""},
+        {"name": "Initializing Collections", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-09-initializing.html", "desc": ""},
+        {"name": "Bean Autowiring", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-10-bean-autowiring.html", "desc": ""},
+        {"name": "Understanding Bean Scopes", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-11-understanding-bean.html", "desc": ""},
+        {"name": "Using ApplicationContextAware", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-12-using.html", "desc": ""},
+        {"name": "Bean Definition Inheritance", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-13-bean-definition.html", "desc": ""},
+        {"name": "Lifecycle Callbacks", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-14-lifecycle-callbacks.html", "desc": ""},
+        {"name": "Writing a BeanPostProcessor", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-15-writing.html", "desc": ""},
+        {"name": "Writing a BeanFactoryPostProcessor", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-16-writing.html", "desc": ""},
+        {"name": "Coding To Interfaces", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-17-coding-to-interfaces.html", "desc": ""},
+        {"name": "Introduction to Annotations and the Required Annotation", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-18-introduction-to.html", "desc": ""},
+        {"name": "The Autowired Annotation", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-19-autowired-annotation.html", "desc": ""},
+        {"name": "Some JSR-250 Annotations", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-20-some-jsr-250.html", "desc": ""},
+        {"name": "Component and Stereotype Annotations", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-21-component-and.html", "desc": ""},
+        {"name": "Using MessageSource To Get Text From Property Files", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-22-using-messagesource.html", "desc": ""},
+        {"name": "Event Handling in Spring", "url": "http://javabrains.koushik.org/2011/08/spring-tutorial-23-event-handling-in.html", "desc": ""}
+    ]
+};
