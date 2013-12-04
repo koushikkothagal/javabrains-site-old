@@ -24,76 +24,17 @@
 <style>
 p {
   font-family: 'Lora', serif;
-  font-size: 18px;
+  color: #3A4145;
+  font-size: 20px;
   padding: 5px;
   line-height: 1.4em;
   max-width: 900px;
 }
-#topnavbar {
-  height: 50px;
-  border-bottom-color: #000000;
-  box-shadow: 2px 2px 2px #888888;
-  border-radius: 0px;
+
+.watch-next-text p {
+  color: inherit;
 }
-@media ( min-width : 768px) {
-  .navbar .nav>li>a {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  #topnavbar {
-    height: 37px;
-    box-shadow: 2px 2px 2px #888888;
-    border-radius: 0px;
-  }
-  #collapsemenu {
-    background-color: #FFFFFF;
-    border-bottom-color: #000000;
-  }
-  body {
-    padding-bottom: 0px;
-  }
-  .mtl,.mvl,.mal {
-    margin-top: 20px;
-  }
-  .bottom-menu-inverse {
-    background-color: #34495E;
-    color: #677786;
-  }
-  .bottom-menu {
-    padding: 40px 0;
-  }
-  .bottom-menu .brand {
-    font-size: 23.996px;
-    margin-bottom: -6px;
-    margin-top: -8px;
-  }
-  .span8 {
-    width: 770px;
-  }
-  .span-footer {
-    float: left;
-    margin-left: 0px;
-    min-height: 1px;
-  }
-  .bottom-links,.bottom-icons {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-  }
-  .bottom-links li,.bottom-icons li {
-    display: block;
-    float: left;
-    margin: 0 18px 0 0;
-  }
-  li {
-    line-height: 20px;
-  }
-  .bottom-menu a {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.25s ease 0s;
-  }
-}
+
 </style>
 
 
@@ -168,7 +109,17 @@ p {
 
 
 
-
+<style>
+.disqusbut {
+background-color: #3A4145;
+color: #FFFFFF;
+border: none;
+font-size: 18px;
+outline: none;
+padding: 30px 100px;
+width: 100%;
+}
+</style>
 
 
 
@@ -283,7 +234,41 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
     
   <div class="container comments">
   <div class="row">
-    <div id="disqus_thread"></div>
+
+
+
+  <div class='disqusbox'>
+  <div><hr />
+  <h6>View or Post Comments</h6>
+  </div>
+  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
+  <script>
+    var disqus_shortname = "javabrains";
+    
+    var my = my || {};
+    my.loadDisqus = function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    };
+  </script>
+  <noscript>Please enable javascript to <a rel="nofollow" href="http://disqus.com/?ref_noscript">discus this page, powered by Disqus.</a></noscript>
+  <style scoped=scoped>
+    @media print{
+     .disqusbox{display:none}
+    }
+  </style>
+</div>
+
+
+
+
+
+
+
+   <!--  <div id="disqus_thread"></div>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'javabrains'; // Required - Replace example with your forum shortname
@@ -296,7 +281,7 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+-->
     </div>
     </div>
 <!--
