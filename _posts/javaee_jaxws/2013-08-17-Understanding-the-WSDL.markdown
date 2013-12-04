@@ -9,4 +9,4 @@ tags: javaee_jaxws
 
 Now it's time to understand what's going on in the WSDL. We'll simplify our web service code to just one method, generate the WSDL for it and  understand the different elements that are generated. 
 
-{% youtube E76xW1JTVXY %}
+{% include youtube.html param="E76xW1JTVXY" %}

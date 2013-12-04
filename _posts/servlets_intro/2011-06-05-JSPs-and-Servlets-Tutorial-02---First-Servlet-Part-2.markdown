@@ -9,4 +9,4 @@ tags: servlets_intro
 
 Creating and running our first Servlet.
 
-{% youtube gU0RebsaFzQ %}
+{% include youtube.html param="gU0RebsaFzQ" %}

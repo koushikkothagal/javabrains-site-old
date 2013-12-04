@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We'll learn what is JSTL and why it is used. We'll also use the useBean tag.
 
-{% youtube -mjYAf0ILZs %}
+{% include youtube.html param="-mjYAf0ILZs" %}

@@ -9,7 +9,7 @@ tags: javaee_jaxws
 
 In this tutorial, we'll setup the new Eclipse Kepler, configure Glassfish and start writing the web application with which we intend to create a web service.
 
-{% youtube 9kb0iLpqKY4 %}
+{% include youtube.html param="9kb0iLpqKY4" %}
 
 **Download:** 
 <a href="http://www.eclipse.org/downloads/">http://www.eclipse.org/downloads/ </a>  

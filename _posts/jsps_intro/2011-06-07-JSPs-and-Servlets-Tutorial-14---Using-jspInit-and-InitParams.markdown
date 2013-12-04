@@ -9,4 +9,4 @@ tags: jsps_intro
 
 Here we'll see how our understanding of the init concepts of servlets translates to JSPs.
 
-{% youtube g15_vDp0HIg %}
+{% include youtube.html param="g15_vDp0HIg" %}

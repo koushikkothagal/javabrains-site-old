@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll look at one of the several ways we can fetch data from the database using Hibernate: the `session.get` method.
 
-{% youtube 3FV1yv7fvDQ %}
+{% include youtube.html param="3FV1yv7fvDQ" %}

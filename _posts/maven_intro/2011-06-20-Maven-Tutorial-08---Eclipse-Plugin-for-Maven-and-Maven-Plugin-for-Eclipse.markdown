@@ -11,4 +11,4 @@ topic: intro
 
 More plugins! We'll use the Maven's Eclipse plugin to get our Maven project into the Eclipse IDE. We'll also download and install the m2eclipse plugin of Eclipse to bring Maven functionality into the Eclipse GUI.
 
-{% youtube xE2F4Z_wKCU %}
+{% include youtube.html param="xE2F4Z_wKCU" %}

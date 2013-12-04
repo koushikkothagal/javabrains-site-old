@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 One to one mapping of entities.
 
-{% youtube Of7qR-WagYk %}
+{% include youtube.html param="Of7qR-WagYk" %}

@@ -9,4 +9,4 @@ tags: servlets_intro
 
 We'll look at few other options in the types of parameters that can be passed to the servlet.
 
-{% youtube 0WPfqrSCb6c %}
+{% include youtube.html param="0WPfqrSCb6c" %}

@@ -11,4 +11,4 @@ tags: struts2_intro
 
 This tutorial explores the method attribute in action mappings and how we can have multiple methods in a single Action class run for different URL mappings.
 
-{% youtube toCQ_CSXpgw %}
+{% include youtube.html param="toCQ_CSXpgw" %}

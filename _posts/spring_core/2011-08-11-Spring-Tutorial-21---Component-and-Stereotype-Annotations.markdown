@@ -11,4 +11,4 @@ tags: spring_core
 
 We'll now use the Component annotation to define Spring beans. We'll also look at some Stereotype annotations.
 
-{% youtube oTcSW4-_1Ew %}
+{% include youtube.html param="oTcSW4-_1Ew" %}

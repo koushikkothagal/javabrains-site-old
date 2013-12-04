@@ -9,7 +9,7 @@ tags: javaee_jaxws
 
 We'll make a couple of changes to the sample web service we've been developing all along. First, we will see what happens when a custom Java data type needs to be exchanged as a part of a web service operation. Then, we'll create a web service endpoint interface that our class implements. 
 
-{% youtube QFq4Ue_jExY %}
+{% include youtube.html param="QFq4Ue_jExY" %}
 
 **Update:** You cannot take every annotation property in the impl class and include it in the interface. Some annotation properties should be used on the impl class and are not allowed on endpoint interfaces. And vice-versa, some are to be used only on the interface.
 

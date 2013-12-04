@@ -12,4 +12,4 @@ tags: struts2_intro
 
 In this video, we'll learn how to implement a very common use case: basic login functionality using Struts 2 framework. In the next tutorial, we'll enhance this code with some best practices.
 
-{% youtube Oo9lMGfis1c %}
+{% include youtube.html param="Oo9lMGfis1c" %}

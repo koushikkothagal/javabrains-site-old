@@ -13,7 +13,7 @@ tags: spring_core
 
 In this tutorial, we'll discuss the role of Spring as a bean container. We'll also have a quick discussion on the Factory pattern, and I'll introduce you to the Spring Bean Factory object.
 
-{% youtube xlWwMSu5I70 %}
+{% include youtube.html param="xlWwMSu5I70" %}
 
 ###Summary
 

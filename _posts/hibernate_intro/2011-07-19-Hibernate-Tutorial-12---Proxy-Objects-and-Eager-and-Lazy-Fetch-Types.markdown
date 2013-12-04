@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 Hibernate manages data fetching and optimizations using proxy objects. In this tutorial, we'll learn what they are and how lazy initialization works.
 
-{% youtube RmnrgocuivQ %}
+{% include youtube.html param="RmnrgocuivQ" %}

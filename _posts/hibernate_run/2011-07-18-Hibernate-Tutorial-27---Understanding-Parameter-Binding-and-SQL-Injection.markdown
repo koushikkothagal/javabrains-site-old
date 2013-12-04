@@ -9,4 +9,4 @@ tags: hibernate_run
 
 We'll understand how appending parameters to SQL queries causes SQL injection, and will learn how to use the Parameter Binding feature in Hibernate.
 
-{% youtube PiahhQ0Qkak %}
+{% include youtube.html param="PiahhQ0Qkak" %}

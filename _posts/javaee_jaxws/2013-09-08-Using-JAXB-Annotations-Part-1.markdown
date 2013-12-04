@@ -9,7 +9,7 @@ tags: javaee_jaxws
 
 In this tutorial we'll understand how an XML binding framework like JAXB works to help convert our object instances to XML. 
 
-{% youtube wireYD00xkw %}
+{% include youtube.html param="wireYD00xkw" %}
 
 **Update:** You cannot take every annotation property in the impl class and include it in the interface. Some annotation properties should be used on the impl class and are not allowed on endpoint interfaces. And vice-versa, some are to be used only on the interface.
 

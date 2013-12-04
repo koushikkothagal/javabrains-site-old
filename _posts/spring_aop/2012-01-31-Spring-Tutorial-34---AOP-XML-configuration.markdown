@@ -11,4 +11,4 @@ tags: spring_aop
 
 We'll learn how to configure aspects, advice and pointcuts using the traditional XML way.
 
-{% youtube ewWzxcNnI7k %}
+{% include youtube.html param="ewWzxcNnI7k" %}

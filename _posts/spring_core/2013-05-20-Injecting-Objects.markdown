@@ -13,5 +13,5 @@ tags: spring_core
 
 In this tutorial, we'll use dependency injection to inject an object dependency to a Spring bean. 
 
-{% youtube g15RcFyEcrk %}
+{% include youtube.html param="g15RcFyEcrk" %}
 

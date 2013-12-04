@@ -12,4 +12,4 @@ tags: struts2_intro
 
 We'll continue looking at the login action and learn about some best practices that we can implement in our Struts 2 application.
 
-{% youtube 7yYs39-ZDOE %}
+{% include youtube.html param="7yYs39-ZDOE" %}

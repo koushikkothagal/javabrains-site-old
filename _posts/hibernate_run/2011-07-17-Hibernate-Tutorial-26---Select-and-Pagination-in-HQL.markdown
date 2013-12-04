@@ -9,4 +9,4 @@ tags: hibernate_run
 
 In this tutorial we'll learn Hibernate's support for pagination. We'll also learn how to write select queries to retrieve only certain columns.
 
-{% youtube WVHFpp8X5z0 %}
+{% include youtube.html param="WVHFpp8X5z0" %}

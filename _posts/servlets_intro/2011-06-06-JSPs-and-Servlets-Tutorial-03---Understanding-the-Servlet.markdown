@@ -9,4 +9,4 @@ tags: servlets_intro
 
 In this tutorial, we'll understand how our servlet intercepts HTTP requests, and the methods it runs.
 
-{% youtube YxuCG0f14hM %}
+{% include youtube.html param="YxuCG0f14hM" %}

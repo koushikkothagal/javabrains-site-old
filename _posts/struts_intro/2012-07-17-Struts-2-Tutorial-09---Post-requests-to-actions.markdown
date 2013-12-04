@@ -12,4 +12,4 @@ tags: struts2_intro
 
 We'll now learn how to make POST requests to actions, using both HTML forms and Struts 2 tags.
 
-{% youtube cG7FNgD11iE %}
+{% include youtube.html param="cG7FNgD11iE" %}

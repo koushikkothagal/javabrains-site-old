@@ -9,4 +9,4 @@ tags: servlets_intro
 
 In this tutorial, we'll set up and configure Eclipse and Tomcat in our development environment.
 
-{% youtube b42CJ0r-1to %}
+{% include youtube.html param="b42CJ0r-1to" %}

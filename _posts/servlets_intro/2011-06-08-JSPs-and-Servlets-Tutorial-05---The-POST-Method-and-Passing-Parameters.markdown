@@ -9,4 +9,4 @@ tags: servlets_intro
 
 Now we'll understand how to intercept GET and POST requests using the `doGet` and the `doPost` methods. We also look at how parameters are passed in HTTP requests.
 
-{% youtube MnUJl3NYRRc %}
+{% include youtube.html param="MnUJl3NYRRc" %}

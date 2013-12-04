@@ -9,4 +9,4 @@ tags: hibernate_run
 
 This tutorial discusses three important entity object states in Hibernate: Transient, Persistent and Detached.
 
-{% youtube kZpRyEABnms %}
+{% include youtube.html param="kZpRyEABnms" %}

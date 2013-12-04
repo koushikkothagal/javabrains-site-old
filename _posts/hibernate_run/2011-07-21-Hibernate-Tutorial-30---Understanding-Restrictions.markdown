@@ -9,4 +9,4 @@ tags: hibernate_run
 
 Understanding how to apply restrictions to our queries when using Criteria.
 
-{% youtube MzrzsKSJBt0 %}
+{% include youtube.html param="MzrzsKSJBt0" %}

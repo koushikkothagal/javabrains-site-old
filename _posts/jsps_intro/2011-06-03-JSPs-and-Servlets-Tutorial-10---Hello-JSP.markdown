@@ -11,4 +11,4 @@ tags: jsps_intro
 
 We'll write and execute our first JSP file. 
 
-{% youtube WCbwBHXUx0k %}
+{% include youtube.html param="WCbwBHXUx0k" %}

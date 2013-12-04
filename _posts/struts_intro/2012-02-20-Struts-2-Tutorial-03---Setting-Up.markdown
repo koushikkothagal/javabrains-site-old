@@ -12,4 +12,4 @@ tags: struts2_intro
 
 In this tutorial, we'll set up our development environment to use Struts 2. We'll download the Struts 2 distribution, configure a user library and create a blank web application.
 
-{% youtube LhjEgxJ080g %}
+{% include youtube.html param="LhjEgxJ080g" %}

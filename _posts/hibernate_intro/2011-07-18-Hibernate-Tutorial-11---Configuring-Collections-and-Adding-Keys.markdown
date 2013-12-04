@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 More configuration options for collections, including configuring primary keys.
 
-{% youtube kk207HAym_I %}
+{% include youtube.html param="kk207HAym_I" %}

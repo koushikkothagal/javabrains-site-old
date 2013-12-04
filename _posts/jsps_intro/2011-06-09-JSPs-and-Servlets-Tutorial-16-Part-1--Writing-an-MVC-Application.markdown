@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We now set out to write our own MVC application from the scratch.
 
-{% youtube QOUIVsBN82Q %}
+{% include youtube.html param="QOUIVsBN82Q" %}

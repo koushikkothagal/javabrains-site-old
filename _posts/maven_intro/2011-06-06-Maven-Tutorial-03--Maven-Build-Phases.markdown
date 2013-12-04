@@ -11,4 +11,4 @@ topic: intro
 
 We'll now learn what the build process in Maven consists of, the build phases and we'll run commands to execute some phases.
 
-{% youtube IYRYbPR5Gek %}
+{% include youtube.html param="IYRYbPR5Gek" %}

@@ -9,4 +9,4 @@ tags: servlets_intro
 
 In this tutorial, we'll learn how to configure our servlets using XML instead of annotations.
 
-{% youtube w6YPK9xunCk %}
+{% include youtube.html param="w6YPK9xunCk" %}

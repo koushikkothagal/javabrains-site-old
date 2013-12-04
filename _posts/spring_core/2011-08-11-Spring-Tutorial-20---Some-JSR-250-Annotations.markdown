@@ -11,4 +11,4 @@ tags: spring_core
 
 We'll learn and implement three JSR-250 annotations that Spring supports:Resource, PostConstruct and PreDestroy.
 
-{% youtube apTEbKPW3ow %}
+{% include youtube.html param="apTEbKPW3ow" %}

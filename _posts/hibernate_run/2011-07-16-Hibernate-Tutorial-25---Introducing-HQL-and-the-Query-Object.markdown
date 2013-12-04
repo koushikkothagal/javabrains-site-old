@@ -9,4 +9,4 @@ tags: hibernate_run
 
 Introducing HQL and using HQL to run queries on the database.
 
-{% youtube Em4M2tUn1bU %}
+{% include youtube.html param="Em4M2tUn1bU" %}

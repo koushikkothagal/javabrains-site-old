@@ -11,7 +11,7 @@ tags: spring_core
 
 In this tutorial, we'll understand the concept of Dependency Injection and how it simplifies managing dependencies between objects.
 
-{% youtube GB8k2-Egfv0 %}
+{% include youtube.html param="GB8k2-Egfv0" %}
 
 ###Summary
 

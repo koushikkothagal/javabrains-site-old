@@ -12,4 +12,4 @@ tags: struts2_intro
 
 We'll now try passing input parameters to our Struts 2 application and learn how we can capture that in our Action class.
 
-{% youtube hBljGA8wyv0 %}
+{% include youtube.html param="hBljGA8wyv0" %}

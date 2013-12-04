@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll try out a few more annotations to configure our entity class.
 
-{% youtube I8YmYFI5D_E %}
+{% include youtube.html param="I8YmYFI5D_E" %}

@@ -11,4 +11,4 @@ topic: intro
 
 In this tutorial, we'll add the Maven compiler plugin configuration to the pom.xml.
 
-{% youtube OQLBcd8QrWk %}
+{% include youtube.html param="OQLBcd8QrWk" %}

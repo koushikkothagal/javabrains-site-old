@@ -9,4 +9,4 @@ tags: javaee_jaxws
 
 Having understood the important elements of the WSDL, we'll now learn some annotations that help us configure and override the various defaults that are used when the WSDL is generated. 
 
-{% youtube xq2zi_UWzUE %}
+{% include youtube.html param="xq2zi_UWzUE" %}

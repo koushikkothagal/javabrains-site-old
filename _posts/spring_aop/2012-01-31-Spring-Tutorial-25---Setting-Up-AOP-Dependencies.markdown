@@ -11,7 +11,7 @@ tags: spring_aop
 
 In this tutorial, we'll add the additional dependencies required for Spring AOP and we'll configure our project's class path with these dependencies.
 
-{% youtube 4P0TME-AbSw %}
+{% include youtube.html param="4P0TME-AbSw" %}
 
 The links for the dependencies are:
 

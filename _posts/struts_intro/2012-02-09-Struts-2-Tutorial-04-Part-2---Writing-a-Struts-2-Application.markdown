@@ -12,4 +12,4 @@ tags: struts2_intro
 
 In the second part of this two part video, we'll continue with our Struts 2 application by adding result mapping to JSPs, Struts 2 filters, and complete the request response flow.
 
-{% youtube 1rDnWURZOWI %}
+{% include youtube.html param="1rDnWURZOWI" %}

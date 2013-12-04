@@ -9,4 +9,4 @@ tags: jsps_intro
 
 Introduction and explanation of the Model-View-Controller pattern.
 
-{% youtube zk_zEp-mtvQ %}
+{% include youtube.html param="zk_zEp-mtvQ" %}

@@ -13,5 +13,5 @@ tags: spring_core
 
 We'll now use constructors to set the member variable values for our Spring beans. We'll also look at some techniques to resolve conflicts in the case of overloaded constructors. 
 
-{% youtube IOZzxmJVus0 %}
+{% include youtube.html param="IOZzxmJVus0" %}
 

@@ -13,4 +13,4 @@ tags: spring_core
 
 We'll use two different ways to run methods on initialization and destruction of beans.
 
-{% youtube 8LCpo4sfdQU %}
+{% include youtube.html param="8LCpo4sfdQU" %}

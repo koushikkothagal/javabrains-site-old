@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We'll learn how to use some page directives and how they affect our JSP.
 
-{% youtube qLpm1Zxytsg %}
+{% include youtube.html param="qLpm1Zxytsg" %}

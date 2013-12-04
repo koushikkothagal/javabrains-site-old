@@ -12,4 +12,4 @@ tags: struts2_intro
 
 We'll understand the concept of namespaces when mapping Struts 2 actions. We'll configure a namespace, and also understand the default "/" namespace.
 
-{% youtube BlFHGscURC4 %}
+{% include youtube.html param="BlFHGscURC4" %}

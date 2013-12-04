@@ -11,4 +11,4 @@ tags: struts2_intro
 
 How does the default interceptor configuration work? What is the necessary configuration to setup an interceptor in Struts 2? We answer these questions in this tutorial.
 
-{% youtube Kkn_8BcmopA %} 
+{% include youtube.html param="Kkn_8BcmopA" %} 

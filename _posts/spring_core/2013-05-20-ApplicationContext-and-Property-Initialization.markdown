@@ -13,7 +13,7 @@ tags: spring_core
 
 We'll first replace the BeanFactory with the more powerful ApplicationContext. We'll then make Spring initialize a property of an object by specifying the value in the configuration XML. 
 
-{% youtube ZxLaEovze3M %}
+{% include youtube.html param="ZxLaEovze3M" %}
 
 ###Summary
 

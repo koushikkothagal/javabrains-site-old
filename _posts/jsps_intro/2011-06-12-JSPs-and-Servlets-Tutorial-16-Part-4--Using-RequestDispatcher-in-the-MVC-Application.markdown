@@ -9,4 +9,4 @@ tags: jsps_intro
 
 The RequestDispatcher object helps us transfer the request from the controller to the view.
 
-{% youtube 3ZTxMDDmBqg %}
+{% include youtube.html param="3ZTxMDDmBqg" %}

@@ -12,4 +12,4 @@ tags: struts2_intro
 
 We'll try to understand what an MVC framework should typically do, and what components any such framework should have. We'll then have a high level look at some of the core Struts 2 modules.
 
-{% youtube 9BvQpf7JcOI %}
+{% include youtube.html param="9BvQpf7JcOI" %}

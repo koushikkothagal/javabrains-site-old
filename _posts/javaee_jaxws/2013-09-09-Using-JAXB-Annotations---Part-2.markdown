@@ -11,7 +11,7 @@ Let's now add some JAXB annotations to our Model class to customize the resultin
 
 **Source code:** <a href="https://github.com/koushikkothagal/Testmart/archive/990865dbabbfdeeb5dd0271a6c163a03091a8c2e.zip"> <b>Download</b> </a> 
 
-{% youtube k5GbEwDFIl8 %}
+{% include youtube.html param="k5GbEwDFIl8" %}
 
 JAXB conversions do not need a lot of inputs by default. When converting the Java object to XML, every field becomes an XML element with the field name. If there are collections or other complex types as member variables, they get converted to XML the same way, and their XML elements are nested in the parent XML. If we need to override any of the defaults, JAXB annotations can be used.
 

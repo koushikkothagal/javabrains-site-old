@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 Single table inheritance strategy.
 
-{% youtube M5YrLtAHtOo %}
+{% include youtube.html param="M5YrLtAHtOo" %}

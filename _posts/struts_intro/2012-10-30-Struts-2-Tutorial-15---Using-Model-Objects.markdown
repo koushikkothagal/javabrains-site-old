@@ -11,4 +11,4 @@ tags: struts2_intro
 
 In this tutorial, we'll learn a few techniques for using model objects in Struts 2 actions. We'll also learn about the ModelDriven interface.
 
-{% youtube ATLP7ZimjVU %}
+{% include youtube.html param="ATLP7ZimjVU" %}

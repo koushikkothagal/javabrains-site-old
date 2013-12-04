@@ -11,4 +11,4 @@ tags: struts2_intro
 
 We'll now learn how to use wildcards when mapping Struts 2 Actions. Wildcards let us map multiple Action names with a single Action mapping. This simplifies the XML mapping configuration, especially if your application uses some sort of standard naming conventions for the Action and JSP names.
 
-{% youtube gBhGREQyeFk %}
+{% include youtube.html param="gBhGREQyeFk" %}

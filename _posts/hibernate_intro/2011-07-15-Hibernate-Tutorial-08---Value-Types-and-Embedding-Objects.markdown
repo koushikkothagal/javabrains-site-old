@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll learn the difference between Entity type objects and Value type objects. We'll use the `@Embeddable` annotation to embed a value type object into our Entity class.
 
-{% youtube c2abcy0Q1a0 %}
+{% include youtube.html param="c2abcy0Q1a0" %}

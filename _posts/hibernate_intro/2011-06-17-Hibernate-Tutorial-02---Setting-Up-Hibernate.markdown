@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 In this tutorial, we'll download Hibernate and set it up in our development environment by configuring it in Eclipse.
 
-{% youtube bzPkebUXxn0 %}
+{% include youtube.html param="bzPkebUXxn0" %}

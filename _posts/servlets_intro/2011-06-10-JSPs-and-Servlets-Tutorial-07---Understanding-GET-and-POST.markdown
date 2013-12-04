@@ -9,4 +9,4 @@ tags: servlets_intro
 
 We'll look at the GET and POST methods in more detail, and we'll learn when to do what. We'll also have a sneak peek at Apache Tomcat's implementation of the `doGet` and `doPost` methods.
 
-{% youtube yzC4oDXfkl0 %}
+{% include youtube.html param="yzC4oDXfkl0" %}

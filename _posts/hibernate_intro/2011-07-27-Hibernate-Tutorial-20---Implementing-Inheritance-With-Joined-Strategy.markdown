@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 Joined inheritance strategy.
 
-{% youtube o1b3HFIlDS0 %}
+{% include youtube.html param="o1b3HFIlDS0" %}

@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We'll learn JSTL's support for the request parameters and the setProperty tag.
 
-{% youtube 4GAJ5pxQ-3c %}
+{% include youtube.html param="4GAJ5pxQ-3c" %}

@@ -11,4 +11,4 @@ tags: spring_core
 
 Here we'll have our first look at Spring annotations. We'll understand and implement the Required annotation, and we'll also learn how it's actually a BeanPostProcessor that's working behind the scenes.
 
-{% youtube Fs_IoEGSP-A %}
+{% include youtube.html param="Fs_IoEGSP-A" %}

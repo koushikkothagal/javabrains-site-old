@@ -11,4 +11,4 @@ tags: spring_data
 
 We'll use the NamedParameterJdbcTemplate class to run queries with named placeholders.
 
-{% youtube W_9DJYXuhwk %}
+{% include youtube.html param="W_9DJYXuhwk" %}

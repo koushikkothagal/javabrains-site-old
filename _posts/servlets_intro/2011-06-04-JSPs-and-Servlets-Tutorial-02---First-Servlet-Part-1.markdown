@@ -9,4 +9,4 @@ tags: servlets_intro
 
 Using Eclipse wizards to create a Dynamic Web Project.
 
-{% youtube oX2rw5pAdxw %}
+{% include youtube.html param="oX2rw5pAdxw" %}

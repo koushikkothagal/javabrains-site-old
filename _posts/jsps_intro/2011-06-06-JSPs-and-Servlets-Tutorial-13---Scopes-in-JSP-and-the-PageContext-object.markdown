@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We'll look at the implicit objects in JSP that provide scoped objects. We'll also look at the PageContext object and how to use it.
 
-{% youtube W0JQ0TaeXAY %}
+{% include youtube.html param="W0JQ0TaeXAY" %}

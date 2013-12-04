@@ -11,4 +11,4 @@ topic: intro
 
 In this tutorial, we'll download and install Maven in our development environment.
 
-{% youtube al7bRZzz4oU %}
+{% include youtube.html param="al7bRZzz4oU" %}

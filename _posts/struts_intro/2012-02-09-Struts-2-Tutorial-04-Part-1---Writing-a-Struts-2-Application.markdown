@@ -12,4 +12,4 @@ tags: struts2_intro
 
 In this tutorial, we'll begin to write a simple Struts 2 project. We'll create the Struts XML and an action class, and also configure a mapping.
 
-{% youtube u4Pn1rdv5Is %}
+{% include youtube.html param="u4Pn1rdv5Is" %}

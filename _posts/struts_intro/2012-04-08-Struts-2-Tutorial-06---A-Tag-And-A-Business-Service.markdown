@@ -12,4 +12,4 @@ tags: struts2_intro
 
 In this tutorial, we'll quickly recap the concepts we've learnt so far by creating a new Struts 2 application. We'll then add an sample business service, and take our first look at Struts 2 tags, starting with s:property tag.
 
-{% youtube nrYLnbGZ_4E %}
+{% include youtube.html param="nrYLnbGZ_4E" %}

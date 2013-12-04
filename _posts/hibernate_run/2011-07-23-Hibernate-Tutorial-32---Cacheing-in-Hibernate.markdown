@@ -9,4 +9,4 @@ tags: hibernate_run
 
 In this tutorial, we'll learn about Hibernate's cache support: both first level (Session) and second level cache.
 
-{% youtube ISi_OkmuQbs %}
+{% include youtube.html param="ISi_OkmuQbs" %}

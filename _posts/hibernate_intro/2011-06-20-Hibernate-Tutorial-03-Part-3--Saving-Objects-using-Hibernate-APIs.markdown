@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll learn how to instantiate Entity objects and save them to the database using Hibernate APIs.
 
-{% youtube FFMOZY4z6bE %}
+{% include youtube.html param="FFMOZY4z6bE" %}

@@ -9,7 +9,7 @@ tags: javaee_jaxws
 
 Welcome to this tutorial course on SOAP web services in Java. We'll start with an introduction to web services. We'll understand what they are and how they are useful. 
 
-{% youtube mKjvKPlb1rA %}
+{% include youtube.html param="mKjvKPlb1rA" %}
 
 ###Introduction
 

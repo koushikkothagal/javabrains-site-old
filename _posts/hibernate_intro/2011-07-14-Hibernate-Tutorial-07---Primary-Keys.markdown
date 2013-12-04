@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 Here we'll learn how to configure the primary key in our entity class using the `@Id` annotation.
 
-{% youtube Xuofihmkl_k %} 
+{% include youtube.html param="Xuofihmkl_k" %} 

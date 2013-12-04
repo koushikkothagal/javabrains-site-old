@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We'll understand what the JSP file is and how it gets converted to a servlet.
 
-{% youtube Ycf_GQbPqKI %}
+{% include youtube.html param="Ycf_GQbPqKI" %}

@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll understand how to configure entity classes that have an inheritance hierarchy.
 
-{% youtube Zj1mRWfhx_Y %}
+{% include youtube.html param="Zj1mRWfhx_Y" %}

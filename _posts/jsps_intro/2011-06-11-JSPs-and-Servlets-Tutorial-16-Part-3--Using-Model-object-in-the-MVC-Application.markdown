@@ -9,4 +9,4 @@ tags: jsps_intro
 
 We'll introduce the Model object to pass data between layers.
 
-{% youtube WxeY-LxMIbE %}
+{% include youtube.html param="WxeY-LxMIbE" %}

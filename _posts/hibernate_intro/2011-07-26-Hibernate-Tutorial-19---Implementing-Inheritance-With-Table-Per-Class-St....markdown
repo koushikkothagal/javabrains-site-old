@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 Table per class inheritance strategy.
 
-{% youtube qIdM4KQOtH8 %}
+{% include youtube.html param="qIdM4KQOtH8" %}

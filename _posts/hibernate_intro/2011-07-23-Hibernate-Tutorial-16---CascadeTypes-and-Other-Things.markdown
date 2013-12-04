@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 In this tutorial, we'll look at some concepts like CascadeType which can be configured for entity relationships.
 
-{% youtube K2Id3WLZWJI %}
+{% include youtube.html param="K2Id3WLZWJI" %}

@@ -9,4 +9,4 @@ tags: javaee_jaxws
 
 In this tutorial, we'll understand how types are handled in the WSDL. We'll also explore the two styles we can choose from for our WSDL - Document style and RPC style. 
 
-{% youtube rHJ1v1jsAao %}
+{% include youtube.html param="rHJ1v1jsAao" %}

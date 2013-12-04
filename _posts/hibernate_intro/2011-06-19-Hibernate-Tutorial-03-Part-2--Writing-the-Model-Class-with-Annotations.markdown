@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll now create a Model class and configure it as an Entity using Annotations.
 
-{% youtube 3eXjpve0QaI %}
+{% include youtube.html param="3eXjpve0QaI" %}

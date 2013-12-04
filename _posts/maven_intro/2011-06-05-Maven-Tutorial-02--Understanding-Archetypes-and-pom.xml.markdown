@@ -11,4 +11,4 @@ topic: intro
 
 We'll now understand what happens when we run the archetype:generate command and how that affects the pom.xml.
 
-{% youtube AI8Kjag1vGk %}
+{% include youtube.html param="AI8Kjag1vGk" %}

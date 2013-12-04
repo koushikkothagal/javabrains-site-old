@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 We'll now learn how to save value types that are collection objects.
 
-{% youtube hofWx5_ZN9c %}
+{% include youtube.html param="hofWx5_ZN9c" %}

@@ -9,4 +9,4 @@ tags: jsps_intro
 
 Calling a Business Service method from the controller.
 
-{% youtube EOdvmGVdndA %}
+{% include youtube.html param="EOdvmGVdndA" %}

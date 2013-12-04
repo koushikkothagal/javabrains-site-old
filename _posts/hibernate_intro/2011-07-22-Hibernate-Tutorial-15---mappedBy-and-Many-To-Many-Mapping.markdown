@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 Many to Many mapping of entities.
 
-{% youtube jAi8bY-H_ek %}
+{% include youtube.html param="jAi8bY-H_ek" %}

@@ -9,4 +9,4 @@ tags: hibernate_run
 
 Writing code to Create, Read, Update and Delete entities in the database.
 
-{% youtube hDBQy-dWC0A %}
+{% include youtube.html param="hDBQy-dWC0A" %}

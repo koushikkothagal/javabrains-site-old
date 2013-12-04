@@ -11,4 +11,4 @@ tags: spring_aop
 
 This video provides a brief introduction to Aspect Oriented Programming concepts.
 
-{% youtube QdyLsX0nG30 %}
+{% include youtube.html param="QdyLsX0nG30" %}

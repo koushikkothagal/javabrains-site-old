@@ -13,4 +13,4 @@ tags: spring_core
 
 In this tutorial, we'll learn what bean definition inheritance is, and how to configure a parent bean definition and have children beans inherit the bean definitions. 
 
-{% youtube LxRiFFEXs5I %}
+{% include youtube.html param="LxRiFFEXs5I" %}

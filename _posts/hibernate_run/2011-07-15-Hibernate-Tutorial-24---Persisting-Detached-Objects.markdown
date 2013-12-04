@@ -9,4 +9,4 @@ tags: hibernate_run
 
 This tutorial explores a special case of object state change: from detached to persistent.
 
-{% youtube T02FicxK_aY %}
+{% include youtube.html param="T02FicxK_aY" %}

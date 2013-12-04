@@ -11,9 +11,9 @@ This two part tutorial introduces scopes and the Request, Session and Context ob
 
 Part 1:
 
-{% youtube GbvuAIhLUZU %}
+{% include youtube.html param="GbvuAIhLUZU" %}
 
 
 Part 2:
 
-{% youtube sHpUrCJmCWs %}
+{% include youtube.html param="sHpUrCJmCWs" %}

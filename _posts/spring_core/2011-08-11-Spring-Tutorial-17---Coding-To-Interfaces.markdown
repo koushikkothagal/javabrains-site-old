@@ -11,4 +11,4 @@ tags: spring_core
 
 When using Spring for dependency injection, it's a good practice to use interfaces for referencing dependencies. In this tutorial, we'll learn how to "code to interfaces".
 
-{% youtube 5IDIEMxdkC8 %}
+{% include youtube.html param="5IDIEMxdkC8" %}

@@ -9,4 +9,4 @@ tags: javaee_jaxws
 
 In this video, we'll learn how to use the wsimport utility to create stubs that can be used to make web service calls. 
 
-{% youtube 6hqDMS-oJ9k %}
+{% include youtube.html param="6hqDMS-oJ9k" %}

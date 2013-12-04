@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 In this tutorial, we'll understand the mismatch between object and relational models and what ORM is.
 
-{% youtube Yv2xctJxE-w %}
+{% include youtube.html param="Yv2xctJxE-w" %}

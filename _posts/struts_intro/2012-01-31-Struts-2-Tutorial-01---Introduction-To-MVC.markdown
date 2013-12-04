@@ -12,4 +12,4 @@ tags: struts2_intro
 
 In this video, we'll learn about the MVC architectural pattern. We'll learn what the Model, View and Controller roles are with a real world example.
 
-{% youtube f46WEeM8HTA %}
+{% include youtube.html param="f46WEeM8HTA" %}

@@ -9,4 +9,4 @@ tags: hibernate_run
 
 This tutorial is an introduction to the Criteria API. Yet another way to work with data in Hibernate.
 
-{% youtube 4fVlAobgQGI %}
+{% include youtube.html param="4fVlAobgQGI" %}

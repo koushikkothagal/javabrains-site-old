@@ -9,4 +9,4 @@ tags: hibernate_intro
 
 In this video, we'll learn how to override configuration inside embedded objects, and we'll also explore object keys.
 
-{% youtube X8t6oYp0Uk8 %}
+{% include youtube.html param="X8t6oYp0Uk8" %}

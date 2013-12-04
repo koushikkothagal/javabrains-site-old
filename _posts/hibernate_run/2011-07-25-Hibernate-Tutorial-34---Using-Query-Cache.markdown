@@ -9,4 +9,4 @@ tags: hibernate_run
 
 In this tutorial, we'll learn how to cache results that are fetched from the Query object.
 
-{% youtube iwCdyr0bdkw %}
+{% include youtube.html param="iwCdyr0bdkw" %}

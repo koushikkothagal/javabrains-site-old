@@ -12,4 +12,4 @@ tags: struts2_intro
 
 We'll now look at how data from the action class is made available to Struts 2 tags. We'll understand a few core concepts of the framework. This will also be our first look at the ValueStack object.
 
-{% youtube EZpwBJ6EfDw %}
+{% include youtube.html param="EZpwBJ6EfDw" %}

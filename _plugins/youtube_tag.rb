@@ -17,8 +17,8 @@ module Jekyll
     def initialize(tag_name, markup, tokens)
       if markup =~ /(?:(?:https?:\/\/)?(?:www.youtube.com\/(?:embed\/|watch\?v=)|youtu.be\/)?(\S+)(?:\?rel=\d)?)(?:\s+(\d+)\s(\d+))?/i
         @videoid = $1
-        @width = $2 || "480"
-        @height = $3 || "360"
+        @width = $2 || "950"
+        @height = $3 || "534"
       end
       super
     end

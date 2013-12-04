@@ -13,7 +13,7 @@ tags: spring_core
 
 In this tutorial, we'll write code to implement the BeanFactory concept that we learnt in our previous tutorial. We'll write a Spring XML to configure a Spring bean. Then we'll use the BeanFactory to instantiate our bean in the Spring container. 
 
-{% youtube 7c6ZTF6cF88 %}
+{% include youtube.html param="7c6ZTF6cF88" %}
 
 Note: This tutorial uses `XmlBeanFactory` as the implementation of the `BeanFactory` interface As of Spring 3.1, `XmlBeanFactory` has been deprecated. You can use the alternatives mentioned in the java docs here: [http://static.springsource.org/spring/docs/3.1.x/javadoc-api/org/springframework/beans/factory/xml/XmlBeanFactory.html] (http://static.springsource.org/spring/docs/3.1.x/javadoc-api/org/springframework/beans/factory/xml/XmlBeanFactory.html) 
 

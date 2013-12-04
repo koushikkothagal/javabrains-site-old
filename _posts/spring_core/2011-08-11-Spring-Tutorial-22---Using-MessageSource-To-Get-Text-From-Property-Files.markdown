@@ -11,4 +11,4 @@ tags: spring_core
 
 In this tutorial, we'll use the MessageSource interface to retrieve messages out of property files.
 
-{% youtube cUqquQDZR-c %}
+{% include youtube.html param="cUqquQDZR-c" %}
