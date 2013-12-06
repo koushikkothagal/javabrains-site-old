@@ -22,13 +22,18 @@
     <![endif]-->
 
 <style>
-p {
-  font-family: 'Lora', serif;
-  color: #3A4145;
-  font-size: 20px;
-  padding: 5px;
-  line-height: 1.4em;
-  max-width: 900px;
+p{
+   font-size: 20px;
+   line-height: 33px;
+   margin-bottom: 35px;
+
+   font-family: Lora;
+   font-weight: 400;
+   font-style: normal;
+   color: #3A4145;
+   padding: 5px;
+   margin-left:auto;
+   margin-right:auto;
 }
 
 .watch-next-text p {
@@ -450,8 +455,6 @@ width: 100%;
         <h1 class="post-title"><small id="vno-title" class="text-color pomegranate">  05  . &nbsp;</small>ApplicationContext and Property Initialization</h1>
       </div>
 
-
-
       
 		<p>We&#39;ll first replace the BeanFactory with the more powerful ApplicationContext. We&#39;ll then make Spring initialize a property of an object by specifying the value in the configuration XML. </p>
 
@@ -491,6 +494,7 @@ width: 100%;
 </code></pre></div>
 <p>This configuration will set the <code>type</code> member variable of the <code>triangle</code> bean with the configured value automatically.    </p>
   
+    
 		<div class="container">
 		 <p class="text-center">_____</p> 
 		</div>

@@ -135,11 +135,12 @@ p .myp {
 
 .shadow {
   /* Firefox */
-  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -moz-box-shadow: 0px 10px 20px rgba(33, 33, 33, 1);
   /* Safari+Chrome */
-  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  -webkit-box-shadow: 0px 10px 20px rgba(33, 33, 33, .7);
   /* Opera */
-  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  box-shadow: 0px 10px 20px rgba(33, 33, 33, .7);
+
 }
 
 .popover {
@@ -230,6 +231,8 @@ p .myp {
   }
   body {
     padding-bottom: 0px;
+    margin-bottom: 0px;
+    overflow-x: hidden;
   }
   .mtl,.mvl,.mal {
     margin-top: 20px;
