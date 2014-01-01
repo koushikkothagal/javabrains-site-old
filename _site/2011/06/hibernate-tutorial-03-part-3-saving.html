@@ -1,86 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Java Brains</title>
+<meta charset="utf-8">
+<title>Java Brains - Saving Objects using Hibernate APIs</title>
+<meta name="description" content="">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-<link href="/css/flat-ui.css" rel="stylesheet">
-<link href="/css/jb-styles.css" rel="stylesheet">
 <link href="/css/syntax.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-<style>
-p{
-   font-size: 20px;
-   line-height: 33px;
-   margin-bottom: 35px;
-
-   font-family: Lora;
-   font-weight: 400;
-   font-style: normal;
-   color: #3A4145;
-   padding: 5px;
-   margin-left:auto;
-   margin-right:auto;
-}
-
-.watch-next-text p {
-  color: inherit;
-}
-
-</style>
-
+    <![endif]-->    
 
 </head>
 <body>
-
-  <div class="container">
-    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse clearfix topmenu">
-          <ul class="nav navbar-nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="groups.html">Groups</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Header Title -->
-  <section class="cta">
-    <div class="page-header text-center Header">
-      <h1>Java Brains</h1>
-    </div>
-  </section>
-  <!-- End Header Title -->
-
-
-
-  <div class="site">
-
-
-    
+          
 
 
 	
@@ -264,195 +226,125 @@ p{
 	
 
 
+  
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            <li><a href="/hibernate.html"> &nbsp; | &nbsp;<em>Hibernate</em></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">Linked In</a></li>   
+          <li><a href="http://www.youtube.com/koushks">Youtube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+    
+<!--    
+
+  <div class="topmenu">
+    <div class="navbar nav-pills navbar-default" id="topnavbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse clearfix topmenu">
+          <ul class="nav navbar-nav nav-pills">
+          	<li><a href="/"><strong style="font-size:21px">Java Brains</strong></a></li>
+            <li><a href="/hibernate.html"> | &nbsp;<em>Hibernate</em></a>
+            
+          </ul>
+        </div>
+
+    </div>
+
+  </div>
+
+-->
+
+
+
+
+  <div id="container" class="cf">
+    
+    <header>
+    <div>
+    	<span class="dd" id="topic-link-span"><a href="/hibernate.html#hibernate_intro" id="topic-link">Introduction to Hibernate</a></span>
+    </div>	
+	    <h1 class="video-number"> 05  </h1>
+
+		<h1 class="no-margin">Saving Objects using Hibernate APIs</h1>
+
+    </header>
+ 
+
+      <div class="post-body">
+		<p>We&#39;ll learn how to instantiate Entity objects and save them to the database using Hibernate APIs.</p>
+
+<!--
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/FFMOZY4z6bE?rel=0"></iframe></div>
+-->
 
 <style>
-.disqusbut {
-background-color: #3A4145;
-color: #FFFFFF;
-border: none;
-font-size: 18px;
-outline: none;
-padding: 30px 100px;
-width: 100%;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>
 
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/FFMOZY4z6bE" frameborder="0" width="560" height="315"></iframe>
+</div>
 
-
-
-    <!-- Header Title 
-    <section class="cta">
-      <div class="page-header text-center Header">
-    	  <h1>Java Brains</h1>
-    	</div>
-    </section>
-    End Header Title -->
-
-<!-- <div class="bs-sidebar affix">
-    <div class="row listing tut-listing">
-    <ul class="nav nav-list">
-            <li class="nav-header">TUTORIALS</li>
-            
-            
-            <li>
-              <a href="/2011/06/hibernate-tutorial-01-introduction-to.html"> 
-                1.&nbsp; Introduction To Hibernate
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/hibernate-tutorial-02-setting-up.html"> 
-                2.&nbsp; Setting Up Hibernate
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/hibernate-tutorial-03-part-1-writing.html"> 
-                3.&nbsp; Writing a Hibernate Application
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/hibernate-tutorial-03-part-2-writing.html"> 
-                4.&nbsp; Writing the Model Class with Annotations
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/hibernate-tutorial-03-part-3-saving.html"> 
-                5.&nbsp; Saving Objects using Hibernate APIs
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/hibernate-tutorial-04-hbm2ddl.html"> 
-                6.&nbsp; hbm2ddl Configuration and Name Annotations
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-05-more-annotations.html"> 
-                7.&nbsp; More Annotations
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-06-retrieving.html"> 
-                8.&nbsp; Retrieving Objects using session.get
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-07-primary-keys.html"> 
-                9.&nbsp; Primary Keys
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-08-value-types-and.html"> 
-                10.&nbsp; Value Types and Embedding Objects
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-09.html"> 
-                11.&nbsp; AttributeOverrides and Embedded Object Keys
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-10-saving.html"> 
-                12.&nbsp; Saving Collections
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-11-configuring.html"> 
-                13.&nbsp; Configuring Collections and Adding Keys
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-12-proxy-objects-and.html"> 
-                14.&nbsp; Proxy Objects and Eager and Lazy Fetch Types
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-13-one-to-one.html"> 
-                15.&nbsp; One To One Mapping
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-14-one-to-many.html"> 
-                16.&nbsp; One To Many Mapping
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-15-mappedby-and-many.html"> 
-                17.&nbsp; mappedBy and Many To Many Mapping
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-16-cascadetypes-and.html"> 
-                18.&nbsp; CascadeTypes and Other Things
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-17-implementing.html"> 
-                19.&nbsp; Implementing Inheritance
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-18-implementing.html"> 
-                20.&nbsp; Single Table Strategy
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-19-implementing.html"> 
-                21.&nbsp; Implementing Inheritance With Table Per Class Strategy
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/07/hibernate-tutorial-20-implementing.html"> 
-                22.&nbsp; Implementing Inheritance With Joined Strategy
-              </a>
-            </li>
-            
-          </ul>
-          
-  </div>
-</div> -->
-
- <!-- Post Container -->
-    <div class="container">
-      <ul style="margin-bottom: 5px;" class="breadcrumb">
-        <li><a href="/courses.html">Courses</a></li>
-        <li><a id="section" href="/hibernate.html">Hibernate</a></li>
-        <li><a class="courseName" href="/hibernate.html#hibernate_intro">Introduction to Hibernate &nbsp; </a></li> <span id="vcount" class="badge">22</span>
-      </ul> 
-      
-      <div class="post-title">
-        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate">  05  . &nbsp;</small>Saving Objects using Hibernate APIs</h1>
-      </div>
-
-      
-		<p>We&#39;ll learn how to instantiate Entity objects and save them to the database using Hibernate APIs.</p>
-
-<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-
-<div style="position:relative;padding-bottom:56.21%;padding-top:30px;height:0;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/FFMOZY4z6bE?rel=0"></iframe></div>
+<p></div>    </p>
   
+		</div>
     
 		<div class="container">
-		 <p class="text-center">_____</p> 
+		 <p class="text-center text-end">_____</p> 
 		</div>
 		  
     </div>
@@ -460,19 +352,18 @@ width: 100%;
     
      <!-- Social Media Icons -->
     
-    <div class="container cta-pad">
+    <div class="container social-media-icons">
       <div class="row text-center">
-        <img src="/img/email-32.png">
-        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/2011/06/hibernate-tutorial-03-part-3-saving.html&p[title]=Saving Objects using Hibernate APIs">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=0.0.0.0/2011/06/hibernate-tutorial-03-part-3-saving.html&p[title]=Saving Objects using Hibernate APIs">
           <img src="/img/facebook-32.png">
         </a>
-        <a href="https://plus.google.com/share?url=/2011/06/hibernate-tutorial-03-part-3-saving.html">
+        <a href="https://plus.google.com/share?url=0.0.0.0/2011/06/hibernate-tutorial-03-part-3-saving.html">
           <img src="/img/googleplus-32.png">
         </a>
-        <a href="http://twitter.com/home?status=/2011/06/hibernate-tutorial-03-part-3-saving.html">
+        <a href="http://twitter.com/home?status=0.0.0.0/2011/06/hibernate-tutorial-03-part-3-saving.html">
           <img src="/img/twitter-32.png">
         </a>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=/2011/06/hibernate-tutorial-03-part-3-saving.html&title=Saving Objects using Hibernate APIs">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=0.0.0.0/2011/06/hibernate-tutorial-03-part-3-saving.html&title=Saving Objects using Hibernate APIs">
           <img src="/img/linkedin-32.png">
         </a>
       </div>
@@ -481,26 +372,22 @@ width: 100%;
     
     
 <!-- Watch next -->
-    
-    <section class="cta text-center carrot texture1">
-      <div class="row cta-pad">
-      <div class="col-md-4 text-right cta-pad">
-        <img alt="Compass" src="/img/compas.svg">
-      </div>
-      
-      <div class="col-md-4 text-left cta-pad-text watch-next-text">
-        <p class="img-comment">Next tutorial</p>
-        <a id="nextVname" href="/2011/06/hibernate-tutorial-04-hbm2ddl.html"> <h4 id="nextVname"> hbm2ddl Configuration and Name Annotations </a> <br/>
-        <small class="nextVnameCourse"><a id="nextVnameCourse" href="/hibernate.html#hibernate_intro">Introduction to Hibernate</a> - Tutorial   6 </small>
-        </h4>
-        
-        <p>In this tutorial, we'll look at the schema generation options in Hibernate. We'll also learn some annotations to change the default name generated by Hibernate for entities.
+
+
+
+<div class="next-tutorial-container"><p class="next-tutorial">Next Tutorial</p>
+
+			<h1 class="next-tutorial-title"><a class="title-link no-deco" href="/2011/06/hibernate-tutorial-04-hbm2ddl.html">hbm2ddl Configuration and Name Annotations</h1></a>
+
+			<a class="title-link no-deco" href="/hibernate.html#hibernate_intro"><p class="next-tutorial-meta">Introduction to Hibernate</p></a>
+
+			<p class="next-tutorial-abstract">In this tutorial, we'll look at the schema generation options in Hibernate. We'll also learn some annotations to change the default name generated by Hibernate for entities.
 
 </p>
-       
-      </div>
-      </div>
-    </section>
+
+			</div>
+ 
+
 
 <!-- End Watch next -->
     
@@ -510,10 +397,8 @@ width: 100%;
 
 
   <div class='disqusbox'>
-  <div><hr />
-  <h6>View or Post Comments</h6>
-  </div>
-  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
+  
+  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock text-center"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
   <script>
     var disqus_shortname = "javabrains";
     
@@ -618,52 +503,22 @@ width: 100%;
       
       
     </section>
+
+
+
+
+
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
+      <div class="container">
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
+    </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script src="/js/youtube.js"></script>
-    
-  </body>
-
-
-
-
-
-
-
-    <div class="mtl pbl">
-      <div class="bottom-menu bottom-menu-inverse">
-        <div class="container">
-          <div class="row">
-            <div class="span2 brand span-footer">
-              <a class="fui-flat" href="#fakelink"></a>
-            </div>
-
-            <div class="span8 span-footer">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">About</a></li>
-                <li><a href="#fakelink">Community</a></li>
-                <li><a href="#fakelink">Site</a></li>
-                <li><a href="#fakelink">Follow</a></li>
-
-                <li><a href="#fakelink">Links</a></li>
-              </ul>
-            </div>
-
-            <div class="span2 span-footer">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
-                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
-               
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</body>
-</html>
+  </body>  

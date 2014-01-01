@@ -1,692 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Java Brains</title>
+<meta charset="utf-8">
+<title>Java Brains - Spring Framework</title>
+<meta name="description" content="">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-<link href="/css/flat-ui.css" rel="stylesheet">
-<link href="/css/jb-styles.css" rel="stylesheet">
 <link href="/css/syntax.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-<style>
-p{
-   font-size: 20px;
-   line-height: 33px;
-   margin-bottom: 35px;
-
-   font-family: Lora;
-   font-weight: 400;
-   font-style: normal;
-   color: #3A4145;
-   padding: 5px;
-   margin-left:auto;
-   margin-right:auto;
-}
-
-.watch-next-text p {
-  color: inherit;
-}
-
-</style>
-
+    <![endif]-->    
 
 </head>
 <body>
+          <style> p { font-family: "Lato", Helvetica, Arial, sans-serif;}</style>
 
-  <div class="container">
-    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
+<header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">LinkedIn</a></li>   
+          <li><a href="http://www.youtube.com/koushks">YouTube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+    
+	<div class="cta">
+		<div class="container">
+			<div class="row">
+				<h2 class="tech-name">Spring Framework</h2>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<h3 class="demo-panel-title">About</h3>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>Spring is one of the most popular application development frameworks for writing enterprise Java applications. Though not associated with the
+							official Java EE standard, the framework is so popular that it is often referred to as the de-facto standard for developing Enterprise Java applications.</p>
+						<p>The courses on this page cover various features and technologies of the Spring framework.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+
+					<h3 class="demo-panel-title">Courses</h3>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="listing course-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Spring Framework</li>
+								<li><a href="#spring_core"> Learning Spring Core 
+                                    <span class="nav-counter">23</span>
+								</a></li>
+								<li class="active"><a href="#spring_aop"> Understanding Spring AOP 
+                                    <span class="nav-counter">12</span>
+								</a></li>
+								<li><a href="#spring_data"> Data access in Spring 
+                                    <span class="nav-counter">10</span>
+								</a></li>
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="cta gray">
+		<div class="container">
+			<a name="spring_core"></a>
+			<div class="row">
+				<h3 class="course-title">
+					<span class="course-title-number">01.</span>Learning Spring Core
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Details</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>This course provides an introduction to the Spring framework. You will understand the concepts of dependency injection, understand how the core
+							Spring framework works and how to write an application using it.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Tutorials</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="row listing tut-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Learning Spring Core</li>  
+								<li><a href="/2011/08/spring-tutorial-01-understanding.html"> <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Understanding Dependency Injection
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-02-setting-up.html"> <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Setting Up
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-03-understanding-spring.html"> <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Understanding Spring Bean Factory
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-04-writing-code-using.html"> <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing Code Using the Bean Factory
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-05-applicationcontext.html"> <span class="glyphicon glyphicon-play"></span> 5.&nbsp; ApplicationContext and Property Initialization
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-06-using-constructor.html"> <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Using Constructor Injection
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-07-injecting-objects.html"> <span class="glyphicon glyphicon-play"></span> 7.&nbsp; Injecting Objects
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-08-inner-beans-aliases.html"> <span class="glyphicon glyphicon-play"></span> 8.&nbsp; Inner Beans, Aliases and idref
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-09-initializing.html"> <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Initializing Collections
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-10-bean-autowiring.html"> <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Bean Autowiring
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-11-understanding-bean.html"> <span class="glyphicon glyphicon-play"></span> 11.&nbsp; Understanding Bean Scopes
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-12-using.html"> <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Using ApplicationContextAware
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-13-bean-definition.html"> <span class="glyphicon glyphicon-play"></span> 13.&nbsp; Bean Definition Inheritance
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-14-lifecycle-callbacks.html"> <span class="glyphicon glyphicon-play"></span> 14.&nbsp; Lifecycle Callbacks
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-15-writing.html"> <span class="glyphicon glyphicon-play"></span> 15.&nbsp; Writing a BeanPostProcessor
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-16-writing.html"> <span class="glyphicon glyphicon-play"></span> 16.&nbsp; Writing a BeanFactoryPostProcessor
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-17-coding-to-interfaces.html"> <span class="glyphicon glyphicon-play"></span> 17.&nbsp; Coding To Interfaces
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-18-introduction-to.html"> <span class="glyphicon glyphicon-play"></span> 18.&nbsp; Introduction to Annotations and the Required Annotation
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-19-autowired-annotation.html"> <span class="glyphicon glyphicon-play"></span> 19.&nbsp; The Autowired Annotation
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-20-some-jsr-250.html"> <span class="glyphicon glyphicon-play"></span> 20.&nbsp; Some JSR-250 Annotations
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-21-component-and.html"> <span class="glyphicon glyphicon-play"></span> 21.&nbsp; Component and Stereotype Annotations
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-22-using-messagesource.html"> <span class="glyphicon glyphicon-play"></span> 22.&nbsp; Using MessageSource To Get Text From Property Files
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-23-event-handling-in.html"> <span class="glyphicon glyphicon-play"></span> 23.&nbsp; Event Handling in Spring
+								</a></li> 
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="cta">
+		<div class="container">
+			<a name="spring_aop"></a>
+			<div class="row">
+				<h3 class="course-title">
+					<span class="course-title-number">02.</span>Understanding Spring AOP
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Details</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>This tutorial introduces the concepts of Aspect Oriented Programming and Spring AOP. You will learn to write Aspects in Java using Spring AOP and also understand the terminologies used in AOP along the way.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Tutorials</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="row listing tut-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Understanding Spring AOP</li>  
+								<li><a href="/2011/08/spring-tutorial-24-introduction-to-aop.html"> <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction to AOP
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-25-setting-up-aop.html"> <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Setting Up AOP Dependencies
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-26-writing-our-first.html"> <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Writing Our First Aspect Part 1
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-27-writing-our-first.html"> <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing Our First Aspect Part 2
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-28-pointcuts-and.html"> <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Pointcuts and Wildcard Expressions
+								</a></li> 
+								<li><a href="/2011/08/spring-tutorial-29-few-more-pointcut.html"> <span class="glyphicon glyphicon-play"></span> 6.&nbsp; A Few More Pointcut Expressions
+								</a></li> 
+								<li><a href="/2011/09/spring-tutorial-30-joinpoints-and.html"> <span class="glyphicon glyphicon-play"></span> 7.&nbsp; JoinPoints and Advice Arguments
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-31-after-advice-types.html"> <span class="glyphicon glyphicon-play"></span> 8.&nbsp; After Advice Types
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-32-around-advice-type.html"> <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Around Advice Type
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-33-naming-conventions.html"> <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Naming Conventions and Custom Advice Annotations
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-34-aop-xml.html"> <span class="glyphicon glyphicon-play"></span> 11.&nbsp; AOP XML configuration
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-35-understanding-aop.html"> <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Understanding AOP Proxies
+								</a></li> 
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="cta gray">
+		<div class="container">
+			<a name="spring_data"></a>
+			<div class="row">
+				<h3 class="course-title">
+					<span class="course-title-number">03.</span>Data access in Spring
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Details</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>Almost every application needs to access data. In this course, you'll learn about Spring's support for data access from relational databases.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Tutorials</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="row listing tut-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Data access in Spring</li>  
+								<li><a href="/2011/10/spring-tutorial-36-introduction-to.html"> <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction to Spring Data and Setting Up
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-37-using-jdbc-without.html"> <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Using JDBC without Spring
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-38-adding-spring-and.html"> <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Adding Spring and DataSource Configuration
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-39-using-jdbctemplate.html"> <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Using JdbcTemplate
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-40-returning-other.html"> <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Returning Other Datatypes from JdbcTemplate
+								</a></li> 
+								<li><a href="/2011/10/spring-tutorial-41-implementing.html"> <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Implementing RowMapper
+								</a></li> 
+								<li><a href="/2011/11/spring-tutorial-42-performing-write.html"> <span class="glyphicon glyphicon-play"></span> 7.&nbsp; Performing Write Operations with JdbcTemplate
+								</a></li> 
+								<li><a href="/2011/11/spring-tutorial-43-named-parameter-jdbc.html"> <span class="glyphicon glyphicon-play"></span> 8.&nbsp; Named Parameter JDBC Template
+								</a></li> 
+								<li><a href="/2011/11/spring-tutorial-44-dao-support-classes.html"> <span class="glyphicon glyphicon-play"></span> 9.&nbsp; DAO Support Classes
+								</a></li> 
+								<li><a href="/2011/12/spring-tutorial-45-using-hibernate-with.html"> <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Using Hibernate with Spring
+								</a></li> 
+							</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse clearfix topmenu">
-          <ul class="nav navbar-nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="groups.html">Groups</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
     </div>
-
-  </div>
-
-  <!-- Header Title -->
-  <section class="cta">
-    <div class="page-header text-center Header">
-      <h1>Java Brains</h1>
-    </div>
-  </section>
-  <!-- End Header Title -->
-
-
-
-  <div class="site">
-
-
-    <style>
-body {
-color: #34495E;
-background:url("img/spring-leaf.png") no-repeat;
-background-position: 90% 5%;
-background-size: 600px;
-
-}
-p {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-background-color: #34495e;
-color: #FFFFFF;
-cursor: pointer;
-}
-
-.table, .listing a {
-font-size:16px;
-color: #34495E !important;
-}
-.glyphicon-play {
-	color:#FFFFFF;
-	margin-right: 10px;
-}
-
-.nav-header {
-    color: #AEB6BF;
-    font-size: 20px;
-    text-transform: uppercase;
-}  
-
-.nav-counter {
-    background-color: #7f8c8d;
-    border-radius: 5px;
-    color: #FFFFFF;
-    float: right;
-    font-size: 12.992px;
-    font-weight: 500;
-    margin: 1px -4px -1px 0;
-    padding: 0 8px;
-}
-
-.nav-list > li.divider {
-    border-bottom: medium none;
-    height: 2px;
-    margin: 13px -13px 17px 0;
-}
-
-.nav-list a {
-	font-size: 17px;
-}
-
-
-div.listing ul.nav li a:hover {
-	background-color: #7f8c8d;
-	color: #FFFFFF !important;
-}
-
-div.course-listing a {
-  border-bottom: 1px solid #95a5a6;
-}
-
-.demo-title {
-    float: left;
-    font-size: 24.5px;
-    line-height: 40px;
-    margin: -10px 20px 10px;
-    width: 240px;
-}
-
-.demo-content {
-    float: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 580px;
-}
-
-.sub-title {
-	font-size: 30px;
-}
-
-.fadeout {
-    position: relative; 
-    bottom: 8em;
-    height: 8em;
-    background: -webkit-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    ); 
-    background-image: -moz-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -o-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -ms-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-} 
-.tut-listing {
-	height:250px;
-	overflow: hidden;
-}
-.tut-listing li > a {
-  padding:10px 10px;
-}
-.expand-link {
-	cursor: pointer;
-}
-
-</style>
-
-<div class="container">
-	<div class="row">
-		<h2 style="color:#c0392b">Spring Framework</h2>
-	</div>
-	
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="demo-panel-title">About</h3>
-        </div>
-        <div class="demo-content">
-        	<p>Spring is one of the most popular application development frameworks for writing enterprise Java applications. Though not associated with the official Java EE standard, the framework is so popular that it is often referred to as the de-facto standard for developing Enterprise Java applications.</p>
-        	<p>The courses on this page cover various features and technologies of the Spring framework. </p>
-        </div>
-	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="demo-panel-title">Courses</h3>
-        </div>
-	<div class="demo-content">
-	<div class="listing course-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Spring Framework</li>
-            <li>
-              <a href="#spring_core"> 
-                Learning Spring Core
-                <span class="nav-counter">23</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="#spring_aop">
-                Understanding Spring AOP
-                <span class="nav-counter">12</span>
-              </a>
-            </li>
-            <li>
-              <a href="#spring_data">
-                Data access in Spring
-                <span class="nav-counter">10</span>
-              </a>
-            </li>
-            <li class="divider"></li>
-          </ul>
-	</div>
-	</div>
-	</div>
-	
-	<hr style="height:10px;color:#000000"/>
-
-	<!-- <div class="row">
-		<h3 >Available courses</h3>
-	</div> -->
-	
-	<div class="container">
-	<a name="spring_core"></a>
-	<div class="row">
-          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">01.</span>&nbsp; Learning Spring Core </h3>
-	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Details</h3>
-        </div>
-        <div class="demo-content">
-        	<p style="font-size:18px;">This course provides an introduction to the Spring framework. You will understand the concepts of dependency injection, understand how the core Spring framework works and how to write an application using it.</p>
-        </div>
-	</div>
-	
-		<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Tutorials</h3>
-        </div>
-	<div class="demo-content">
-	<div class="row listing tut-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Learning Spring Core</li>
-            
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-01-understanding.html"> 
-                <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Understanding Dependency Injection
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-02-setting-up.html"> 
-                <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Setting Up
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-03-understanding-spring.html"> 
-                <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Understanding Spring Bean Factory
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-04-writing-code-using.html"> 
-                <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing Code Using the Bean Factory
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-05-applicationcontext.html"> 
-                <span class="glyphicon glyphicon-play"></span> 5.&nbsp; ApplicationContext and Property Initialization
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-06-using-constructor.html"> 
-                <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Using Constructor Injection
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-07-injecting-objects.html"> 
-                <span class="glyphicon glyphicon-play"></span> 7.&nbsp; Injecting Objects
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-08-inner-beans-aliases.html"> 
-                <span class="glyphicon glyphicon-play"></span> 8.&nbsp; Inner Beans, Aliases and idref
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-09-initializing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Initializing Collections
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-10-bean-autowiring.html"> 
-                <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Bean Autowiring
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-11-understanding-bean.html"> 
-                <span class="glyphicon glyphicon-play"></span> 11.&nbsp; Understanding Bean Scopes
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-12-using.html"> 
-                <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Using ApplicationContextAware
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-13-bean-definition.html"> 
-                <span class="glyphicon glyphicon-play"></span> 13.&nbsp; Bean Definition Inheritance
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-14-lifecycle-callbacks.html"> 
-                <span class="glyphicon glyphicon-play"></span> 14.&nbsp; Lifecycle Callbacks
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-15-writing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 15.&nbsp; Writing a BeanPostProcessor
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-16-writing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 16.&nbsp; Writing a BeanFactoryPostProcessor
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-17-coding-to-interfaces.html"> 
-                <span class="glyphicon glyphicon-play"></span> 17.&nbsp; Coding To Interfaces
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-18-introduction-to.html"> 
-                <span class="glyphicon glyphicon-play"></span> 18.&nbsp; Introduction to Annotations and the Required Annotation
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-19-autowired-annotation.html"> 
-                <span class="glyphicon glyphicon-play"></span> 19.&nbsp; The Autowired Annotation
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-20-some-jsr-250.html"> 
-                <span class="glyphicon glyphicon-play"></span> 20.&nbsp; Some JSR-250 Annotations
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-21-component-and.html"> 
-                <span class="glyphicon glyphicon-play"></span> 21.&nbsp; Component and Stereotype Annotations
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-22-using-messagesource.html"> 
-                <span class="glyphicon glyphicon-play"></span> 22.&nbsp; Using MessageSource To Get Text From Property Files
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-23-event-handling-in.html"> 
-                <span class="glyphicon glyphicon-play"></span> 23.&nbsp; Event Handling in Spring
-              </a>
-            </li>
-            
-          </ul>
-          
-	</div>
-	<div class="fadeout"></div>
-	<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
-	
-	
-	</div>
-	</div>
-	
-	
-	</div>
-	
-	<hr style="height:3px;"/>
-	
-	<div class="container">
-	<a name="spring_aop"></a>
-	<div class="row">
-          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">02.</span>&nbsp; Understanding Spring AOP </h3>
-	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Details</h3>
-        </div>
-        <div class="demo-content">
-        	<p style="font-size:18px;">This tutorial introduces the concepts of Aspect Oriented Programming and Spring AOP. You will learn to write Aspects in Java using Spring AOP and also understand the terminologies used in AOP along the way.</p>
-        </div>
-	</div>
-	
-		<div class="row">
-	<div class="demo-title">
-          <h3 class="sub-title">Tutorials</h3>
-        </div>
-	<div class="demo-content">
-	<div class="row listing tut-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Understanding Spring AOP</li>
-            
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-24-introduction-to-aop.html"> 
-                <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction to AOP
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-25-setting-up-aop.html"> 
-                <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Setting Up AOP Dependencies
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-26-writing-our-first.html"> 
-                <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Writing Our First Aspect Part 1
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-27-writing-our-first.html"> 
-                <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing Our First Aspect Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-28-pointcuts-and.html"> 
-                <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Pointcuts and Wildcard Expressions
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/08/spring-tutorial-29-few-more-pointcut.html"> 
-                <span class="glyphicon glyphicon-play"></span> 6.&nbsp; A Few More Pointcut Expressions
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/09/spring-tutorial-30-joinpoints-and.html"> 
-                <span class="glyphicon glyphicon-play"></span> 7.&nbsp; JoinPoints and Advice Arguments
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-31-after-advice-types.html"> 
-                <span class="glyphicon glyphicon-play"></span> 8.&nbsp; After Advice Types
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-32-around-advice-type.html"> 
-                <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Around Advice Type
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-33-naming-conventions.html"> 
-                <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Naming Conventions and Custom Advice Annotations
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-34-aop-xml.html"> 
-                <span class="glyphicon glyphicon-play"></span> 11.&nbsp; AOP XML configuration
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-35-understanding-aop.html"> 
-                <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Understanding AOP Proxies
-              </a>
-            </li>
-            
-          </ul>
-          
-	</div>
-	<div class="fadeout"></div>
-		<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
-	
-	
-	</div>
-	</div>
-	
-	
-	</div>
-	
-	<hr style="height:3px;"/>
-	
-	<div class="container">
-	<a name="spring_data"></a>
-	<div class="row">
-          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">03.</span>&nbsp; Data access in Spring </h3>
-	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Details</h3>
-        </div>
-        <div class="demo-content">
-        	<p style="font-size:18px;">Almost every application needs to access data. In this course, you'll learn about Spring's support for data access from relational databases.</p>
-        </div>
-	</div>
-	
-		<div class="row">
-	<div class="demo-title">
-          <h3 class="sub-title">Tutorials</h3>
-        </div>
-	<div class="demo-content">
-	<div class="row listing tut-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Data access in Spring</li>
-            
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-36-introduction-to.html"> 
-                <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction to Spring Data and Setting Up
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-37-using-jdbc-without.html"> 
-                <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Using JDBC without Spring
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-38-adding-spring-and.html"> 
-                <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Adding Spring and DataSource Configuration
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-39-using-jdbctemplate.html"> 
-                <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Using JdbcTemplate
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-40-returning-other.html"> 
-                <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Returning Other Datatypes from JdbcTemplate
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/10/spring-tutorial-41-implementing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Implementing RowMapper
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/11/spring-tutorial-42-performing-write.html"> 
-                <span class="glyphicon glyphicon-play"></span> 7.&nbsp; Performing Write Operations with JdbcTemplate
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/11/spring-tutorial-43-named-parameter-jdbc.html"> 
-                <span class="glyphicon glyphicon-play"></span> 8.&nbsp; Named Parameter JDBC Template
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/11/spring-tutorial-44-dao-support-classes.html"> 
-                <span class="glyphicon glyphicon-play"></span> 9.&nbsp; DAO Support Classes
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/12/spring-tutorial-45-using-hibernate-with.html"> 
-                <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Using Hibernate with Spring
-              </a>
-            </li>
-            
-          </ul>
-          
-	</div>
-	<div class="fadeout"></div>
-		<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
-	
-	
-	</div>
-	</div>
-	
-	
-	</div>
-</div>
-
-<script>
-
-
-$('.expand-link').click(function() {
-$(this).parent().parent().siblings('div.tut-listing').height('100%');
-$(this).parent().parent().siblings('div.fadeout').hide();
-$(this).hide();
-});
-
-</script>
-
-
-
-
-
-
-
-    <div class="mtl pbl">
-      <div class="bottom-menu bottom-menu-inverse">
-        <div class="container">
-          <div class="row">
-            <div class="span2 brand span-footer">
-              <a class="fui-flat" href="#fakelink"></a>
-            </div>
-
-            <div class="span8 span-footer">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">About</a></li>
-                <li><a href="#fakelink">Community</a></li>
-                <li><a href="#fakelink">Site</a></li>
-                <li><a href="#fakelink">Follow</a></li>
-
-                <li><a href="#fakelink">Links</a></li>
-              </ul>
-            </div>
-
-            <div class="span2 span-footer">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
-                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
-               
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</body>
-</html>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  </body>  

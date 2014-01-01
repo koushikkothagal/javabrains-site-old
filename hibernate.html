@@ -1,277 +1,180 @@
 ---
-layout: default
-title: Java Brains - Hibernate Courses
+layout: blank
+title: Hibernate
 ---
 
-<style>
-body {
-color: #34495E;
-background:url("img/hibernate.png") no-repeat;
-background-position: 90% 5%;
-background-size: 500px;
 
-}
-p {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-background-color: #34495e;
-color: #FFFFFF;
-cursor: pointer;
-}
+<style> p { font-family: "Lato", Helvetica, Arial, sans-serif;}</style>
 
-.table, .listing a {
-font-size:16px;
-color: #34495E !important;
-}
-.glyphicon-play {
-	color:#FFFFFF;
-	margin-right: 10px;
-}
+    
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">LinkedIn</a></li>   
+          <li><a href="http://www.youtube.com/koushks">YouTube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
 
-.nav-header {
-    color: #AEB6BF;
-    font-size: 20px;
-    text-transform: uppercase;
-}  
+</header>
+    
+	<div class="cta">
+		<div class="container">
+			<div class="row">
+				<h2 class="tech-name">Hibernate</h2>
+			</div>
 
-.nav-counter {
-    background-color: #7f8c8d;
-    border-radius: 5px;
-    color: #FFFFFF;
-    float: right;
-    font-size: 12.992px;
-    font-weight: 500;
-    margin: 1px -4px -1px 0;
-    padding: 0 8px;
-}
-
-.nav-list > li.divider {
-    border-bottom: medium none;
-    height: 2px;
-    margin: 13px -13px 17px 0;
-}
-
-.nav-list a {
-	font-size: 17px;
-}
-
-
-div.listing ul.nav li a:hover {
-	background-color: #7f8c8d;
-	color: #FFFFFF !important;
-}
-
-div.course-listing a {
-  border-bottom: 1px solid #95a5a6;
-}
-
-.demo-title {
-    float: left;
-    font-size: 24.5px;
-    line-height: 40px;
-    margin: -10px 20px 10px;
-    width: 240px;
-}
-
-.demo-content {
-    float: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 580px;
-}
-
-.sub-title {
-	font-size: 30px;
-}
-
-.fadeout {
-    position: relative; 
-    bottom: 8em;
-    height: 8em;
-    background: -webkit-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    ); 
-    background-image: -moz-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -o-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -ms-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-} 
-.tut-listing {
-	height:200px;
-	overflow: hidden;
-}
-.tut-listing li > a {
-	padding:3px 5px;
-}
-.expand-link {
-	cursor: pointer;
-}
-
-</style>
-
-<div class="container">
-	<div class="row">
-		<h2 style="color:#c0392b">Hibernate</h2>
-	</div>
-
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="demo-panel-title">About</h3>
-        </div>
-        <div class="demo-content">
-        	<p>Hibernate is an open source Java persistence framework that lets Java applications connect to and work with a relational database using Object Relational Mapping. The Hibernate framework implements the Java Persistance API (JPA) which is the standard specification for object-relational mapping. </p>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 class="demo-panel-title">About</h3>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>Hibernate is an open source Java persistence framework that lets Java applications connect to and work with a relational database using Object Relational Mapping. The Hibernate framework implements the Java Persistance API (JPA) which is the standard specification for object-relational mapping. </p>
         	<p>The courses on this page cover various concepts and features of ORM, JPA and Hibernate. </p>
-        </div>
-	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="demo-panel-title">Courses</h3>
-        </div>
-	<div class="demo-content">
-	<div class="listing course-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Hibernate</li>
-            <li>
-              <a href="#spring_core"> 
-                Introduction to Hibernate
-                <span class="nav-counter">{{site.tags["hibernate_intro"].size}}</span>
-              </a>
-            </li>
-            <li class="active">
-              <a href="#spring_aop">
-                Hibernate - APIs and Runtime
-                <span class="nav-counter">{{site.tags["hibernate_run"].size}}</span>
-              </a>
-            </li>
-            <li class="divider"></li>
-          </ul>
-	</div>
-	</div>
-	</div>
-	
-	<hr style="height:3px;"/>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
 
-	<!-- <div class="row">
-		<h3 >Available courses</h3>
-	</div> -->
-	
-	<div class="container">
-	<a name="spring_core"></a>
-	<div class="row">
-          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">01.</span>&nbsp; Introduction to Hibernate </h3>
+					<h3 class="demo-panel-title">Courses</h3>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="listing course-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Hibernate</li>
+								<li><a href="#hibernate_intro"> Introduction to Hibernate 
+                                    <span class="nav-counter">{{site.tags["hibernate_intro"].size}}</span>
+								</a></li>
+								<li class="active"><a href="#hibernate_run"> Hibernate - APIs and Runtime 
+                                    <span class="nav-counter">{{site.tags["hibernate_run"].size}}</span>
+								</a></li>
+								
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Details</h3>
-        </div>
-        <div class="demo-content">
-        	<p style="font-size:18px;">This course provides an introduction to the Hibernate ORM framework. You will understand the concept of Object Relational Mapping (ORM). You will learn to use Hibernate to write Java applications that connect to a relational database. You will also learn various JPA annotations that let you map an classes to relational models. </p>
-        </div>
-	</div>
-	
-		<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Tutorials</h3>
-        </div>
-	<div class="demo-content">
-	<div class="row listing tut-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Introduction to Hibernate</li>
-            {% assign course = site.tags["hibernate_intro"] | sort: 'date' %}
-            {% for tut in course %}
-            <li>
-              <a href="{{tut.url}}"> 
-                <span class="glyphicon glyphicon-play"></span> {{forloop.index}}.&nbsp; {{tut.title}}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-          
-	</div>
-	<div class="fadeout"></div>
-	<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
-	
-	
-	</div>
-	</div>
-	
-	
-	</div>
-	
-	<hr style="height:3px;"/>
-	
-	<div class="container">
-	<a name="spring_aop"></a>
-	<div class="row">
-          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">02.</span>&nbsp; Hibernate - APIs and Runtime </h3>
-	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Details</h3>
-        </div>
-        <div class="demo-content">
-        	<p style="font-size:18px;">This course explores the runtime aspects of Hibernate. You'll understand how to perform Create, Read, Update and Delete operations, implement Hibernate APIs, understand the life cycle of entities, write queries in HQL, the Hibernate Query Language and implement caching.  </p>
-        </div>
-	</div>
-	
-		<div class="row">
-	<div class="demo-title">
-          <h3 class="sub-title">Tutorials</h3>
-        </div>
-	<div class="demo-content">
-	<div class="row listing tut-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Understanding Spring AOP</li>
-            {% assign course = site.tags["hibernate_run"] | sort: 'date' %}
-            {% for tut in course %}
-            <li>
-              <a href="{{tut.url}}"> 
-                <span class="glyphicon glyphicon-play"></span> {{forloop.index}}.&nbsp; {{tut.title}}
-              </a>
-            </li>
-            {% endfor %}
-          </ul>
-          
-	</div>
-	<div class="fadeout"></div>
-		<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
-	
-	
-	</div>
-	</div>
-	
-	
-	</div>
-	
-	<hr style="height:3px;"/>
-	
 
-</div>
+	
+	<div class="cta gray">
+		<div class="container">
+			<a name="hibernate_intro"></a>
+			<div class="row">
+				<h3 class="course-title">
+					<span class="course-title-number">01.</span>Introduction to Hibernate
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Details</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>This course provides an introduction to the Hibernate ORM framework. You will understand the concept of Object Relational Mapping (ORM). You will learn to use Hibernate to write Java applications that connect to a relational database. You will also learn various JPA annotations that let you map an classes to relational models.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Tutorials</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="row listing tut-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Introduction to Hibernate</li> {% assign course = site.tags["hibernate_intro"] | sort: 'date' %} {% for tut in course %}
+								<li><a href="{{tut.url}}"> <span class="glyphicon glyphicon-play"></span> {{forloop.index}}.&nbsp; {{tut.title}}
+								</a></li> {% endfor %}
+							</ul>
 
-<script>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+    
+	<div class="cta">
+		<div class="container">
+			<a name="hibernate_run"></a>
+			<div class="row">
+				<h3 class="course-title">
+					<span class="course-title-number">02.</span>Hibernate - APIs and Runtime
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Details</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>This course explores the runtime aspects of Hibernate. You'll understand how to perform Create, Read, Update and Delete operations, implement Hibernate APIs, understand the life cycle of entities, write queries in HQL, the Hibernate Query Language and implement caching.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Tutorials</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="row listing tut-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Hibernate - APIs and Runtime</li> {% assign course = site.tags["hibernate_run"] | sort: 'date' %} {% for tut in course %}
+								<li><a href="{{tut.url}}"> <span class="glyphicon glyphicon-play"></span> {{forloop.index}}.&nbsp; {{tut.title}}
+								</a></li> {% endfor %}
+							</ul>
 
-$('.expand-link').click(function() {
-$(this).parent().parent().siblings('div.tut-listing').height('100%');
-$(this).parent().parent().siblings('div.fadeout').hide();
-$(this).hide();
-});
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-</script>
-
-
-
+    
+	

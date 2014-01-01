@@ -1,0 +1,72 @@
+---
+layout: blank
+title: Courses
+---
+    
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco title-link" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/courses.html">Courses</a>
+        </li>      
+        <li>
+          <a href="/blog.html" class="title-link">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html" class="title-link">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">LinkedIn</a></li>   
+          <li><a href="http://www.youtube.com/koushks">YouTube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+<style>
+
+p {
+    font-family: "Lato";
+    font-size: 20px;
+}
+</style>    
+
+<div class="cta">
+		<div class="container">
+			<div class="row">
+				<h2 class="tech-name">Blog</h2>
+			</div>
+
+        <div class="row">
+            <p class="nav-header">All posts</p>    
+        </div>
+        <div class="container">    
+           {% for post in site.categories.blog  %}
+                <p>{{post.date | date: '%B %d, %Y' }} - <a href="{{ post.url }}">{{ post.title }}</a></p>
+           {% endfor %}
+    
+</div>   
+</div>
+
+
+
+
+
