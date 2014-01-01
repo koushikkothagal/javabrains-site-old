@@ -15,7 +15,7 @@ I would be lying if I said that this effort is entirely selfless. Making these t
 
 ### The move
 
-Java Brains started its existence on <a href="http://www.blogger.com" target="_blank">Blogger</a>, the free blogging platform by Google. I chose Blogger at the time because it was free *and* extremely flexible. I had written a custom Blogger template that had the look and feel close to the way I wanted it. 
+Java Brains started its existence on <a href="http://www.blogger.com" target="_blank">Blogger</a>, the free blogging platform by Google. I chose Blogger at the time because it was free *and* flexible. I had written a custom Blogger template that had the look and feel close to the way I wanted it. 
 
 A while back, a colleague of mine introduced me to <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>. Jekyll is a static site generator written in Ruby that takes individual post text files and generates a site or a blog from it. It is extremely customizable and I found it to be a good fit for what I wanted. I have now rebuilt this site to use Jekyll and moved it to <a href="http://pages.github.com/" target="_blank">Github pages</a>. I would definitely encourage you to check them both out if you are interested in blogging. I'm using <a href="http://disqus.com/" target="_blank">Disqus</a> for comments, since I'm moving away from Blogger and its commenting system. But since the site is static now, (it's pre-rendered before deployment) the load time should be super-fast. In fact, you should be able to see how slow the YouTube video widget loads compared to the rest of the site! 
 
@@ -35,6 +35,6 @@ I've now licensed Java Brains under Creative Commons Attribution-NonCommercial-S
 
 Over the years, a lot of people have been asking me how they can contribute to this effort.  I used to tell them that the best thing they can do is spread the word. Now, there is one more way! If you are a UI developer, you'll probably take a look at the HTML / CSS code and cringe. Well, feel free to fork the code and enhance it. I would definitely appreciate pull requests on Github. Also, in relation to #1 above, if you'd like to add written material and source code to some of my older videos, you are welcome to. Connect with me <a href="http://www.linkedin.com/in/koushiksrinivas" target="_blank">on LinkedIn</a> if you have any questions on how to contribute.
 
-I intend to write more about my process of publishing. Do let me know in the comments if that would interest you. I have messed around with Jekyll, HTML and CSS enough that I could probably even start even a tutorial series on them. HTML Brains, perhaps?!  
+I intend to write more about my process of publishing. Do let me know in the comments if that would interest you. I have messed around with Jekyll, HTML and CSS enough that I could probably even start even a basic tutorial series on them. HTML Brains, perhaps?!  
 
 Anyhow, looking back, my work with Java Brains has been worth every minute of time and effort I have put into it. I'll share more about it in the hope that it'll encourage you to work on your own blog and start teaching stuff you already know. Well, you know, *just in case it might help someone!*

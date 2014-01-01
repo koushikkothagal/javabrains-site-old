@@ -297,27 +297,44 @@ p.next-tutorial-meta {
 }
     
 .tech-name {
-    font-size: 3.2em;
+    font-size: 2.8em;
 }
 
 .demo-panel-title {
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 0.4em;
 	margin-top: 0.4em;
 }
-
+p.nav-header {
+        font-size: 1em;
+        padding-top:1em;
+        padding-bottom:0;
+    }
 .course-title {
 	font-size: 2.5em;
 }
 .demo-title {
 	font-size: 1.8em;
 }
-
+    h1.tech-title-head {
+   font-size: 1.5em;
+   line-height: 1.2em;
+   }
+    
+p.tech-desc {
+   margin: 15px 50px 5px 50px;  
+    font-size:0.9em;
+}
+    
 .nav-list a {
     font-size: 1em;
 }
+.demo-content {
+    margin-top: 8px;    
+    }        
 .demo-content p {
         font-size: 17px;
+        margin-left: 0;
     }
 
 .outer-container {
@@ -347,7 +364,7 @@ header.navbar {
 h1.javabrains {
     font-size: 106px;
     line-height: 100px;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.2em;
     padding: 0 0 20px;
     text-align: left;
 }
