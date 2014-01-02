@@ -12,7 +12,7 @@ In this tutorial, you'll learn about the Web Service Explorer tool that come wit
 
 ###Summary
 
-In the previous tutorial, we looked at SoapUI as a tool to test and make calls to external web services without having to write a client program. In this tutorial, we'll learn about a tool that comes as a part of Eclipse to do this. It isn't as powerful as SoapUI, but it's good to know about them since it is already a part of the IDE! And it does get the basic job done.
+In the previous tutorial, we looked at SoapUI as a tool to test and make calls to external web services without having to write a client program. In this tutorial, we'll learn about a tool that comes as a part of Eclipse to do this. It isn't as powerful as SoapUI, but it's good to know about it since it is already a part of the IDE! And it does get the basic job done.
 
 To launch the tool, click on the "Launch Web Services Explorer" button on the toolbar or choose Run > Launch Web Services Explorer. 
 
@@ -28,6 +28,6 @@ Here you can enter the WSDL URL you want to access. The tool then examines the W
 
 <img class="img-responsive" src="/img/courses/javaee/jaxws/03-wsexp.jpg" />
 
-Once you have the WSDL open, you can import it to your project and open it. Or you can click to open the WSDL directly from teh Web Services Explorer. This lets you use inbuilt Eclipse plugins to graphically navigate the WSDL. Depending on how complex the WSDL is, this could be handy.
+Once you have the WSDL open, you can import it to your project and open it. Or you can click to open the WSDL directly from the Web Services Explorer. This lets you use inbuilt Eclipse plugins to graphically navigate the WSDL. If you are working with a long and complicated WSDL, this could be handy.
 
 <img class="img-responsive" src="/img/courses/javaee/jaxws/04-wsexp.jpg" />
