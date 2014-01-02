@@ -37,4 +37,4 @@ Over the years, a lot of people have been asking me how they can contribute to t
 
 I intend to write more about my process of publishing. Do let me know in the comments if that would interest you. I have messed around with Jekyll, HTML and CSS enough that I could probably even start even a basic tutorial series on them. HTML Brains, perhaps?!  
 
-Anyhow, looking back, my work with Java Brains has been worth every minute of time and effort I have put into it. I'll share more about it in the hope that it'll encourage you to work on your own blog and start teaching stuff you already know. Well, you know, *just in case it might help someone!*
+Anyhow, looking back, my work with Java Brains has been worth every minute of time and effort I have put into it. I'll share more about it in the hope that it'll encourage you to work on your own blog and start teaching stuff. Well, you know, *just in case it might help someone!*
