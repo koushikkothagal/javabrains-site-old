@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Java Brains - Configuring Collections and Adding Keys</title>
+<title>Java Brains - Using Endpoint</title>
 <meta name="description" content="Java Brains is an Enterprise Java tutorial website. Free tutorials on Spring Framework, Hibernate, Struts 2, Java EE, Maven.">
 <meta name="author" content="Koushik Kothagal">
 
@@ -67,24 +67,60 @@
 	
 
 	
+
+	
+
+	
+
+	
 		
 		
     
     
 	
 
+
+
+
+
+
+
+
+	
+	
+  	
+
 	
 
 	
+	
+  	
 
 	
 
+	
+	
+  	
 
+	
 
+	
+	
+  	
 
+	
 
+	
+	
+  	
 
+	
 
+	
+	
+  	
+
+	
 
 	
 	
@@ -168,68 +204,13 @@
 		
 		
 			
+		
+    	
+    	
+			
 			
     	
     	
-    	
-			
-			
-    	
-    	
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
 	
 
 
@@ -249,7 +230,7 @@
       <ul class="nav navbar-nav navbar-left">
         
             <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
-            <li><a href="/hibernate.html"> &nbsp; | &nbsp;<em>Hibernate</em></a></li>
+            <li><a href="/javaee.html"> &nbsp; | &nbsp;<em>Java EE</em></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -286,7 +267,7 @@
         <div class="collapse navbar-collapse clearfix topmenu">
           <ul class="nav navbar-nav nav-pills">
           	<li><a href="/"><strong style="font-size:21px">Java Brains</strong></a></li>
-            <li><a href="/hibernate.html"> | &nbsp;<em>Hibernate</em></a>
+            <li><a href="/javaee.html"> | &nbsp;<em>Java EE</em></a>
             
           </ul>
         </div>
@@ -304,21 +285,21 @@
     
     <header>
     <div>
-    	<span class="dd" id="topic-link-span"><a href="/hibernate.html#hibernate_intro" id="topic-link">Introduction to Hibernate</a></span>
+    	<span class="dd" id="topic-link-span"><a href="/javaee.html#javaee_jaxws" id="topic-link">SOAP Web Services with JAX-WS</a></span>
     </div>	
-	    <h1 class="video-number">13</h1>
+	    <h1 class="video-number">19</h1>
 
-		<h1 class="no-margin">Configuring Collections and Adding Keys</h1>
+		<h1 class="no-margin">Using Endpoint</h1>
 
     </header>
  
 
       <div class="post-body">
-		<p>More configuration options for collections, including configuring primary keys.</p>
+		<p>There is an alternative way of publishing and running web services without having to use any app servers. In this tutorial, we&#39;ll use the Endpoint class to publish our web service.</p>
 
 <!--
 <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/kk207HAym_I?rel=0"></iframe></div>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/ExGgevg3i94?rel=0"></iframe></div>
 -->
 
 <style>
@@ -343,10 +324,45 @@
 
 <div class="outer-container">
 <div class="video-container shadow">
-         <iframe src="http://www.youtube.com/embed/kk207HAym_I" frameborder="0" width="560" height="315"></iframe>
+         <iframe src="http://www.youtube.com/embed/ExGgevg3i94" frameborder="0" width="560" height="315"></iframe>
 </div>
 
 <p></div>    </p>
+
+<h3>Summary</h3>
+
+<p>So far, we&#39;ve used the Glassfish application server to deploy and run our web service application. While this works just fine, there are alternative ways to deploy and run web services. In fact, you can run a web service application without using any servers!</p>
+
+<p>Every JDK, at least the latest version, comes with support for JAX-WS. You can write a simple Java class that publishes and runs your web services!</p>
+
+<p>Create a new Java class with a main method. Add the following code:</p>
+<div class="highlight"><pre><code class="java language-java" data-lang="java"><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="n">Endpoint</span><span class="o">.</span><span class="na">publish</span><span class="o">(</span><span class="s">&quot;http://localhost:1234/productcatalog&quot;</span><span class="o">,</span> <span class="k">new</span> <span class="n">ProductCatalog</span><span class="o">());</span>
+
+<span class="o">}</span>
+</code></pre></div>
+<p>That&#39;s all it takes to run a web service! The <code>Endpoint.publish()</code> is an overloaded method, but the one we are using here takes two arguments. </p>
+
+<p>The first argument is a <code>String</code> where you can specify the URL for your web service. Note that I&#39;m using <code>localhost</code> as the host name since I intend to run this on my computer only. The port can be any arbitrary port that you know is not in use by any other program on your computer. I&#39;m using port <code>1234</code> here. The <code>productcatalog</code> part of the URL can be any arbitrary name that you want the web service to be exposed at.</p>
+
+<p>The second argument is an instance of the <code>ProductCatalog</code> class. Basically it has to be an instance of any class that has the <code>@WebService</code> annotation. This is the web service that you want to publish at the URL you&#39;ve specified in the first argument.</p>
+
+<p>Run the main method and you are done. You can access the web service page at <code>http://localhost:1234/productcatalog</code>. You get the WSDL generated at <code>http://localhost:1234/productcatalog?WSDL</code>. This web service is able to receive and respond to SOAP requests!</p>
+
+<h3>How it works</h3>
+
+<p>We are not using Glassfish here. Who is handling the responsibilities of running the web service and responding to requests? The answer is an implementation called <strong>Metro</strong>.</p>
+
+<p><a href="https://metro.java.net" target="_blank">Metro</a> is a reference implementation of the JAX-WS standard that we&#39;ve been learning so far. The JAX-WS specification tells us how to write web services. It tells us what annotations to use, what conventions to follow and so on. Once you write a web service that follows this specification, you&#39;ll need something to run it!</p>
+
+<p>This is where JAX-WS implementations come in. The implementations pick up any code that is written following the specification, and they actually run them exactly like the specification promises they would.  </p>
+
+<p>Metro is bundled with Glassfish. When a web service application is deployed in Glassfish, it is actually Metro doing all the work behind the scenes. Interestingly, Metro is also bundled with the JDK, which is why we could run a web service using just the <code>Endpoint</code> class in the JDK, without using any app servers.</p>
+
+<p>Of course, there are some limitations to running this using <code>Endpoint.publish()</code> approach. For instance, web services published using <code>Endpoint</code> are single threaded. They cannot run multiple threads by default and needs further tweaking to make them more useful.</p>
+
+<p>When deploying web services in a production environment, you need a decent application server. But for other purposes, when you don&#39;t need a heavy weight Java EE application server, you can use this approach. Especially when you are developing web services and need to run something quickly and easily.</p>
   
 		</div>
     
@@ -361,16 +377,16 @@
     
     <div class="container social-media-icons">
       <div class="row text-center">
-        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/2011/07/hibernate-tutorial-11-configuring.html&p[title]=Configuring Collections and Adding Keys" target="_blank">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/javaee/jaxws/Using-Endpoint.html&p[title]=Using Endpoint" target="_blank">
           <img src="/img/facebook-32.png">
         </a>
-        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/2011/07/hibernate-tutorial-11-configuring.html" target="_blank">
+        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/javaee/jaxws/Using-Endpoint.html" target="_blank">
           <img src="/img/googleplus-32.png">
         </a>
-        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/2011/07/hibernate-tutorial-11-configuring.html" target="_blank">
+        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/javaee/jaxws/Using-Endpoint.html" target="_blank">
           <img src="/img/twitter-32.png">
         </a>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/2011/07/hibernate-tutorial-11-configuring.html&title=Configuring Collections and Adding Keys" target="_blank">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/javaee/jaxws/Using-Endpoint.html&title=Using Endpoint" target="_blank">
           <img src="/img/linkedin-32.png">
         </a>
       </div>
@@ -381,19 +397,15 @@
 <!-- Watch next -->
 
 
+<div class="next-tutorial-container text-center">
 
-<div class="next-tutorial-container"><p class="next-tutorial">Next Tutorial</p>
+			<p class="next-tutorial" style="text-align:center;width:100%">End of course</p></a>
 
-			<h1 class="next-tutorial-title"><a class="title-link no-deco" href="/2011/07/hibernate-tutorial-12-proxy-objects-and.html">Proxy Objects and Eager and Lazy Fetch Types</h1></a>
-
-			<a class="title-link no-deco" href="/hibernate.html#hibernate_intro"><p class="next-tutorial-meta">Introduction to Hibernate</p></a>
-
-			<p class="next-tutorial-abstract">Hibernate manages data fetching and optimizations using proxy objects. In this tutorial, we'll learn what they are and how lazy initialization works.
-
-</p>
+			<a class="no-deco" href="/javaee.html#javaee_jaxws"><p class="next-tutorial-meta" style="text-align:center;margin:1.5em;">Back to course page</p></a>
 
 			</div>
- 
+
+
 
 
 <!-- End Watch next -->
