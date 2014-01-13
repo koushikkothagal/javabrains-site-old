@@ -44,6 +44,11 @@ p, .post-body li {
    line-height: 1.8em;
 }
 
+.alert {
+   font-size: 20px;
+   line-height: 1.8em;
+}
+
 blockquote p, blockquote p code {
  text-align: center;
 font-size: 26px;
@@ -263,7 +268,7 @@ p.intro, .post-body > p:first-of-type {
    line-height: 150%;
 }
 
-p, blockquote p, .post-body li {
+p, blockquote p, .post-body li, .alert {
    font-size: 1em;
    line-height: 1.8em;
 }

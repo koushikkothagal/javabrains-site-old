@@ -68,7 +68,7 @@ img, embed, object, video { max-width: 100%; }
 /* 3. CORE TYPOGRAPHY
 ----------------------------------------------------------------------------------------*/
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Lato';
   font-size: 1em;
   line-height: 1.618em;
   color: #333;
@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1em;
   }
 
-p, ul, ol, dl, blockquote {
+p, ul, ol, dl, blockquote, .alert {
     font-size: 1em;
     line-height: 1.618em;
     margin-bottom: 1.618em; 
@@ -92,13 +92,19 @@ p, blockquote p, .post-body li {
    
 }
 
-div.post-body p img {
+div.post-body p img, .alert {
     margin-left:auto;
     margin-right:auto;
 }
 
 p, blockquote p {
 margin: 0px 0px 1.7em 0px;
+}
+
+.alert {
+ font-family: 'Lato';   
+ text-align:left;    
+ font-size: 80%;    
 }
 
 li > p {

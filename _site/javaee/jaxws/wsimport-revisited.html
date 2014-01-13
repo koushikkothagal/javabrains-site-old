@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Java Brains - Writing a Web Service - Code and Deploy</title>
+<title>Java Brains - wsimport Revisited</title>
 <meta name="description" content="Java Brains is an Enterprise Java tutorial website. Free tutorials on Spring Framework, Hibernate, Struts 2, Java EE, Maven.">
 <meta name="author" content="Koushik Kothagal">
 
@@ -127,97 +127,96 @@
   	
 
 	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
 		
-				
+			
 		
 		
 			
+		
+    	
+    	
+			
 			
     	
     	
-    	
-			
-			
-    	
-    	
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
 	
 
 
@@ -294,19 +293,19 @@
     <div>
     	<span class="dd" id="topic-link-span"><a href="/javaee.html#javaee_jaxws" id="topic-link">SOAP Web Services with JAX-WS</a></span>
     </div>	
-	    <h1 class="video-number"> 07  </h1>
+	    <h1 class="video-number">20</h1>
 
-		<h1 class="no-margin">Writing a Web Service - Code and Deploy</h1>
+		<h1 class="no-margin">wsimport Revisited</h1>
 
     </header>
  
 
       <div class="post-body">
-		<p>We&#39;ll now convert the simple Java class in the previous tutorial into a web service, deploy it to Glassfish, and test it by submitting a SOAP request to get a SOAP response. </p>
+		<p>In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs. </p>
 
 <!--
 <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/u5cQkVgq6jE?rel=0"></iframe></div>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/lwXsrcJyjiI?rel=0"></iframe></div>
 -->
 
 <style>
@@ -331,12 +330,83 @@
 
 <div class="outer-container">
 <div class="video-container shadow">
-         <iframe src="http://www.youtube.com/embed/u5cQkVgq6jE" frameborder="0" width="560" height="315"></iframe>
+         <iframe src="http://www.youtube.com/embed/lwXsrcJyjiI" frameborder="0" width="560" height="315"></iframe>
 </div>
 
 <p></div>    </p>
 
-<p><strong>Download the code:</strong> <a href="https://github.com/koushikkothagal/Testmart/archive/5da3b6e0a2f1d0acc93dddb57dcee8710e0a5247.zip">Click here</a></p>
+<h3>Back to the client</h3>
+
+<p>We did a WSDL import early in this tutorial series, and we used a free external WSDL and web service that was available online. We will now switch to our own web service and write a client for the web service we&#39;ve written - the TestMart web service!</p>
+
+<p>We&#39;ve already taken a look at the <code>wsimport</code> utility that comes with the JDK. When you run <code>wsimport</code> with the WSDL URL, it creates handy classes, called <em>stubs</em>, that hide the web-service-calling complexity for you. You just call a method of the generated class, and then it does the complete web service call and gives you the response as a return type. The stubs have one method for every web service operation, so calling any web service operation is literally as simple as calling a method on the generated class.</p>
+
+<p>There are a few things you can do while <code>wsimport</code>ing that help in customising how the tool generates these stubs for you. Let&#39;s take a look at some of the options now.</p>
+
+<p>Open the command prompt and navigate to a temporary folder. Any folder will do. We are just using it to generate the classes, and then we&#39;ll copy them to our Eclipse workspace.</p>
+
+<p>You&#39;ve already seen the basic command:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport [options] &lt;wsdl&gt;
+</code></pre></div>
+<p>The <code>[options]</code> here are configuration options to change the way wsimport behaves, but at minimum, you just need to enter the location of the WSDL. The location could be a web address, like <code>http://webapp.com/webservice?WSDL</code>. Or it could be a local file on the file system. Both work, but I would recommend using the first approach. Whenever possible, make sure you choose HTTP WSDL URLs as input to <code>wsimport</code>. I&#39;ll explain why in the next tutorial.</p>
+
+<p>I&#39;ll copy the WSDL URL and run <code>wsimport</code>. The tool parses the WSDL and generates all the necessary types. Here it has generated two directories containing classes.</p>
+
+<p>Now, let&#39;s say you save the WSDL file on your hard drive and run wsimport. Do you think that&#39;ll work? I&#39;ll save the WSDL file to the local directory, the same directory that I&#39;m already in. Now I&#39;ll run </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport productcatalog.wsdl
+</code></pre></div>
+<p>It still works! Why am I mentioning this? The reason is that the WSDL file, the file I&#39;ve saved locally, is only a part of the web service definition. If you remember, the WSDL refers to types, which are in a separate XSD file. I didn&#39;t save those. But <code>wsimport</code> is smart enough to detect that. It starts with your local WSDL file, but looks up any referenced XSD files from their http locations.</p>
+
+<h3>Import options</h3>
+
+<p>You&#39;ve already seen the following three options.</p>
+
+<p><code>-d directory</code><br>
+This lets you specify the directory where you want the generated classes to go.</p>
+
+<p><code>-keep</code><br>
+Tells <code>wsimport</code> to save the source files. By default, <code>wsimport</code> deletes the <code>.java</code> files after compiling them and retains just the <code>.class</code> files.</p>
+
+<p><code>-s directory</code><br>
+This tells wsimport where to put the source <code>.java</code> files. As you can imagine, using this turns on the <code>-keep</code> flag automatically.</p>
+
+<p>Also, a couple of obvious ones:</p>
+
+<p><code>-verbose</code><br>
+Makes the tool give more detailed output<br>
+and<br>
+<code>-quiet</code><br>
+gives out little output. These two do not affect the output classes themselves.</p>
+
+<p>Now, let&#39;s look at a couple of options that do affect the output classes. </p>
+
+<p><code>-p packageName</code><br>
+Look at the output classes. They are in the package <code>org.koushik.javabrains</code> because that is the package I wrote the web services in. Of course, I did some overrides and they have gone into the <code>com.testmart</code> package.  Basically, that&#39;s the package that the web service belongs to, and that was automatically picked up into the WSDL as namespaces. Now <em>that</em> is again automatically picked up as the package names by <code>wsimport</code>. If you need to override this, you can change the package name of the generated classes by using the <code>-p</code> option.</p>
+
+<p>For example, this command forces all generated classes to be in the <code>org.koushik.generated</code> package.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport -p org.koushik.generated productcatalog.wsdl
+</code></pre></div>
+<p>Next, let&#39;s look at the <code>-b</code> parameter. </p>
+
+<p>Every program that generates Java code carries with it an implicit responsibility. The responsibility that the code it generates has to compile! As we&#39;ve seen, <code>wsimport</code> generates Java code and compiles it. So, can <code>wsimport</code> guarantee that the code it generates will compile fine? </p>
+
+<p>Unfortunately, it doesn&#39;t! We&#39;ll take a look at the code <code>wsimport</code> generates later, but as you can imagine, it uses a lot of names like type names and variable names directly from the WSDL. For instance, an XSD type name becomes the corresponding generated class name. Now, in some areas, Java is stricter and XSD is more forgiving. In such cases, we have a problem. Some names that might be valid in XSD might not be valid on the Java side. So when <code>wsimport</code> generates code using those names, the resultant code may not compile!</p>
+
+<p>A common problem is type names. You can have multiple schema types with the same name. But when they are converted to corresponding Java classes with the same name, if they end up being in the same package, the compiler will complain.
+To avoid this problem, you can use what are called <em>binding files</em>. </p>
+
+<blockquote>
+<p>Binding files are XML files that let you specify custom overrides to the way code is generated by <code>wsimport</code>. </p>
+</blockquote>
+
+<p>I will not be going into the details of binding files, but I&#39;d encourage you to look them up. You can do  things like configuring a specific XSD type to have a Java class name of your choice instead of the default XSD type name. </p>
+
+<p>You write all these overrides in an xml file and supply that to <code>wsimport</code> with the <code>-b</code> option.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport -b binding_file.xml wsdl_file.wsdl
+</code></pre></div>
+<p>There are a lot of customization you can do here. The <code>-p</code> option lets you customize just the package  name, but this <code>-b</code> option lets you customize a whole lot more, and it is very handy when you have troublesome WSDL files that lead to Java classes that don&#39;t compile. </p>
+
+<p>In the next tutorial, we&#39;ll look at two options related to the WSDL location that you should definitely know about. They address a specific problem with the way Java client works, and we&#39;ll understand what that is. See you in the next tutorial.</p>
   
 		</div>
     
@@ -351,16 +421,16 @@
     
     <div class="container social-media-icons">
       <div class="row text-center">
-        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/2013/07/writing-web-service-code-and-deploy.html&p[title]=Writing a Web Service - Code and Deploy" target="_blank">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html&p[title]=wsimport Revisited" target="_blank">
           <img src="/img/facebook-32.png">
         </a>
-        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/2013/07/writing-web-service-code-and-deploy.html" target="_blank">
+        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html" target="_blank">
           <img src="/img/googleplus-32.png">
         </a>
-        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/2013/07/writing-web-service-code-and-deploy.html" target="_blank">
+        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html" target="_blank">
           <img src="/img/twitter-32.png">
         </a>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/2013/07/writing-web-service-code-and-deploy.html&title=Writing a Web Service - Code and Deploy" target="_blank">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html&title=wsimport Revisited" target="_blank">
           <img src="/img/linkedin-32.png">
         </a>
       </div>
@@ -371,19 +441,15 @@
 <!-- Watch next -->
 
 
+<div class="next-tutorial-container text-center">
 
-<div class="next-tutorial-container"><p class="next-tutorial">Next Tutorial</p>
+			<p class="next-tutorial" style="text-align:center;width:100%">End of course</p></a>
 
-			<h1 class="next-tutorial-title"><a class="title-link no-deco" href="/2013/07/adding-input-arguments.html">Adding Input Arguments</h1></a>
-
-			<a class="title-link no-deco" href="/javaee.html#javaee_jaxws"><p class="next-tutorial-meta">SOAP Web Services with JAX-WS</p></a>
-
-			<p class="next-tutorial-abstract">We'll add an operation to our web service that takes input arguments to achieve both sending and receiving data from the web service. 
-
-</p>
+			<a class="no-deco" href="/javaee.html#javaee_jaxws"><p class="next-tutorial-meta" style="text-align:center;margin:1.5em;">Back to course page</p></a>
 
 			</div>
- 
+
+
 
 
 <!-- End Watch next -->

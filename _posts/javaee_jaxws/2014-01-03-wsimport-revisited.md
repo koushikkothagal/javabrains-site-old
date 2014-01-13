@@ -7,6 +7,10 @@ tags: javaee_jaxws
 
 In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs. 
 
+{% include youtube.html param="lwXsrcJyjiI" %}
+
+###Back to the client
+
 We did a WSDL import early in this tutorial series, and we used a free external WSDL and web service that was available online. We will now switch to our own web service and write a client for the web service we've written - the TestMart web service!
 
 We've already taken a look at the `wsimport` utility that comes with the JDK. When you run `wsimport` with the WSDL URL, it creates handy classes, called *stubs*, that hide the web-service-calling complexity for you. You just call a method of the generated class, and then it does the complete web service call and gives you the response as a return type. The stubs have one method for every web service operation, so calling any web service operation is literally as simple as calling a method on the generated class.
