@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Java Brains - wsimport Revisited</title>
+<meta name="description" content="In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs. 
+">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="twitter:site" content="@java_brains" />
+    <meta name="twitter:url" content="http://javabrains.koushik.org/" />
+    <meta name="twitter:title" content="Enterprise Java tutorials" />    
+    
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
+<link href="/css/bootstrap.min.css" rel="stylesheet">
+<link href="/css/syntax.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->    
+
+</head>
+<body>
+          
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+    
+    
+	
+
+
+
+
+
+
+
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+		
+			
+		
+		
+			
+		
+    	
+    	
+			
+			
+    	
+    	
+	
+
+
+  
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            <li><a href="/javaee.html"> &nbsp; | &nbsp;<em>Java EE</em></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">Linked In</a></li>   
+          <li><a href="http://www.youtube.com/koushks">Youtube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+    
+<!--    
+
+  <div class="topmenu">
+    <div class="navbar nav-pills navbar-default" id="topnavbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse clearfix topmenu">
+          <ul class="nav navbar-nav nav-pills">
+          	<li><a href="/"><strong style="font-size:21px">Java Brains</strong></a></li>
+            <li><a href="/javaee.html"> | &nbsp;<em>Java EE</em></a>
+            
+          </ul>
+        </div>
+
+    </div>
+
+  </div>
+
+-->
+
+
+
+
+  <div id="container" class="cf">
+    
+    <header>
+    <div>
+    	<span class="dd" id="topic-link-span"><a href="/javaee.html#javaee_jaxws" id="topic-link">SOAP Web Services with JAX-WS</a></span>
+    </div>	
+	    <h1 class="video-number">20</h1>
+
+		<h1 class="no-margin">wsimport Revisited</h1>
+
+    </header>
+ 
+
+      <div class="post-body">
+		<p>In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs. </p>
+
+<!--
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/lwXsrcJyjiI?rel=0"></iframe></div>
+-->
+
+<style>
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/lwXsrcJyjiI" frameborder="0" width="560" height="315"></iframe>
+</div>
+
+<p></div>    </p>
+
+<h3>Back to the client</h3>
+
+<p>We did a WSDL import early in this tutorial series, and we used a free external WSDL and web service that was available online. We will now switch to our own web service and write a client for the web service we&#39;ve written - the TestMart web service!</p>
+
+<p>We&#39;ve already taken a look at the <code>wsimport</code> utility that comes with the JDK. When you run <code>wsimport</code> with the WSDL URL, it creates handy classes, called <em>stubs</em>, that hide the web-service-calling complexity for you. You just call a method of the generated class, and then it does the complete web service call and gives you the response as a return type. The stubs have one method for every web service operation, so calling any web service operation is literally as simple as calling a method on the generated class.</p>
+
+<p>There are a few things you can do while <code>wsimport</code>ing that help in customising how the tool generates these stubs for you. Let&#39;s take a look at some of the options now.</p>
+
+<p>Open the command prompt and navigate to a temporary folder. Any folder will do. We are just using it to generate the classes, and then we&#39;ll copy them to our Eclipse workspace.</p>
+
+<p>You&#39;ve already seen the basic command:</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport [options] &lt;wsdl&gt;
+</code></pre></div>
+<p>The <code>[options]</code> here are configuration options to change the way wsimport behaves, but at minimum, you just need to enter the location of the WSDL. The location could be a web address, like <code>http://webapp.com/webservice?WSDL</code>. Or it could be a local file on the file system. Both work, but I would recommend using the first approach. Whenever possible, make sure you choose HTTP WSDL URLs as input to <code>wsimport</code>. I&#39;ll explain why in the next tutorial.</p>
+
+<p>I&#39;ll copy the WSDL URL and run <code>wsimport</code>. The tool parses the WSDL and generates all the necessary types. Here it has generated two directories containing classes.</p>
+
+<p>Now, let&#39;s say you save the WSDL file on your hard drive and run wsimport. Do you think that&#39;ll work? I&#39;ll save the WSDL file to the local directory, the same directory that I&#39;m already in. Now I&#39;ll run </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport productcatalog.wsdl
+</code></pre></div>
+<p>It still works! Why am I mentioning this? The reason is that the WSDL file, the file I&#39;ve saved locally, is only a part of the web service definition. If you remember, the WSDL refers to types, which are in a separate XSD file. I didn&#39;t save those. But <code>wsimport</code> is smart enough to detect that. It starts with your local WSDL file, but looks up any referenced XSD files from their http locations.</p>
+
+<h3>Import options</h3>
+
+<p>You&#39;ve already seen the following three options.</p>
+
+<p><code>-d directory</code><br>
+This lets you specify the directory where you want the generated classes to go.</p>
+
+<p><code>-keep</code><br>
+Tells <code>wsimport</code> to save the source files. By default, <code>wsimport</code> deletes the <code>.java</code> files after compiling them and retains just the <code>.class</code> files.</p>
+
+<p><code>-s directory</code><br>
+This tells wsimport where to put the source <code>.java</code> files. As you can imagine, using this turns on the <code>-keep</code> flag automatically.</p>
+
+<p>Also, a couple of obvious ones:</p>
+
+<p><code>-verbose</code><br>
+Makes the tool give more detailed output<br>
+and<br>
+<code>-quiet</code><br>
+gives out little output. These two do not affect the output classes themselves.</p>
+
+<p>Now, let&#39;s look at a couple of options that do affect the output classes. </p>
+
+<p><code>-p packageName</code><br>
+Look at the output classes. They are in the package <code>org.koushik.javabrains</code> because that is the package I wrote the web services in. Of course, I did some overrides and they have gone into the <code>com.testmart</code> package.  Basically, that&#39;s the package that the web service belongs to, and that was automatically picked up into the WSDL as namespaces. Now <em>that</em> is again automatically picked up as the package names by <code>wsimport</code>. If you need to override this, you can change the package name of the generated classes by using the <code>-p</code> option.</p>
+
+<p>For example, this command forces all generated classes to be in the <code>org.koushik.generated</code> package.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport -p org.koushik.generated productcatalog.wsdl
+</code></pre></div>
+<p>Next, let&#39;s look at the <code>-b</code> parameter. </p>
+
+<p>Every program that generates Java code carries with it an implicit responsibility. The responsibility that the code it generates has to compile! As we&#39;ve seen, <code>wsimport</code> generates Java code and compiles it. So, can <code>wsimport</code> guarantee that the code it generates will compile fine? </p>
+
+<p>Unfortunately, it doesn&#39;t! We&#39;ll take a look at the code <code>wsimport</code> generates later, but as you can imagine, it uses a lot of names like type names and variable names directly from the WSDL. For instance, an XSD type name becomes the corresponding generated class name. Now, in some areas, Java is stricter and XSD is more forgiving. In such cases, we have a problem. Some names that might be valid in XSD might not be valid on the Java side. So when <code>wsimport</code> generates code using those names, the resultant code may not compile!</p>
+
+<p>A common problem is type names. You can have multiple schema types with the same name. But when they are converted to corresponding Java classes with the same name, if they end up being in the same package, the compiler will complain.
+To avoid this problem, you can use what are called <em>binding files</em>. </p>
+
+<blockquote>
+<p>Binding files are XML files that let you specify custom overrides to the way code is generated by <code>wsimport</code>. </p>
+</blockquote>
+
+<p>I will not be going into the details of binding files, but I&#39;d encourage you to look them up. You can do  things like configuring a specific XSD type to have a Java class name of your choice instead of the default XSD type name. </p>
+
+<p>You write all these overrides in an xml file and supply that to <code>wsimport</code> with the <code>-b</code> option.</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">wsimport -b binding_file.xml wsdl_file.wsdl
+</code></pre></div>
+<p>There are a lot of customization you can do here. The <code>-p</code> option lets you customize just the package  name, but this <code>-b</code> option lets you customize a whole lot more, and it is very handy when you have troublesome WSDL files that lead to Java classes that don&#39;t compile. </p>
+
+<p>In the next tutorial, we&#39;ll look at two options related to the WSDL location that you should definitely know about. They address a specific problem with the way Java client works, and we&#39;ll understand what that is. See you in the next tutorial.</p>
+  
+		</div>
+    
+		<div class="container">
+		 <p class="text-center text-end">_____</p> 
+		</div>
+		  
+    </div>
+    <!-- End Post Container -->
+    
+     <!-- Social Media Icons -->
+    
+    <div class="container social-media-icons">
+      <div class="row text-center">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html&p[title]=wsimport Revisited" target="_blank">
+          <img src="/img/facebook-32.png">
+        </a>
+        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html" target="_blank">
+          <img src="/img/googleplus-32.png">
+        </a>
+        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html" target="_blank">
+          <img src="/img/twitter-32.png">
+        </a>
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/javaee/jaxws/wsimport-revisited.html&title=wsimport Revisited" target="_blank">
+          <img src="/img/linkedin-32.png">
+        </a>
+      </div>
+    </div>
+    <!-- End Social Media Icons -->
+    
+    
+<!-- Watch next -->
+
+
+<div class="next-tutorial-container text-center">
+
+			<p class="next-tutorial" style="text-align:center;width:100%">End of course</p></a>
+
+			<a class="no-deco" href="/javaee.html#javaee_jaxws"><p class="next-tutorial-meta" style="text-align:center;margin:1.5em;">Back to course page</p></a>
+
+			</div>
+
+
+
+
+<!-- End Watch next -->
+    
+  <div class="container comments">
+  <div class="row">
+
+
+
+  <div class='disqusbox'>
+  
+  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock text-center"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
+  <script>
+    var disqus_shortname = "javabrains";
+    
+    var my = my || {};
+    my.loadDisqus = function() {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    };
+  </script>
+  <noscript>Please enable javascript to <a rel="nofollow" href="http://disqus.com/?ref_noscript">discus this page, powered by Disqus.</a></noscript>
+  <style scoped=scoped>
+    @media print{
+     .disqusbox{display:none}
+    }
+  </style>
+</div>
+
+
+
+
+
+
+
+   <!--  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'javabrains'; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+-->
+    </div>
+    </div>
+<!--
+    <section class="cta cta-pad text-center">
+      <div class="row cta-pad text-center">
+        <img class="text-center" alt="Map" src="img/map.svg">
+      </div>
+        <p class="lead">Other Tutorials</p>
+        <p>Navigate to other tutorials in this course.</p>
+          <div class="cta text-center">
+      
+      <div class="cta pagination">
+            <ul>
+              <li id="prev" class="previous"><a class="fui-arrow-left prev-next" href="#fakelink">
+
+              <div class="col-md-12">
+                <div class="row text-right">
+                  <h6 class="vprev">< PREV</h6>
+                </div>
+                <div class="row">
+                  <p id="prevCourseNav" class="vprev"></p>
+                  
+                </div>
+                
+              </div>
+              
+              </a></li>
+              <li><a id="1" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="2" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="3" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="4" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="5" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="6" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="7" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="8" data-style="primary" href="#fakelink"></a></li>
+              <li><a id="9" data-style="primary" href="#fakelink"></a></li>
+              <li class= "next" id="next"><a class="fui-arrow-right prev-next" href="#fakelink">
+              
+                <div class="col-md-12">
+                <div class="row text-left">
+                  <h6 class="vnext">NEXT ></h6>
+                </div>
+                <div class="row">
+                  <p id="nextCourseNav" class="vnext"></p>
+                  
+                </div>
+                
+              </div>
+              
+              
+              
+              
+              </a></li>
+            </ul>
+          </div>
+    -->
+    
+    </div>
+  
+        
+      
+      
+      
+    </section>
+
+
+
+
+
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
+      <div class="container">
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
+    </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  </body>  

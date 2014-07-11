@@ -1,446 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Java Brains</title>
+<meta charset="utf-8">
+<title>Java Brains - Struts 2</title>
+<meta name="description" content="Apache Struts 2 is an elegant and extensible framework for creating Java web applications. The courses on this page cover various concepts and features of the Struts 2 framework.">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="twitter:site" content="@java_brains" />
+    <meta name="twitter:url" content="http://javabrains.koushik.org/" />
+    <meta name="twitter:title" content="Enterprise Java tutorials" />    
+    
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-<link href="/css/flat-ui.css" rel="stylesheet">
-<link href="/css/jb-styles.css" rel="stylesheet">
 <link href="/css/syntax.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-<style>
-p {
-  font-family: 'Lora', serif;
-  color: #3A4145;
-  font-size: 20px;
-  padding: 5px;
-  line-height: 1.4em;
-  max-width: 900px;
-}
-
-.watch-next-text p {
-  color: inherit;
-}
-
-</style>
-
+    <![endif]-->    
 
 </head>
 <body>
+          <style> p { font-family: "Lato", Helvetica, Arial, sans-serif;}</style>
 
-  <div class="container">
-    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse clearfix topmenu">
-          <ul class="nav navbar-nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="groups.html">Groups</a></li>
-          </ul>
-        </div>
-      </div>
+<header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
     </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">LinkedIn</a></li>   
+          <li><a href="http://www.youtube.com/koushks">YouTube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
 
-  </div>
+</header>
+    
+	<div class="cta">
+		<div class="container">
+			<div class="row">
+				<h2 class="tech-name">Struts 2</h2>
+			</div>
 
-  <!-- Header Title -->
-  <section class="cta">
-    <div class="page-header text-center Header">
-      <h1>Java Brains</h1>
-    </div>
-  </section>
-  <!-- End Header Title -->
-
-
-
-  <div class="site">
-
-
-    <style>
-body {
-color: #34495E;
-background:url("img/struts2.png") no-repeat;
-background-position: 90% 15%;
-background-size: 600px;
-
-}
-p {
-font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-background-color: #34495e;
-color: #FFFFFF;
-cursor: pointer;
-}
-
-.table, .listing a {
-font-size:16px;
-color: #34495E !important;
-}
-.glyphicon-play {
-	color:#FFFFFF;
-	margin-right: 10px;
-}
-
-.nav-header {
-    color: #AEB6BF;
-    font-size: 20px;
-    text-transform: uppercase;
-}  
-
-.nav-counter {
-    background-color: #7f8c8d;
-    border-radius: 5px;
-    color: #FFFFFF;
-    float: right;
-    font-size: 12.992px;
-    font-weight: 500;
-    margin: 1px -4px -1px 0;
-    padding: 0 8px;
-}
-
-.nav-list > li.divider {
-    border-bottom: medium none;
-    height: 2px;
-    margin: 13px -13px 17px 0;
-}
-
-.nav-list a {
-	font-size: 17px;
-}
-
-
-div.listing ul.nav li a:hover {
-	background-color: #7f8c8d;
-	color: #FFFFFF !important;
-}
-
-div.course-listing a {
-  border-bottom: 1px solid #95a5a6;
-}
-
-.demo-title {
-    float: left;
-    font-size: 24.5px;
-    line-height: 40px;
-    margin: -10px 20px 10px;
-    width: 240px;
-}
-
-.demo-content {
-    float: left;
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 580px;
-}
-
-.sub-title {
-	font-size: 30px;
-}
-
-.fadeout {
-    position: relative; 
-    bottom: 8em;
-    height: 8em;
-    background: -webkit-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    ); 
-    background-image: -moz-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -o-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-    background-image: -ms-radial-gradient(
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 1) 100%
-    );
-} 
-.tut-listing {
-	height:200px;
-	overflow: hidden;
-}
-.tut-listing li > a {
-	padding:3px 5px;
-}
-.expand-link {
-	cursor: pointer;
-}
-
-</style>
-
-<div class="container">
-	<div class="row">
-		<h2 style="color:#c0392b">Struts 2</h2>
-	</div>
-
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="demo-panel-title">About</h3>
-        </div>
-        <div class="demo-content">
-        	<p>Apache Struts 2 is an elegant and extensible framework for creating Java web applications. The framework is designed to let developers write web applications using the Model-View-Controller (MVC) pattern. </p>
+			<div class="row">
+				<div class="col-md-4">
+					<h3 class="demo-panel-title">About</h3>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>Apache Struts 2 is an elegant and extensible framework for creating Java web applications. The framework is designed to let developers write web applications using the Model-View-Controller (MVC) pattern. </p>
         	<p>The courses on this page cover various concepts and features of the Struts 2 framework. </p>
-        </div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+
+					<h3 class="demo-panel-title">Courses</h3>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="listing course-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Struts 2</li>
+								<li><a href="#struts2_intro"> Beginning Struts 2
+                                    <span class="nav-counter">19</span>
+								</a></li>
+								
+								<li class="divider"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="demo-panel-title">Courses</h3>
-        </div>
-	<div class="demo-content">
-	<div class="listing course-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Struts 2</li>
-            <li>
-              <a href="#struts2_intro"> 
-                Beginning Struts 2
-                <span class="nav-counter">19</span>
-              </a>
-            </li>
-            <li class="divider"></li>
-          </ul>
-	</div>
-	</div>
-	</div>
+
 	
-	<hr style="height:3px;"/>
+	<div class="cta gray">
+		<div class="container">
+			<a name="struts2_intro"></a>
+			<div class="row">
+				<h3 class="course-title">
+					<span class="course-title-number">01.</span>Beginning Struts 2
+				</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Details</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<p>This course provides an introduction to the Struts 2 framework. You will understand the concepts of MVC, and learn to write a web application from scratch using Struts 2.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="demo-title">
+						<h3 class="demo-panel-title">Tutorials</h3>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="demo-content">
+						<div class="row listing tut-listing">
+							<ul class="nav nav-list">
+								<li class="nav-header">Beginning Struts 2</li>  
+								<li><a href="/2011/12/struts-2-tutorial-01-introduction-to.html"> <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction To MVC
+								</a></li> 
+								<li><a href="/2012/01/struts-2-tutorial-02-introduction-to.html"> <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Introduction to Struts 2
+								</a></li> 
+								<li><a href="/2012/01/struts-2-tutorial-02-setting-up.html"> <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Setting Up
+								</a></li> 
+								<li><a href="/2012/02/struts-2-tutorial-04-part-1-writing.html"> <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing a Struts 2 Application Part 1
+								</a></li> 
+								<li><a href="/2012/02/struts-2-tutorial-04-part-2-writing.html"> <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Writing a Struts 2 Application Part 2
+								</a></li> 
+								<li><a href="/2012/02/struts-2-tutorial-05-understanding.html"> <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Understanding Namespaces
+								</a></li> 
+								<li><a href="/2012/04/struts-2-tutorial-06-tag-and-business.html"> <span class="glyphicon glyphicon-play"></span> 7.&nbsp; A Tag And A Business Service
+								</a></li> 
+								<li><a href="/2012/04/struts-2-tutorial-07-valuestack.html"> <span class="glyphicon glyphicon-play"></span> 8.&nbsp; The ValueStack
+								</a></li> 
+								<li><a href="/2012/06/struts-2-tutorial-08-accessing-input.html"> <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Accessing Input Parameters
+								</a></li> 
+								<li><a href="/2012/06/struts-tutorial-09-post-requests-to.html"> <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Post requests to actions
+								</a></li> 
+								<li><a href="/2012/06/struts-2-tutorial-10-login-action-and.html"> <span class="glyphicon glyphicon-play"></span> 11.&nbsp; Login Action and Best Practices
+								</a></li> 
+								<li><a href="/2012/06/struts-2-tutorial-11-login-action-and.html"> <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Login Action and Best Practices Part 2
+								</a></li> 
+								<li><a href="/2012/07/struts-2-tutorial-12-action-wildcards.html"> <span class="glyphicon glyphicon-play"></span> 13.&nbsp; Action Wildcards
+								</a></li> 
+								<li><a href="/2012/08/struts-2-tutorial-13-actionsupport-class.html"> <span class="glyphicon glyphicon-play"></span> 14.&nbsp; The ActionSupport Class
+								</a></li> 
+								<li><a href="/2012/10/struts-2-tutorial-14-configuring.html"> <span class="glyphicon glyphicon-play"></span> 15.&nbsp; Configuring methods in Action mappings
+								</a></li> 
+								<li><a href="/2012/10/struts-2-tutorial-15-using-model-objects.html"> <span class="glyphicon glyphicon-play"></span> 16.&nbsp; Using Model Objects
+								</a></li> 
+								<li><a href="/2013/02/struts-2-tutorial-16-introducing.html"> <span class="glyphicon glyphicon-play"></span> 17.&nbsp; Introducing Interceptors
+								</a></li> 
+								<li><a href="/2013/03/how-does-default-interceptor.html"> <span class="glyphicon glyphicon-play"></span> 18.&nbsp; Configuring Interceptors
+								</a></li> 
+								<li><a href="/2013/04/struts2-18.html"> <span class="glyphicon glyphicon-play"></span> 19.&nbsp; Anatomy of an Interceptor
+								</a></li> 
+							</ul>
 
-	<!-- <div class="row">
-		<h3 >Available courses</h3>
-	</div> -->
-	
-	<div class="container">
-	<a name="struts2_intro"></a>
-	<div class="row">
-          <h3 class="demo-panel-title"><span style="font-size:30px;color:#c0392b">01.</span>&nbsp; Beginning Struts 2 </h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Details</h3>
-        </div>
-        <div class="demo-content">
-        	<p style="font-size:18px;">This course provides an introduction to the Struts 2 framework. You will understand the concepts of MVC, and learn to write a web application from scratch using Struts 2.</p>
-        </div>
-	</div>
-	
-		<div class="row">
-		<div class="demo-title">
-          <h3 class="sub-title">Tutorials</h3>
-        </div>
-	<div class="demo-content">
-	<div class="row listing tut-listing">
-		<ul class="nav nav-list">
-            <li class="nav-header">Beginning Struts 2</li>
-            
-            
-            <li>
-              <a href="/2011/12/struts-2-tutorial-01-introduction-to.html"> 
-                <span class="glyphicon glyphicon-play"></span> 1.&nbsp; Introduction To MVC
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/01/struts-2-tutorial-02-introduction-to.html"> 
-                <span class="glyphicon glyphicon-play"></span> 2.&nbsp; Introduction to Struts 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/01/struts-2-tutorial-02-setting-up.html"> 
-                <span class="glyphicon glyphicon-play"></span> 3.&nbsp; Setting Up
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/02/struts-2-tutorial-04-part-1-writing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 4.&nbsp; Writing a Struts 2 Application Part 1
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/02/struts-2-tutorial-04-part-2-writing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 5.&nbsp; Writing a Struts 2 Application Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/02/struts-2-tutorial-05-understanding.html"> 
-                <span class="glyphicon glyphicon-play"></span> 6.&nbsp; Understanding Namespaces
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/04/struts-2-tutorial-06-tag-and-business.html"> 
-                <span class="glyphicon glyphicon-play"></span> 7.&nbsp; A Tag And A Business Service
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/04/struts-2-tutorial-07-valuestack.html"> 
-                <span class="glyphicon glyphicon-play"></span> 8.&nbsp; The ValueStack
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-2-tutorial-08-accessing-input.html"> 
-                <span class="glyphicon glyphicon-play"></span> 9.&nbsp; Accessing Input Parameters
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-tutorial-09-post-requests-to.html"> 
-                <span class="glyphicon glyphicon-play"></span> 10.&nbsp; Post requests to actions
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-2-tutorial-10-login-action-and.html"> 
-                <span class="glyphicon glyphicon-play"></span> 11.&nbsp; Login Action and Best Practices
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-2-tutorial-11-login-action-and.html"> 
-                <span class="glyphicon glyphicon-play"></span> 12.&nbsp; Login Action and Best Practices Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/07/struts-2-tutorial-12-action-wildcards.html"> 
-                <span class="glyphicon glyphicon-play"></span> 13.&nbsp; Action Wildcards
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/08/struts-2-tutorial-13-actionsupport-class.html"> 
-                <span class="glyphicon glyphicon-play"></span> 14.&nbsp; The ActionSupport Class
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/10/struts-2-tutorial-14-configuring.html"> 
-                <span class="glyphicon glyphicon-play"></span> 15.&nbsp; Configuring methods in Action mappings
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/10/struts-2-tutorial-15-using-model-objects.html"> 
-                <span class="glyphicon glyphicon-play"></span> 16.&nbsp; Using Model Objects
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/02/struts-2-tutorial-16-introducing.html"> 
-                <span class="glyphicon glyphicon-play"></span> 17.&nbsp; Introducing Interceptors
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/03/how-does-default-interceptor.html"> 
-                <span class="glyphicon glyphicon-play"></span> 18.&nbsp; Configuring Interceptors
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/04/struts2-18.html"> 
-                <span class="glyphicon glyphicon-play"></span> 19.&nbsp; Anatomy of an Interceptor
-              </a>
-            </li>
-            
-          </ul>
-          
-	</div>
-	<div class="fadeout"></div>
-	<div class="row"> <div class="row text-center" style="margin-top: -100;"><a class="expand-link"><span class="glyphicon glyphicon-chevron-down"></span>&nbsp; Show all &nbsp;<span class="glyphicon glyphicon-chevron-down"></span></a></div></div>
-	
-	
-	</div>
-	</div>
-	
-	
-	</div>
-	
-	<hr style="height:3px;"/>
-	
-	
-	</div>
-</div>
-
-<script>
 
 
-$('.expand-link').click(function() {
-$(this).parent().parent().siblings('div.tut-listing').height('100%');
-$(this).parent().parent().siblings('div.fadeout').hide();
-$(this).hide();
-});
-
-</script>
-
-
-
-
-
-
-
-    <div class="mtl pbl">
-      <div class="bottom-menu bottom-menu-inverse">
-        <div class="container">
-          <div class="row">
-            <div class="span2 brand span-footer">
-              <a class="fui-flat" href="#fakelink"></a>
-            </div>
-
-            <div class="span8 span-footer">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">About</a></li>
-                <li><a href="#fakelink">Community</a></li>
-                <li><a href="#fakelink">Site</a></li>
-                <li><a href="#fakelink">Follow</a></li>
-
-                <li><a href="#fakelink">Links</a></li>
-              </ul>
-            </div>
-
-            <div class="span2 span-footer">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
-                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
-               
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
+      <div class="container">
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
     </div>
-</body>
-</html>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+  </body>  

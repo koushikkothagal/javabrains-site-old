@@ -1,81 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Java Brains</title>
+<meta charset="utf-8">
+<title>Java Brains - Understanding the MVC Pattern</title>
+<meta name="description" content="Introduction and explanation of the Model-View-Controller pattern.
+">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="twitter:site" content="@java_brains" />
+    <meta name="twitter:url" content="http://javabrains.koushik.org/" />
+    <meta name="twitter:title" content="Enterprise Java tutorials" />    
+    
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-<link href="/css/flat-ui.css" rel="stylesheet">
-<link href="/css/jb-styles.css" rel="stylesheet">
 <link href="/css/syntax.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-<style>
-p {
-  font-family: 'Lora', serif;
-  color: #3A4145;
-  font-size: 20px;
-  padding: 5px;
-  line-height: 1.4em;
-  max-width: 900px;
-}
-
-.watch-next-text p {
-  color: inherit;
-}
-
-</style>
-
+    <![endif]-->    
 
 </head>
 <body>
-
-  <div class="container">
-    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse clearfix topmenu">
-          <ul class="nav navbar-nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="groups.html">Groups</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Header Title -->
-  <section class="cta">
-    <div class="page-header text-center Header">
-      <h1>Java Brains</h1>
-    </div>
-  </section>
-  <!-- End Header Title -->
-
-
-
-  <div class="site">
-
-
-    
+          
 
 
 	
@@ -199,136 +174,125 @@ p {
 	
 
 
+  
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            <li><a href="/servlets.html"> &nbsp; | &nbsp;<em>JSPs and Servlets</em></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">Linked In</a></li>   
+          <li><a href="http://www.youtube.com/koushks">Youtube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+    
+<!--    
+
+  <div class="topmenu">
+    <div class="navbar nav-pills navbar-default" id="topnavbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse clearfix topmenu">
+          <ul class="nav navbar-nav nav-pills">
+          	<li><a href="/"><strong style="font-size:21px">Java Brains</strong></a></li>
+            <li><a href="/servlets.html"> | &nbsp;<em>JSPs and Servlets</em></a>
+            
+          </ul>
+        </div>
+
+    </div>
+
+  </div>
+
+-->
+
+
+
+
+  <div id="container" class="cf">
+    
+    <header>
+    <div>
+    	<span class="dd" id="topic-link-span"><a href="/servlets.html#jsps_intro" id="topic-link">Java Server Pages</a></span>
+    </div>	
+	    <h1 class="video-number"> 06  </h1>
+
+		<h1 class="no-margin">Understanding the MVC Pattern</h1>
+
+    </header>
+ 
+
+      <div class="post-body">
+		<p>Introduction and explanation of the Model-View-Controller pattern.</p>
+
+<!--
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/zk_zEp-mtvQ?rel=0"></iframe></div>
+-->
 
 <style>
-.disqusbut {
-background-color: #3A4145;
-color: #FFFFFF;
-border: none;
-font-size: 18px;
-outline: none;
-padding: 30px 100px;
-width: 100%;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>
 
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/zk_zEp-mtvQ" frameborder="0" width="560" height="315"></iframe>
+</div>
 
-
-
-    <!-- Header Title 
-    <section class="cta">
-      <div class="page-header text-center Header">
-    	  <h1>Java Brains</h1>
-    	</div>
-    </section>
-    End Header Title -->
-
-<!-- <div class="bs-sidebar affix">
-    <div class="row listing tut-listing">
-    <ul class="nav nav-list">
-            <li class="nav-header">TUTORIALS</li>
-            
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-10-hello-jsp.html"> 
-                1.&nbsp; Hello JSP
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-11.html"> 
-                2.&nbsp; Understanding the JSP
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-12-jsp-page.html"> 
-                3.&nbsp; JSP Page Directives
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-13-scopes-in.html"> 
-                4.&nbsp; Scopes in JSP and the PageContext object
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-14-using.html"> 
-                5.&nbsp; Using jspInit and InitParams
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-15.html"> 
-                6.&nbsp; Understanding the MVC Pattern
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-16-part-1.html"> 
-                7.&nbsp; Writing an MVC Application Part 1
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/05/jsps-and-servlets-tutorial-16-part-2.html"> 
-                8.&nbsp; Writing an MVC Application Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/jsps-and-servlets-tutorial-16-part-3.html"> 
-                9.&nbsp; Using Model object in the MVC Application
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/jsps-and-servlets-tutorial-16-part-4.html"> 
-                10.&nbsp; Using RequestDispatcher in the MVC Application
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/jsps-and-servlets-tutorial-17.html"> 
-                11.&nbsp; Introduction to JSTL and the useBean tag
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2011/06/jsps-and-servlets-tutorial-18-request.html"> 
-                12.&nbsp; Request Parameters with the setProperty tag
-              </a>
-            </li>
-            
-          </ul>
-          
-  </div>
-</div> -->
-
- <!-- Post Container -->
-    <div class="container">
-      <ul style="margin-bottom: 5px;" class="breadcrumb">
-        <li><a href="/courses.html">Courses</a></li>
-        <li><a id="section" href="/servlets.html">JSPs and Servlets</a></li>
-        <li><a class="courseName" href="/servlets.html#jsps_intro">Java Server Pages &nbsp; </a></li> <span id="vcount" class="badge">12</span>
-      </ul> 
-      
-      <div class="post-title">
-        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate">  06  . &nbsp;</small>Understanding the MVC Pattern</h1>
-      </div>
-
-
-
-      
-		<p>Introduction and explanation of the Model-View-Controller pattern.</p>
-
-<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-
-<div style="position:relative;padding-bottom:56.21%;padding-top:30px;height:0;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/zk_zEp-mtvQ?rel=0"></iframe></div>
+<p></div>    </p>
   
+		</div>
+    
 		<div class="container">
-		 <p class="text-center">_____</p> 
+		 <p class="text-center text-end">_____</p> 
 		</div>
 		  
     </div>
@@ -336,19 +300,18 @@ width: 100%;
     
      <!-- Social Media Icons -->
     
-    <div class="container cta-pad">
+    <div class="container social-media-icons">
       <div class="row text-center">
-        <img src="/img/email-32.png">
-        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/2011/05/jsps-and-servlets-tutorial-15.html&p[title]=Understanding the MVC Pattern">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/2011/05/jsps-and-servlets-tutorial-15.html&p[title]=Understanding the MVC Pattern" target="_blank">
           <img src="/img/facebook-32.png">
         </a>
-        <a href="https://plus.google.com/share?url=/2011/05/jsps-and-servlets-tutorial-15.html">
+        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/2011/05/jsps-and-servlets-tutorial-15.html" target="_blank">
           <img src="/img/googleplus-32.png">
         </a>
-        <a href="http://twitter.com/home?status=/2011/05/jsps-and-servlets-tutorial-15.html">
+        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/2011/05/jsps-and-servlets-tutorial-15.html" target="_blank">
           <img src="/img/twitter-32.png">
         </a>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=/2011/05/jsps-and-servlets-tutorial-15.html&title=Understanding the MVC Pattern">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/2011/05/jsps-and-servlets-tutorial-15.html&title=Understanding the MVC Pattern" target="_blank">
           <img src="/img/linkedin-32.png">
         </a>
       </div>
@@ -357,26 +320,22 @@ width: 100%;
     
     
 <!-- Watch next -->
-    
-    <section class="cta text-center carrot texture1">
-      <div class="row cta-pad">
-      <div class="col-md-4 text-right cta-pad">
-        <img alt="Compass" src="/img/compas.svg">
-      </div>
-      
-      <div class="col-md-4 text-left cta-pad-text watch-next-text">
-        <p class="img-comment">Next tutorial</p>
-        <a id="nextVname" href="/2011/05/jsps-and-servlets-tutorial-16-part-1.html"> <h4 id="nextVname"> Writing an MVC Application Part 1 </a> <br/>
-        <small class="nextVnameCourse"><a id="nextVnameCourse" href="/servlets.html#jsps_intro">Java Server Pages</a> - Tutorial   7 </small>
-        </h4>
-        
-        <p>We now set out to write our own MVC application from the scratch.
+
+
+
+<div class="next-tutorial-container"><p class="next-tutorial">Next Tutorial</p>
+
+			<h1 class="next-tutorial-title"><a class="title-link no-deco" href="/2011/05/jsps-and-servlets-tutorial-16-part-1.html">Writing an MVC Application Part 1</h1></a>
+
+			<a class="title-link no-deco" href="/servlets.html#jsps_intro"><p class="next-tutorial-meta">Java Server Pages</p></a>
+
+			<p class="next-tutorial-abstract">We now set out to write our own MVC application from the scratch.
 
 </p>
-       
-      </div>
-      </div>
-    </section>
+
+			</div>
+ 
+
 
 <!-- End Watch next -->
     
@@ -386,10 +345,8 @@ width: 100%;
 
 
   <div class='disqusbox'>
-  <div><hr />
-  <h6>View or Post Comments</h6>
-  </div>
-  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
+  
+  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock text-center"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
   <script>
     var disqus_shortname = "javabrains";
     
@@ -494,52 +451,22 @@ width: 100%;
       
       
     </section>
+
+
+
+
+
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
+      <div class="container">
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
+    </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script src="/js/youtube.js"></script>
-    
-  </body>
-
-
-
-
-
-
-
-    <div class="mtl pbl">
-      <div class="bottom-menu bottom-menu-inverse">
-        <div class="container">
-          <div class="row">
-            <div class="span2 brand span-footer">
-              <a class="fui-flat" href="#fakelink"></a>
-            </div>
-
-            <div class="span8 span-footer">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">About</a></li>
-                <li><a href="#fakelink">Community</a></li>
-                <li><a href="#fakelink">Site</a></li>
-                <li><a href="#fakelink">Follow</a></li>
-
-                <li><a href="#fakelink">Links</a></li>
-              </ul>
-            </div>
-
-            <div class="span2 span-footer">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
-                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
-               
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</body>
-</html>
+  </body>  

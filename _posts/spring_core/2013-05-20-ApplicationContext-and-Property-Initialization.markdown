@@ -26,7 +26,7 @@ The way to instantiate the `ApplicationContext` is:
 ```java
 ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 ```
-assuming here that spring.xml is the Spring configuration XML in the classpath. If the fiel is not in the class path, you'll need to provide the path to the file *from* the class path.
+assuming here that spring.xml is the Spring configuration XML in the classpath. If the file is not in the class path, you'll need to provide the path to the file *from* the class path.
 
 Once you have the instance of the context, you get a bean by calling the `getBean()` method on it. Like this:
 
@@ -44,7 +44,7 @@ Triangle triangle = context.getBean("triangle", Triangle.class);
 
 Note that by passing the class of the type as a second parameter, you get the object that's already of that type, making the explicit cast unnecessary. I highly recommend using this approach wherever possible.
 
-####property Tag
+###property Tag
 
 Next, we use the property tag in the Spring XML to pre-initialize the value of a member variable of our Spring bean.
 

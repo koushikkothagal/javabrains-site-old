@@ -1,49 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Java Brains</title>
+<meta charset="utf-8">
+<title>Java Brains - The ActionSupport Class</title>
+<meta name="description" content="This video introduces the ActionSupport class and one of the features of the class, validation. We&#39;ll look at the validate() method and how we can implement simple form validations in Struts 2.
+">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="twitter:site" content="@java_brains" />
+    <meta name="twitter:url" content="http://javabrains.koushik.org/" />
+    <meta name="twitter:title" content="Enterprise Java tutorials" />    
+    
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-<link href="/css/flat-ui.css" rel="stylesheet">
-<link href="/css/jb-styles.css" rel="stylesheet">
 <link href="/css/syntax.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-<style>
-p {
-  font-family: 'Lora', serif;
-  color: #3A4145;
-  font-size: 20px;
-  padding: 5px;
-  line-height: 1.4em;
-  max-width: 900px;
-}
-
-.watch-next-text p {
-  color: inherit;
-}
-
-</style>
-
+    <![endif]-->    
 
 </head>
 <body>
+          
 
-  <div class="container">
-    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
-      <div class="container">
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+    
+    
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+		
+			
+		
+		
+			
+			
+    	
+    	
+    	
+			
+			
+    	
+    	
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+
+  
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            <li><a href="/struts2.html"> &nbsp; | &nbsp;<em>Struts 2</em></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">Linked In</a></li>   
+          <li><a href="http://www.youtube.com/koushks">Youtube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+    
+<!--    
+
+  <div class="topmenu">
+    <div class="navbar nav-pills navbar-default" id="topnavbar">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -51,368 +268,73 @@ p {
         </div>
         <div class="collapse navbar-collapse clearfix topmenu">
           <ul class="nav navbar-nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="groups.html">Groups</a></li>
+          	<li><a href="/"><strong style="font-size:21px">Java Brains</strong></a></li>
+            <li><a href="/struts2.html"> | &nbsp;<em>Struts 2</em></a>
+            
           </ul>
         </div>
-      </div>
+
     </div>
 
   </div>
 
-  <!-- Header Title -->
-  <section class="cta">
-    <div class="page-header text-center Header">
-      <h1>Java Brains</h1>
-    </div>
-  </section>
-  <!-- End Header Title -->
+-->
 
 
 
-  <div class="site">
 
-
+  <div id="container" class="cf">
     
+    <header>
+    <div>
+    	<span class="dd" id="topic-link-span"><a href="/struts2.html#struts2_intro" id="topic-link">Beginning Struts 2</a></span>
+    </div>	
+	    <h1 class="video-number">14</h1>
 
+		<h1 class="no-margin">The ActionSupport Class</h1>
 
-	
+    </header>
+ 
 
-	
+      <div class="post-body">
+		<p>This video introduces the ActionSupport class and one of the features of the class, validation. We&#39;ll look at the validate() method and how we can implement simple form validations in Struts 2.</p>
 
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-    
-    
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-
-
-
-
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-		
-			
-		
-		
-			
-			
-    	
-    	
-    	
-			
-			
-    	
-    	
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-
+<!--
+<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/R6n511ZC50Q?rel=0"></iframe></div>
+-->
 
 <style>
-.disqusbut {
-background-color: #3A4145;
-color: #FFFFFF;
-border: none;
-font-size: 18px;
-outline: none;
-padding: 30px 100px;
-width: 100%;
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 </style>
 
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/R6n511ZC50Q" frameborder="0" width="560" height="315"></iframe>
+</div>
 
-
-
-    <!-- Header Title 
-    <section class="cta">
-      <div class="page-header text-center Header">
-    	  <h1>Java Brains</h1>
-    	</div>
-    </section>
-    End Header Title -->
-
-<!-- <div class="bs-sidebar affix">
-    <div class="row listing tut-listing">
-    <ul class="nav nav-list">
-            <li class="nav-header">TUTORIALS</li>
-            
-            
-            <li>
-              <a href="/2011/12/struts-2-tutorial-01-introduction-to.html"> 
-                1.&nbsp; Introduction To MVC
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/01/struts-2-tutorial-02-introduction-to.html"> 
-                2.&nbsp; Introduction to Struts 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/01/struts-2-tutorial-02-setting-up.html"> 
-                3.&nbsp; Setting Up
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/02/struts-2-tutorial-04-part-1-writing.html"> 
-                4.&nbsp; Writing a Struts 2 Application Part 1
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/02/struts-2-tutorial-04-part-2-writing.html"> 
-                5.&nbsp; Writing a Struts 2 Application Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/02/struts-2-tutorial-05-understanding.html"> 
-                6.&nbsp; Understanding Namespaces
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/04/struts-2-tutorial-06-tag-and-business.html"> 
-                7.&nbsp; A Tag And A Business Service
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/04/struts-2-tutorial-07-valuestack.html"> 
-                8.&nbsp; The ValueStack
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-2-tutorial-08-accessing-input.html"> 
-                9.&nbsp; Accessing Input Parameters
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-tutorial-09-post-requests-to.html"> 
-                10.&nbsp; Post requests to actions
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-2-tutorial-10-login-action-and.html"> 
-                11.&nbsp; Login Action and Best Practices
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/06/struts-2-tutorial-11-login-action-and.html"> 
-                12.&nbsp; Login Action and Best Practices Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/07/struts-2-tutorial-12-action-wildcards.html"> 
-                13.&nbsp; Action Wildcards
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/08/struts-2-tutorial-13-actionsupport-class.html"> 
-                14.&nbsp; The ActionSupport Class
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/10/struts-2-tutorial-14-configuring.html"> 
-                15.&nbsp; Configuring methods in Action mappings
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2012/10/struts-2-tutorial-15-using-model-objects.html"> 
-                16.&nbsp; Using Model Objects
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/02/struts-2-tutorial-16-introducing.html"> 
-                17.&nbsp; Introducing Interceptors
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/03/how-does-default-interceptor.html"> 
-                18.&nbsp; Configuring Interceptors
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/04/struts2-18.html"> 
-                19.&nbsp; Anatomy of an Interceptor
-              </a>
-            </li>
-            
-          </ul>
-          
-  </div>
-</div> -->
-
- <!-- Post Container -->
-    <div class="container">
-      <ul style="margin-bottom: 5px;" class="breadcrumb">
-        <li><a href="/courses.html">Courses</a></li>
-        <li><a id="section" href="/struts2.html">Struts 2</a></li>
-        <li><a class="courseName" href="/struts2.html#struts2_intro">Beginning Struts 2 &nbsp; </a></li> <span id="vcount" class="badge">19</span>
-      </ul> 
-      
-      <div class="post-title">
-        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate"> 14. &nbsp;</small>The ActionSupport Class</h1>
-      </div>
-
-
-
-      
-		<p>This video introduces the ActionSupport class and one of the features of the class, validation. We&#39;ll look at the validate() method and how we can implement simple form validations in Struts 2.</p>
-
-<style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-
-<div style="position:relative;padding-bottom:56.21%;padding-top:30px;height:0;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/R6n511ZC50Q?rel=0"></iframe></div>
+<p></div>    </p>
   
+		</div>
+    
 		<div class="container">
-		 <p class="text-center">_____</p> 
+		 <p class="text-center text-end">_____</p> 
 		</div>
 		  
     </div>
@@ -420,19 +342,18 @@ width: 100%;
     
      <!-- Social Media Icons -->
     
-    <div class="container cta-pad">
+    <div class="container social-media-icons">
       <div class="row text-center">
-        <img src="/img/email-32.png">
-        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/2012/08/struts-2-tutorial-13-actionsupport-class.html&p[title]=The ActionSupport Class">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/2012/08/struts-2-tutorial-13-actionsupport-class.html&p[title]=The ActionSupport Class" target="_blank">
           <img src="/img/facebook-32.png">
         </a>
-        <a href="https://plus.google.com/share?url=/2012/08/struts-2-tutorial-13-actionsupport-class.html">
+        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/2012/08/struts-2-tutorial-13-actionsupport-class.html" target="_blank">
           <img src="/img/googleplus-32.png">
         </a>
-        <a href="http://twitter.com/home?status=/2012/08/struts-2-tutorial-13-actionsupport-class.html">
+        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/2012/08/struts-2-tutorial-13-actionsupport-class.html" target="_blank">
           <img src="/img/twitter-32.png">
         </a>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=/2012/08/struts-2-tutorial-13-actionsupport-class.html&title=The ActionSupport Class">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/2012/08/struts-2-tutorial-13-actionsupport-class.html&title=The ActionSupport Class" target="_blank">
           <img src="/img/linkedin-32.png">
         </a>
       </div>
@@ -441,26 +362,22 @@ width: 100%;
     
     
 <!-- Watch next -->
-    
-    <section class="cta text-center carrot texture1">
-      <div class="row cta-pad">
-      <div class="col-md-4 text-right cta-pad">
-        <img alt="Compass" src="/img/compas.svg">
-      </div>
-      
-      <div class="col-md-4 text-left cta-pad-text watch-next-text">
-        <p class="img-comment">Next tutorial</p>
-        <a id="nextVname" href="/2012/10/struts-2-tutorial-14-configuring.html"> <h4 id="nextVname"> Configuring methods in Action mappings </a> <br/>
-        <small class="nextVnameCourse"><a id="nextVnameCourse" href="/struts2.html#struts2_intro">Beginning Struts 2</a> - Tutorial   15 </small>
-        </h4>
-        
-        <p>This tutorial explores the method attribute in action mappings and how we can have multiple methods in a single Action class run for different URL mappings.
+
+
+
+<div class="next-tutorial-container"><p class="next-tutorial">Next Tutorial</p>
+
+			<h1 class="next-tutorial-title"><a class="title-link no-deco" href="/2012/10/struts-2-tutorial-14-configuring.html">Configuring methods in Action mappings</h1></a>
+
+			<a class="title-link no-deco" href="/struts2.html#struts2_intro"><p class="next-tutorial-meta">Beginning Struts 2</p></a>
+
+			<p class="next-tutorial-abstract">This tutorial explores the method attribute in action mappings and how we can have multiple methods in a single Action class run for different URL mappings.
 
 </p>
-       
-      </div>
-      </div>
-    </section>
+
+			</div>
+ 
+
 
 <!-- End Watch next -->
     
@@ -470,10 +387,8 @@ width: 100%;
 
 
   <div class='disqusbox'>
-  <div><hr />
-  <h6>View or Post Comments</h6>
-  </div>
-  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
+  
+  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock text-center"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
   <script>
     var disqus_shortname = "javabrains";
     
@@ -578,52 +493,22 @@ width: 100%;
       
       
     </section>
+
+
+
+
+
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
+      <div class="container">
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
+    </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script src="/js/youtube.js"></script>
-    
-  </body>
-
-
-
-
-
-
-
-    <div class="mtl pbl">
-      <div class="bottom-menu bottom-menu-inverse">
-        <div class="container">
-          <div class="row">
-            <div class="span2 brand span-footer">
-              <a class="fui-flat" href="#fakelink"></a>
-            </div>
-
-            <div class="span8 span-footer">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">About</a></li>
-                <li><a href="#fakelink">Community</a></li>
-                <li><a href="#fakelink">Site</a></li>
-                <li><a href="#fakelink">Follow</a></li>
-
-                <li><a href="#fakelink">Links</a></li>
-              </ul>
-            </div>
-
-            <div class="span2 span-footer">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
-                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
-               
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</body>
-</html>
+  </body>  

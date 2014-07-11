@@ -1,2 +1,29 @@
+<!--
 <style>.bt-video-container iframe,.bt-video-container object,.bt-video-container embed{position:absolute;top:0;left:0;width:100%;height:100%;margin-top:0}</style>
-<div style="position:relative;padding-bottom:56.21%;padding-top:30px;height:0;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/{{ include.param }}?rel=0"></iframe></div>
+<div style="position:relative;padding-bottom:30%;padding-top:30px;overflow:hidden" class="bt-video-container shadow"><iframe width="950" height="534" frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/{{ include.param }}?rel=0"></iframe></div>
+-->
+<style>
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+    
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<div class="outer-container">
+<div class="video-container shadow">
+         <iframe src="http://www.youtube.com/embed/{{ include.param }}" frameborder="0" width="560" height="315"></iframe>
+</div>
+</div>    

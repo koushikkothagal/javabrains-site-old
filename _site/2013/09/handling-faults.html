@@ -1,49 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- /ht Paul Irish - http://front.ie/j5OMXi -->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-<title>Java Brains</title>
+<meta charset="utf-8">
+<title>Java Brains - Handling Faults</title>
+<meta name="description" content="Web services return &quot;Fault&quot; messages to denote error scenarios. In this tutorial, we&#39;ll throw an exception, generate and examine a fault message. 
+">
+<meta name="author" content="Koushik Kothagal">
+
+<!-- /ht Andy Clarke - http://front.ie/lkCwyf -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+
+
+<meta name="twitter:site" content="@java_brains" />
+    <meta name="twitter:url" content="http://javabrains.koushik.org/" />
+    <meta name="twitter:title" content="Enterprise Java tutorials" />    
+    
+<link rel="shortcut icon" href="/link/to/favicon.ico">
+<link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png">
+
+<!-- /ht Jeremy Keith - http://front.ie/mLXiaS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
-<link href="/css/jumbotron-narrow.css" rel="stylesheet">
-<link href="/css/flat-ui.css" rel="stylesheet">
-<link href="/css/jb-styles.css" rel="stylesheet">
 <link href="/css/syntax.css" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/css/global.css" media="all">
+<link rel="stylesheet" href="/css/layout.css" media="all and (min-width: 33.236em)">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>    
+<!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<link rel="stylesheet" href="css/layout.css" media="all">
+<![endif]-->
+
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
-<style>
-p {
-  font-family: 'Lora', serif;
-  color: #3A4145;
-  font-size: 20px;
-  padding: 5px;
-  line-height: 1.4em;
-  max-width: 900px;
-}
-
-.watch-next-text p {
-  color: inherit;
-}
-
-</style>
-
+    <![endif]-->    
 
 </head>
 <body>
+          
 
-  <div class="container">
-    <div class="navbar nav-pills navbar-fixed-top navbar-default" id="topnavbar">
-      <div class="container">
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+    
+    
+	
+
+
+
+
+
+
+
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+		
+			
+		
+		
+			
+			
+    	
+    	
+    	
+			
+			
+    	
+    	
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+	
+	
+  	
+
+	
+
+
+  
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco" href="/">Java Brains</a>
+    </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav navbar-left">
+        
+            <li><a href="/courses.html"> &nbsp; | &nbsp;Courses</a></li>
+            <li><a href="/javaee.html"> &nbsp; | &nbsp;<em>Java EE</em></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">Linked In</a></li>   
+          <li><a href="http://www.youtube.com/koushks">Youtube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+    
+<!--    
+
+  <div class="topmenu">
+    <div class="navbar nav-pills navbar-default" id="topnavbar">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -51,336 +274,35 @@ p {
         </div>
         <div class="collapse navbar-collapse clearfix topmenu">
           <ul class="nav navbar-nav nav-pills">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/courses.html">Courses</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="groups.html">Groups</a></li>
+          	<li><a href="/"><strong style="font-size:21px">Java Brains</strong></a></li>
+            <li><a href="/javaee.html"> | &nbsp;<em>Java EE</em></a>
+            
           </ul>
         </div>
-      </div>
+
     </div>
 
   </div>
 
-  <!-- Header Title -->
-  <section class="cta">
-    <div class="page-header text-center Header">
-      <h1>Java Brains</h1>
-    </div>
-  </section>
-  <!-- End Header Title -->
+-->
 
 
 
-  <div class="site">
 
-
+  <div id="container" class="cf">
     
+    <header>
+    <div>
+    	<span class="dd" id="topic-link-span"><a href="/javaee.html#javaee_jaxws" id="topic-link">SOAP Web Services with JAX-WS</a></span>
+    </div>	
+	    <h1 class="video-number">16</h1>
 
+		<h1 class="no-margin">Handling Faults</h1>
 
-	
+    </header>
+ 
 
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-		
-		
-    
-    
-	
-
-
-
-
-
-
-
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-
-	
-	
-  	
-
-	
-		
-			
-		
-		
-			
-			
-    	
-    	
-    	
-			
-			
-    	
-    	
-	
-
-	
-	
-  	
-
-	
-
-
-
-<style>
-.disqusbut {
-background-color: #3A4145;
-color: #FFFFFF;
-border: none;
-font-size: 18px;
-outline: none;
-padding: 30px 100px;
-width: 100%;
-}
-</style>
-
-
-
-
-    <!-- Header Title 
-    <section class="cta">
-      <div class="page-header text-center Header">
-    	  <h1>Java Brains</h1>
-    	</div>
-    </section>
-    End Header Title -->
-
-<!-- <div class="bs-sidebar affix">
-    <div class="row listing tut-listing">
-    <ul class="nav nav-list">
-            <li class="nav-header">TUTORIALS</li>
-            
-            
-            <li>
-              <a href="/2013/06/ws01-introduction-to-web-services.html"> 
-                1.&nbsp; Introduction to Web Services
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/06/web-service-jargon.html"> 
-                2.&nbsp; Web Service Jargon
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/06/writing-web-service-client-stub.html"> 
-                3.&nbsp; Writing a Web service Client - Stub generation
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/06/writing-web-service-client-calling.html"> 
-                4.&nbsp; Writing a Web service Client - Calling the Service
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/06/setting-up-java-ee-7-sdk.html"> 
-                5.&nbsp; Setting up Java EE 7 SDK
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/07/download-soap-web-services-06-writing.html"> 
-                6.&nbsp; Writing a Web Service - Eclipse setup
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/07/writing-web-service-code-and-deploy.html"> 
-                7.&nbsp; Writing a Web Service - Code and Deploy
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/07/adding-input-arguments.html"> 
-                8.&nbsp; Adding Input Arguments
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/08/service-first-and-contract-first-web.html"> 
-                9.&nbsp; Service First and Contract First Web Services
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/08/understanding-wsdl.html"> 
-                10.&nbsp; Understanding the WSDL
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/08/customizing-wsdl.html"> 
-                11.&nbsp; Customizing the WSDL
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/08/schema-types-and-binding-styles.html"> 
-                12.&nbsp; Schema Types and Binding Styles
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/08/service-interface-and-custom-types.html"> 
-                13.&nbsp; Service Interface and Custom Types
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/09/using-jaxb-annotations-part-1.html"> 
-                14.&nbsp; Using JAXB Annotations Part 1
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/09/using-jaxb-annotations-part-2.html"> 
-                15.&nbsp; Using JAXB Annotations Part 2
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/09/handling-faults.html"> 
-                16.&nbsp; Handling Faults
-              </a>
-            </li>
-            
-            <li>
-              <a href="/2013/10/using-soapui.html"> 
-                17.&nbsp; Using SoapUI
-              </a>
-            </li>
-            
-          </ul>
-          
-  </div>
-</div> -->
-
- <!-- Post Container -->
-    <div class="container">
-      <ul style="margin-bottom: 5px;" class="breadcrumb">
-        <li><a href="/courses.html">Courses</a></li>
-        <li><a id="section" href="/javaee.html">Java EE</a></li>
-        <li><a class="courseName" href="/javaee.html#javaee_jaxws">SOAP Web Services with JAX-WS &nbsp; </a></li> <span id="vcount" class="badge">17</span>
-      </ul> 
-      
-      <div class="post-title">
-        <h1 class="post-title"><small id="vno-title" class="text-color pomegranate"> 16. &nbsp;</small>Handling Faults</h1>
-      </div>
-
-
-
-      
+      <div class="post-body">
 		<p>Web services return &quot;Fault&quot; messages to denote error scenarios. In this tutorial, we&#39;ll throw an exception, generate and examine a fault message. </p>
 
 <p>Source code: <a href="https://github.com/koushikkothagal/Testmart/archive/307adc8daa0a5163c8358f418dfa489af9eb0dc2.zip"> <b>Download</b> </a></p>
@@ -417,8 +339,10 @@ width: 100%;
 
 <p>The way the framework gets this message is by calling the method <code>public String getFaultInfo()</code>. If your exception has this method, the framework uses it to prepare the SOAP response containing the message.</p>
   
+		</div>
+    
 		<div class="container">
-		 <p class="text-center">_____</p> 
+		 <p class="text-center text-end">_____</p> 
 		</div>
 		  
     </div>
@@ -426,19 +350,18 @@ width: 100%;
     
      <!-- Social Media Icons -->
     
-    <div class="container cta-pad">
+    <div class="container social-media-icons">
       <div class="row text-center">
-        <img src="/img/email-32.png">
-        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=/2013/09/handling-faults.html&p[title]=Handling Faults">
+        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=http://javabrains.koushik.org/2013/09/handling-faults.html&p[title]=Handling Faults" target="_blank">
           <img src="/img/facebook-32.png">
         </a>
-        <a href="https://plus.google.com/share?url=/2013/09/handling-faults.html">
+        <a href="https://plus.google.com/share?url=http://javabrains.koushik.org/2013/09/handling-faults.html" target="_blank">
           <img src="/img/googleplus-32.png">
         </a>
-        <a href="http://twitter.com/home?status=/2013/09/handling-faults.html">
+        <a href="http://twitter.com/home?status=http://javabrains.koushik.org/2013/09/handling-faults.html" target="_blank">
           <img src="/img/twitter-32.png">
         </a>
-        <a href="http://www.linkedin.com/shareArticle?mini=true&url=/2013/09/handling-faults.html&title=Handling Faults">
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://javabrains.koushik.org/2013/09/handling-faults.html&title=Handling Faults" target="_blank">
           <img src="/img/linkedin-32.png">
         </a>
       </div>
@@ -447,26 +370,22 @@ width: 100%;
     
     
 <!-- Watch next -->
-    
-    <section class="cta text-center carrot texture1">
-      <div class="row cta-pad">
-      <div class="col-md-4 text-right cta-pad">
-        <img alt="Compass" src="/img/compas.svg">
-      </div>
-      
-      <div class="col-md-4 text-left cta-pad-text watch-next-text">
-        <p class="img-comment">Next tutorial</p>
-        <a id="nextVname" href="/2013/10/using-soapui.html"> <h4 id="nextVname"> Using SoapUI </a> <br/>
-        <small class="nextVnameCourse"><a id="nextVnameCourse" href="/javaee.html#javaee_jaxws">SOAP Web Services with JAX-WS</a> - Tutorial   17 </small>
-        </h4>
-        
-        <p>This is a quick introduction to a web service testing tool called SoapUI. We use this tool to test our web service without having to use the Glassfish tester page. In this video, you'll learn how to install the SoapUI plugin in eclipse, create a new project and make a SOAP web service call from it. 
+
+
+
+<div class="next-tutorial-container"><p class="next-tutorial">Next Tutorial</p>
+
+			<h1 class="next-tutorial-title"><a class="title-link no-deco" href="/2013/10/using-soapui.html">Using SoapUI</h1></a>
+
+			<a class="title-link no-deco" href="/javaee.html#javaee_jaxws"><p class="next-tutorial-meta">SOAP Web Services with JAX-WS</p></a>
+
+			<p class="next-tutorial-abstract">This is a quick introduction to a web service testing tool called SoapUI. We use this tool to test our web service without having to use the Glassfish tester page. In this video, you'll learn how to install the SoapUI plugin in eclipse, create a new project and make a SOAP web service call from it. 
 
 </p>
-       
-      </div>
-      </div>
-    </section>
+
+			</div>
+ 
+
 
 <!-- End Watch next -->
     
@@ -476,10 +395,8 @@ width: 100%;
 
 
   <div class='disqusbox'>
-  <div><hr />
-  <h6>View or Post Comments</h6>
-  </div>
-  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
+  
+  <div id="disqus_thread"><form onsubmit="my.loadDisqus();return false;" class="formBlock text-center"><input class="cmd disqusbut" type="submit" value="Load Comments"></form></div>
   <script>
     var disqus_shortname = "javabrains";
     
@@ -584,52 +501,22 @@ width: 100%;
       
       
     </section>
+
+
+
+
+
+    
+    <footer role="contentinfo" class="bs-footer bottom-menu-inverse">
+      <div class="container">
+    <div class="row">
+    <p class="footer-text">Site and content designed and developed by Koushik Kothagal. </p>
+    <p class="footer-text"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Java Brains</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://koushik.org" property="cc:attributionName" rel="cc:attributionURL">Koushik Kothagal</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+    </div>      
+    </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
-    <script src="/js/youtube.js"></script>
-    
-  </body>
-
-
-
-
-
-
-
-    <div class="mtl pbl">
-      <div class="bottom-menu bottom-menu-inverse">
-        <div class="container">
-          <div class="row">
-            <div class="span2 brand span-footer">
-              <a class="fui-flat" href="#fakelink"></a>
-            </div>
-
-            <div class="span8 span-footer">
-              <ul class="bottom-links">
-                <li><a href="#fakelink">About</a></li>
-                <li><a href="#fakelink">Community</a></li>
-                <li><a href="#fakelink">Site</a></li>
-                <li><a href="#fakelink">Follow</a></li>
-
-                <li><a href="#fakelink">Links</a></li>
-              </ul>
-            </div>
-
-            <div class="span2 span-footer">
-              <ul class="bottom-icons">
-                <li><a href="#fakelink"><img src="/img/facebook-32.png"></img></a></li>
-                <li><a href="#fakelink"><img src="/img/googleplus-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/twitter-32.png"></a></li>
-                <li><a href="#fakelink"><img src="/img/linkedin-32.png"></a></li>
-               
-
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</body>
-</html>
+  </body>  

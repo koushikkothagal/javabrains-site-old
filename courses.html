@@ -1,130 +1,131 @@
---- 
-layout: default 
-title: Java Brains - Courses
 ---
-
-<style>
-body {
-  color: #34495E;
-}
-.caption {
-  color: rgb(218, 89, 76);
-  font-family: "MenschRegular", Helvetica, Arial, sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-.techLogo {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  height: 100px;
-}
-.tile-title {
-  padding: 10px;
-}
-.tech-cell {
-  padding-bottom: 15px;
-  padding-top: 5px;
-}
-@media ( min-width : 768px) {
-  .view-courses-btn {
-    display: none;
-  }
-}
-p {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-}
-</style>
-
-<div class="container">
-  <h2>Contents</h2>
-  <p class="lead">Click on a course topic to see available courses.</p>
-  <div>
-    <span class="caption">Java frameworks and tools</span>
-    <div class="container" style="padding-top: 20px;">
-      <div class="row demo-tiles">
-        <div class="col-md-4 tech-cell">
-          <div class="tile" onclick="location.href='spring.html';" style="cursor: pointer;">
-            <img class="big-illustration techLogo" src="http://4.bp.blogspot.com/-_KFDM9brcnA/UVuXdwhvsfI/AAAAAAAABw4/PKAUg7MbIkM/s1600/icon_Spring.png">
-            <h3 class="tile-title">Spring framework</h3>
-            <p>Learn about one of the most popular application frameworks in Java.</p>
-            <a href="spring.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>
-            &nbsp; View Courses</a>
-          </div>
-        </div>
-        <div class="col-md-4 tech-cell">
-          <div class="tile" onclick="location.href='hibernate.html';" style="cursor: pointer;">
-            <img class="big-illustration techLogo"
-              src="http://3.bp.blogspot.com/-mv-aVJU9DyY/UVuycsLWf9I/AAAAAAAABx0/J4iB34shyYI/s1600/Hibernate_logo_a.png">
-            <h3 class="tile-title">Hibernate</h3>
-            <p>Understand ORM and write robust data applications.</p>
-            <a href="hibernate.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
-              Courses</a>
-          </div>
-        </div>
-        <div class="col-md-4 tech-cell">
-          <div class="tile" onclick="location.href='struts2.html';" style="cursor: pointer;">
-            <img class="big-illustration techLogo"
-              src="http://2.bp.blogspot.com/-lKLJHyqM1J8/UVuyI-O0b-I/AAAAAAAABxs/UGm5KixxAGw/s1600/struts2-merger2.png">
-            <h3 class="tile-title">Struts 2</h3>
-            <p>Learn and implement MVC concepts with the Struts 2 framework.</p>
-            <a href="/struts2.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
-              Courses</a>
-          </div>
-        </div>
-      </div>
+layout: blank
+title: Courses
+excerpt: Choose a course topic to see available courses. Free tutorials on Spring Framework, Hibernate, Struts 2, Java EE, Maven.
+---
+    
+    <header role="banner" class="navbar navbar-default navbar-fixed-top bs-docs-nav">
+  
+    <div class="navbar-header">
+      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand no-deco title-link" href="/">Java Brains</a>
     </div>
-    <div class="container">
-      <div class="row demo-tiles">
-        <div class="col-md-4 tech-cell">
-          <div class="tile" onclick="location.href='maven.html';" style="cursor: pointer;">
-            <img class="big-illustration techLogo" src="http://2.bp.blogspot.com/-hX7M8uZpBzc/UVuxcFtRpJI/AAAAAAAABxk/Pe_NT9j0V8E/s1600/Maven_logo.gif">
-            <h3 class="tile-title">Maven</h3>
-            <p>Simplify your application's build and dependency management.</p>
-            <a href="/maven.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
-              Courses</a>
-          </div>
+    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/blog.html" class="title-link">Blog</a>
+        </li>  
+        <li>
+          <a href="/about.html" class="title-link">About</a>
+        </li>
+        <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Connect <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://www.facebook.com/javabrains">Facebook</a></li>
+          <li><a href="https://plus.google.com/101241060481722039118/posts">Google Plus</a></li>
+          <li><a href="http://twitter.com/Java_Brains">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/in/koushiksrinivas">LinkedIn</a></li>   
+          <li><a href="http://www.youtube.com/koushks">YouTube</a></li>       
+          <li><a href="https://groups.google.com/d/forum/java-brains-group">Google Groups</a></li>    
+        </ul>
+      </li>
+      </ul>
+    </nav>
+
+</header>
+<div class="cta">
+		<div class="container">
+			<div class="row">
+				<h2 class="tech-name">Courses</h2>
+			</div>
+
+		<div class="row">
+			<h3 class="demo-panel-title">Click on a course topic to see available courses.</h3>
+		</div>
+        <div class="row">
+            <p class="nav-header">Java Frameworks and Tools</p>    
         </div>
-      </div>
+        <div class="container">    
+<div class="row pad-row">
+  <div class="col-md-6">
+    <div class="row">
+    <h1 class="tech-title-head"><a class="no-deco title-link" href="/spring.html">Spring Framework</a></h1>
     </div>
+    <div class="row">
+    <p class="tech-desc">Learn about one of the most popular application frameworks in Java today.</p> 
+    </div>  
   </div>
-  <h3 class="caption">Standard Java</h3>
-  <div class="container" style="padding-top: 20px;">
-    <div class="row demo-tiles">
-      <div class="col-md-4 tech-cell">
-        <div class="tile" onclick="location.href='servlets.html';" style="cursor: pointer;">
-          <img class="big-illustration techLogo" src="http://4.bp.blogspot.com/-SebYoOCO-0I/UVuXdhg5ngI/AAAAAAAABw0/Q64igvVJVAM/s1600/Tomcat-logo.png">
-          <h3 class="tile-title">Servlets and JSPs</h3>
-          <p>Server side web programming in Java.</p>
-          <a href="/servlets.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
-            Courses</a>
-        </div>
-      </div>
-      <div class="col-md-4 tech-cell">
-        <div class="tile" onclick="location.href='javaee.html';" style="cursor: pointer;">
-          <img class="big-illustration techLogo"
-            src="http://2.bp.blogspot.com/-XxE-_9g52II/UVuXdunIoUI/AAAAAAAABww/KHNkE69mtvU/s1600/JavaIcon.png">
-          <h3 class="tile-title">Java EE</h3>
-          <p>Enterprise Java programming courses.</p>
-          <a href="/javaee.html" class="btn btn-primary btn-large btn-block view-courses-btn"><span class="glyphicon glyphicon-th-list"></span>&nbsp; View
-            Courses</a>
-        </div>
-      </div>
-    </div>
+  <div class="col-md-6">
+   <div class="row">  
+   <h1 class="tech-title-head"><a class="no-deco title-link" href="/hibernate.html">Hibernate</a></h1>
+   </div>  
+    <div class="row">
+    <p class="tech-desc">Understand Object Relational Mapping and write robust data applications using this ORM framework.</p> 
+    </div>        
   </div>
+  
 </div>
-</div>
+            
+            
+<div class="row pad-row">
+  <div class="col-md-6">
+    <div class="row">
+    <h1 class="tech-title-head"><a class="no-deco title-link" href="/struts2.html">Struts 2</a></h1>
+    </div>
+    <div class="row">
+    <p class="tech-desc">Learn MVC concepts and write MVC web applications with the Struts 2 framework.</p> 
+    </div>  
+  </div>
+  <div class="col-md-6">
+   <div class="row">  
+   <h1 class="tech-title-head"><a class="no-deco title-link" href="/maven.html">Maven</a></h1>
+   </div>  
+    <div class="row">
+    <p class="tech-desc">Understand and use Maven to simplify your application's build and dependency management.</p> 
+    </div>        
+  </div>
+  
+</div>            
 </div>
 
-<script>
-  $("div.tech-cell").mouseenter(function() {
-    $(this).css('color', '#e74c3c');
-    $(this).children('div.tile').css('background-color', '#F0F2F4').addClass('shadow');
-  });
+            
+            
+            
+ <div class="row">
+            <p class="nav-header">Standard Java</p>    
+        </div>                
+ <div class="container">    
+<div class="row pad-row">
+  <div class="col-md-6">
+    <div class="row">
+    <h1 class="tech-title-head"><a class="no-deco title-link" href="/servlets.html">Servlets and JSPs</a></h1>
+    </div>
+    <div class="row">
+    <p class="tech-desc">Learn server side web programming in Java.</p> 
+    </div>  
+  </div>
+  <div class="col-md-6">
+   <div class="row">  
+   <h1 class="tech-title-head"><a class="no-deco title-link" href="/javaee.html">Java EE</a></h1>
+   </div>  
+    <div class="row">
+    <p class="tech-desc">Enterprise Java programming courses.</p> 
+    </div>        
+  </div>
+  
+</div>
+            
+</div>    
+</div>   
+</div>
 
-  $("div.tech-cell").mouseleave(function() {
-    $(this).css('color', '#2c3e50');
-    $(this).children('div.tile').css('background-color', '#F0F2F4').removeClass('shadow');
-  });
-</script>
+
+
+
+

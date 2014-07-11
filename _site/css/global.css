@@ -1,0 +1,745 @@
+/*
+Goldilocks Approach to Responsive Web Design Boilerplate
+
+Author: Design by Front - @designbyfront
+Version: 0.1
+URL: http://www.goldilocksapproach.com
+----------------------------------------------------------------------------------------
+
+CONTENTS - GLOBAL.CSS
+-----------------------------------------
+1. RESET
+2. ROOT
+3. CORE TYPOGRAPHY
+4. LINKS
+5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+7. BROWSER AND NON-SEMANTIC STYLING
+
+CONTENTS - LAYOUT.CSS
+-----------------------------------------
+8. CUSTOM LAYOUT & TYPOGRAPHY (Daddy bear)
+9. CUSTOM LAYOUT & TYPOGRAPHY (Mummy bear)
+
+*/
+
+
+/* 1. RESET
+----------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size:100%;
+  font: inherit;
+  vertical-align: baseline;
+  }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+  
+  
+/* 2. ROOT
+----------------------------------------------------------------------------------------*/
+html { 
+  overflow-y: scroll;
+  overflow-x: hidden !important; 
+  background: #FFF;
+  }
+
+/* /ht Ethan Marcotte - http://front.ie/l8rJaA */
+img, embed, object, video { max-width: 100%; }
+.ie6 img.full, .ie6 object.full, .ie6 embed, .ie6 video { width: 100%; }
+
+
+/* 3. CORE TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+body {
+  font-family: 'Lato';
+  font-size: 1em;
+  line-height: 1.618em;
+  color: #333;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.809em;
+  line-height: 1em;
+  }
+
+p, ul, ol, dl, blockquote, .alert {
+    font-size: 1em;
+    line-height: 1.618em;
+    margin-bottom: 1.618em; 
+    max-width: 31em; /* Optimal width for long-form text */
+  }
+
+p, blockquote p, .post-body li {
+    margin-left: 20px;
+   font-size: 80%;
+   
+}
+
+div.post-body p img, .alert {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+p, blockquote p {
+margin: 0px 0px 1.7em 0px;
+}
+
+.alert {
+ font-family: 'Lato';   
+ text-align:left;    
+ font-size: 80%;    
+}
+
+li > p {
+    margin-bottom:0;
+}
+
+ul.nav {
+  font-size: 0.8em;
+  max-width: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+p.intro, p:first-of-type {
+  max-width: none;
+}
+
+    
+ul { list-style-type: disc; margin-left: 1.618em; }
+ol { list-style-type: decimal; margin-left: 1.618em; }
+nav ul, nav ol { list-style: none; margin: 0; padding: 0;}
+
+b, strong { font-weight: bold; }
+i, em { font-style: italic; }
+small { font-size: 80%; }
+
+
+/* 4. LINKS
+----------------------------------------------------------------------------------------*/
+a, a:visited { outline: none; color: #439BBD; text-decoration: underline; }  
+a:hover { outline: none; text-decoration:none; }  
+a:active, a:focus { outline: none; }
+a {
+	transition: all 0.25s ease 0s;
+}
+
+.title-link, a.title-link:visited { outline: none; text-decoration: none; color: inherit;}  
+a.title-link:hover { color: #7f8c8d; }  
+a.title-link {
+	transition: all 0.25s ease 0s;
+}
+
+/* 5. GLOBAL LAYOUT & GLOBAL CUSTOM TYPOGRAPHY
+----------------------------------------------------------------------------------------*/
+
+
+
+/* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
+----------------------------------------------------------------------------------------*/
+#container {
+    padding: 0.809em;
+    
+    margin: auto;
+  }
+
+.cf {
+  padding-top: 22px !important;
+}
+
+aside { width: 100%; }
+
+body {
+   font-size: 19px;
+}
+
+h1, h1.video-number, p.intro {
+  width: 84%;
+}
+
+.no-deco {
+  text-decoration: none;
+}
+.no-margin {
+  margin:0;
+}
+.navbar-brand {
+    
+    color: #000000 !important;
+}
+.navbar-left > li > a {
+ padding-left: 0;
+ padding-right: 0;
+}
+h1 {
+   font-family: "Lato";
+   font-size: 152.63%;
+   line-height: 145.161%;
+   text-align: center;
+   text-transform: none;
+   margin: auto;
+   font-weight: 600;
+   font-style: normal;
+   color: rgba(51, 51, 51, 1);
+   
+}
+
+p.intro, .post-body > p:first-of-type {
+   font-family: Lato;
+   font-size: 84.21%;
+   border-top: 1px;
+   border-bottom: 1px;
+   padding: 5px 0px;
+   text-align: center;
+   border-style: solid;
+   line-height: 131.25%;
+   font-weight: 400;
+   font-style: italic;
+   margin: auto;
+   margin-bottom: 1em;
+   color: rgba(51, 51, 51, 0.80);    
+
+}
+
+p {
+   font-size: 80%;
+   line-height: 173.333%;
+   color: #444444;
+   margin-bottom: 27px;
+   font-family: 'PT Serif', serif;
+   font-weight: 400;
+   font-style: normal;
+   letter-spacing: 0px;
+   text-align: left;
+   float: none;
+   clear: both;
+   
+}
+
+h2, h3, .text-end {
+   font-size: 1.4em;
+   font-family: "Lato";
+   line-height: 93.103%;
+   margin-bottom: 27px;
+   font-weight: 700;
+   font-style: normal;
+   color: rgba(51, 51, 51, 1);
+}
+
+p.pullquote, blockquote p {
+   padding-left: 10px;
+   font-size: 80%;
+   line-height: 174%;
+   text-indent: 0%;
+   letter-spacing: 0px;
+   width:84%;
+   padding-top: 1em;
+   padding-bottom: 1em;
+
+}
+
+p.author {
+   text-align: center;
+   font-size: 13px;
+   letter-spacing: 2px;
+   margin-top: 27px;
+}
+
+h1.video-number {
+   font-size: 1em;
+   color: rgba(192, 57, 43, 1);
+   font-family: "Lato";
+   font-weight: 700;
+   font-style: normal;
+   line-height: 1em;
+   margin: auto;
+  
+}
+
+h2, h3 {
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+div {
+   font-family: Lora;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.cf {
+  text-align: center;
+  }
+
+.cf h1, .cf p, .cf blockquote, .cf h2, .cf ol, .cf ul {
+  margin-left: auto; margin-right: auto;
+}
+
+.cf p em {
+  color: #333333;
+}
+
+.cf p strong {
+  color: #333333;
+
+}
+
+.cf ol, .cf ul {
+  text-align: left;
+}
+
+
+.shadow {
+  /* Firefox */
+  -moz-box-shadow: 0px 10px 20px rgba(33, 33, 33, 1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 0px 10px 20px rgba(33, 33, 33, .7);
+  /* Opera */
+  box-shadow: 0px 10px 20px rgba(33, 33, 33, .7);
+
+}
+
+a, a:visited {
+  color: #2c3e50;
+  font-family: "Lato";
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+a:hover,
+a:focus {
+  color: #7f8c8d;
+  text-decoration: none;
+}
+
+.social-media-icons a {
+   text-decoration:none;
+}
+
+#topic-link-span {
+    text-transform: uppercase;
+    font: normal normal normal 0.55em/normal effra-bold, sans-serif;
+}/*#SPAN_1*/
+
+#topic-link {
+    color: rgb(144, 147, 154);
+    display: inline-block;
+    text-decoration: none;
+    background: rgb(228, 231, 236) none repeat scroll 0% 0% / auto padding-box border-box;
+    margin-top: 25px;
+    margin-bottom: 1.6em;
+    padding: 0.6em;
+}/*#A_2*/
+
+.highlight {
+  text-align: left;
+  max-width: 30em;
+  margin-bottom:1.7em;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+
+}
+
+pre {
+    background-color: #FFFFFF;
+    border: 2px solid #E7E9EC;
+    border-radius: 6px;
+    color: inherit;
+    font-size: 0.65em;
+    line-height: 1.72222;
+    margin: 0 0 15px;
+    padding: 8px;
+    white-space: pre;
+    display: inline-block;
+}
+
+code, kdb, pre, samp {
+    font-family: 'Ubuntu Mono',Monaco,Menlo,Consolas,"Courier New",monospace;
+    
+}
+
+p.next-tutorial {
+   border-width: 0px 0px 2px 0px;
+   font-family: "Lato";
+   font-weight: 300;
+   font-style: italic;
+   font-size: 1em;
+   line-height: 1em;
+   border-bottom: 1px solid #000;
+   margin-bottom: 0;
+}
+
+h1.next-tutorial-title {
+   font-family: "Lato";
+   font-weight: 700;
+   font-style: normal;
+   font-size: 1.5em;
+   line-height: 1.697em;
+   margin: 0.5em 0px 0px 0px;
+   text-align: left;
+}
+
+p.next-tutorial-abstract {
+   font-family: "Lato";
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.next-tutorial-meta {
+   font-family: "Lato";
+   font-weight: 400;
+   font-style: italic;
+   line-height: 2em;
+   font-size: 1em;
+   color: rgba(204, 65, 65, 1);
+   margin: 0;
+}
+
+.next-tutorial-container {
+  max-width: 30em;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 4em;
+  padding:0.5em;
+}
+
+/* Courses page */
+
+p.tech-desc {
+font-family: "Lato", Helvetica, Arial, sans-serif;   
+margin: 1em 0.2em 1em 0.7em;        
+}
+
+    h1.tech-title-head {
+   font-family: "Lato";
+   font-weight: 700;
+   font-style: normal;
+   font-size: 1em;
+   border-width: 0px 0px 2px 0px;
+   border-style: solid;
+   line-height: 1em;
+   text-align:left;
+   }
+p.nav-header {
+        padding-top:1.5em;
+        padding-bottom:0.5em;
+    }
+    
+.pad-row {
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+    }
+
+
+
+/* Course page */
+
+
+.table-hover tbody tr:hover td,.table-hover tbody tr:hover th {
+	background-color: #34495e;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.table, .listing a {
+	font-size: 0.6em;
+	color: #34495E !important;
+}
+
+.glyphicon-play {
+	color: #FFFFFF;
+	margin-right: 0.3em;
+}
+
+.gray .glyphicon-play {
+	color: #F2F2F2;
+}    
+    
+.nav-header {
+	color: #AEB6BF;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	margin-bottom: 0.7em;
+}
+
+.nav-counter {
+	background-color: #7f8c8d;
+	border-radius: 5px;
+	color: #FFFFFF;
+	float: right;
+	font-size: 12.992px;
+	font-weight: 500;
+	margin: 1px -4px -1px 0;
+	padding: 0 8px;
+}
+
+.nav-list>li.divider {
+	border-bottom: medium none;
+	height: 2px;
+	margin: 13px -13px 17px 0;
+}
+
+.nav-list a {
+	font-size: 1em;
+}
+
+.listing .nav > li > a {
+    padding: 10px 0px;
+}
+
+.listing ul.nav-list {
+    margin-left:0;
+}
+
+div.listing ul.nav li a:hover {
+	background-color: #7f8c8d;
+	color: #FFFFFF !important;
+}
+
+div.course-listing a {
+	border-bottom: 1px solid #95a5a6;
+}
+
+.tech-name {
+	color: #c0392b;
+    font-weight:600;    
+	font-size: 2.2em;
+	margin: 0.5em 0 0.6em;
+}
+
+.course-title {
+	font-size: 2em;
+    font-weight:600;   
+	margin: 0em 0.5em 1em;
+}
+
+span.course-title-number {
+	font-size: 0.65em;
+	color: #c0392b;
+	padding-right: 0.4em;
+}
+
+.demo-title {
+	float: left;
+	font-size: 1.2em;
+	line-height: 40px;
+	margin: -10px 20px 10px;
+	max-width: 240px;
+}
+
+.demo-panel-title {
+	font-size: 30;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.demo-content {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+	max-width: 580px;
+	width: 90%;
+}
+
+.demo-content p {
+	color: #3A4145;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 33px;
+	margin-bottom: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+}
+
+.nav-header {
+	color: #7f8c8d;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.nav li {
+	line-height: 20px;
+}
+    
+.cta {
+    padding:3em 1em;
+    }
+.gray {
+    background-color: #F2F2F2;  /* #ecf0f1; #ECECEC; */    
+    }
+    
+
+.topmenu {
+	width:100%;
+}
+
+.navbar-default {
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+#topnavbar a {
+	padding: 10px 1px 7px;
+	
+
+}
+
+.navbar {
+	position: absolute;
+}
+.outer-container {
+        max-width:350px;
+        margin: auto;
+        
+}
+.disqusbut {
+background-color: #3A4145;
+color: #FFFFFF;
+border: none;
+font-size: 1em;
+font-family: "Lato";
+outline: none;
+padding: 1em;
+width: 100%;
+max-width: 30em;
+margin: 2em auto 2em;
+}
+
+    .bottom-menu-inverse {
+    background-color: #ecf0f1;
+    color: #677786;
+    padding: 0;
+    margin: 3em 0em -1em -1em;
+   
+    
+        }
+        .bottom-menu-inverse a, .bottom-menu-inverse a:visited{
+    background-color: #ecf0f1;
+    color: #677786;
+            text-decoration:none;
+            
+        }    
+        .bottom-links, .bottom-links li, .bottom-icons {
+    list-style: none outside none;
+    display: inline;
+    margin: 5px;
+    padding: 20px;
+        }
+    
+    .footer-text {
+            font-family:"Lato";
+            color: #677786;
+            font-size: 0.7em;
+            margin-left: 2em;
+            margin-top: 1em;
+        }
+
+
+/* Index page */
+
+.index-cta {
+padding-left: 2em;  
+border-style: solid;
+   border-width: 2px 0px 0px 0px;   
+margin: 60px auto 10px;
+padding-top: 0px;
+padding-bottom: 0px;        
+width:92%;
+        
+    }        
+h1.javabrains {
+    font-family: "Lato";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 50px;
+    margin-bottom: 0.5em;
+    padding: 0 0 20px;
+    text-align: center;
+    width: 100%;
+}
+
+
+h2.subtext {
+    color: #C0392B;
+    font-family: "Lato";
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 25px;
+    margin: 3px 0 20px;
+    text-align: center;
+}
+    
+
+.get-started {
+    margin-top: 0;
+    color: #FFFFFF;    
+        
+    }
+
+.index-btn {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    padding: 14px 23px;
+}
+  
+.index-jumbotron {
+    padding:20px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #FFFFFF;    
+    }
+    
+.index-page-row {
+    border-top: 2px solid #444444; 
+    margin-top: 10px;        
+    
+}
+    
+.index-page-row h2 {
+    margin-top: 30px;    
+    }
+.blog-post-date {
+    font-family:"Lato";
+    color: #95a5a6;
+    margin-bottom: 1em;
+}
+
+
+/* 7. BROWSER AND NON-SEMANTIC STYLING
+----------------------------------------------------------------------------------------*/
+.cf:before, .cf:after { content: ""; display: block; }
+.cf:after { clear: both; }
+.ie6 .cf { zoom: 1 }
