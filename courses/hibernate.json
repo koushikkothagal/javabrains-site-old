@@ -1,0 +1,34 @@
+---
+---
+{
+  "name": "Hibernate",
+  "about": "<p>Hibernate is an open source Java persistence framework that lets Java applications connect to and work with a relational database using Object Relational Mapping. The Hibernate framework implements the Java Persistance API (JPA) which is the standard specification for object-relational mapping.</p><p>The courses on this page cover various concepts and features of ORM, JPA and Hibernate.</p>",
+  "courses": [{
+      "id": "01",
+      "code": "hibernate_intro",
+      "name": "Introduction to Hibernate",
+      "details": "<p>This course provides an introduction to the Hibernate ORM framework. You will understand the concept of Object Relational Mapping (ORM). You will learn to use Hibernate to write Java applications that connect to a relational database. You will also learn various JPA annotations that let you map an classes to relational models.</p>",
+      "tutorials": [
+{% assign course = site.categories["hibernate_intro"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]},
+    {
+      "id": "02",
+      "code": "hibernate_run",
+      "name": "Hibernate - APIs and Runtime",
+      "details": "<p>This course explores the runtime aspects of Hibernate. You'll understand how to perform Create, Read, Update and Delete operations, implement Hibernate APIs, understand the life cycle of entities, write queries in HQL, the Hibernate Query Language and implement caching.</p>",
+      "tutorials": [
+{% assign course = site.categories["hibernate_run"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]
+
+    }
+    ]
+
+
+
+}

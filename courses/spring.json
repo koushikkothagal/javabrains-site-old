@@ -1,0 +1,47 @@
+---
+---
+{
+  "name": "Spring Framework",
+  "about": "<p>Spring is one of the most popular application development frameworks for writing enterprise Java applications. Though not associated with the official Java EE standard, the framework is so popular that it is often referred to as the de-facto standard for developing Enterprise Java applications.</p><p>The courses on this page cover various features and technologies of the Spring framework.</p>",
+  "courses": [{
+      "id": "01",
+      "code": "spring-core",
+      "name": "Learning Spring Core",
+      "details": "<p>This course provides an introduction to the Spring framework. You will understand the concepts of dependency injection, understand how the core Spring framework works and how to write an application using it.</p>",
+      "tutorials": [
+{% assign course = site.categories["spring_core"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]},
+    {
+      "id": "02",
+      "code": "spring-aop",
+      "name": "Understanding Spring AOP",
+      "details": "<p>This tutorial introduces the concepts of Aspect Oriented Programming and Spring AOP. You will learn to write Aspects in Java using Spring AOP and also understand the terminologies used in AOP along the way.</p>",
+      "tutorials": [
+{% assign course = site.categories["spring_aop"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]
+
+    },
+    {
+      "id": "03",
+      "code": "spring-data",
+      "name": "Data access in Spring",
+      "details": "<p>Almost every application needs to access data. In this course, you will learn about Spring support for data access from relational databases.</p>",
+      "tutorials": [
+{% assign course = site.categories["spring_data"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]
+
+    }
+    ]
+
+
+
+}

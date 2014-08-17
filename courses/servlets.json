@@ -1,0 +1,30 @@
+---
+---
+{
+  "name": "Servlets and JSPs",
+  "about": "<p>Servlets and JSPs are Java technologies that allow server side programming in Java. Servlet containers facilitate running applications developed using the Servlet and JSP specifications. </p><p>The courses on this page cover various concepts related to Servlets and JSPs using Apache Tomcat as the servlet container. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "servlets_intro",
+      "name": "Introduction to Servlets",
+      "details": "<p>This course provides an introduction to Java Servlet technology. You will learn how to develop Java web applications using Servlets. you will also understand the life cycle of Servlets, how they work and how to configure them.</p>",
+      "tutorials": [
+{% assign course = site.categories["servlets_intro"] | where:"layout","blank" | sort: 'date' %}
+{% for tut in course %}{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}{% endfor %}
+        ]},
+    {
+      "id": "02",
+      "code": "jsps_intro",
+      "name": "Java Server Pages",
+      "details": "<p>This course covers writing and implementing Java Server Pages (JSPs) on a servlet container. You will understand what JSPs are, how they are related to servlets and how to write view logic using them.</p>",
+      "tutorials": [
+{% assign course = site.categories["jsps_intro"] | where:"layout","blank" | sort: 'date' %}
+{% for tut in course %}{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}{% endfor %}
+        ]
+
+    }
+    ]
+
+
+
+}

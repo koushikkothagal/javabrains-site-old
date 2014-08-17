@@ -1,4 +1,6 @@
 name: Java Brains
 markdown: redcarpet
-pygments: true
-permalink: none
+highlighter: pygments
+permalink: /:categories/:title.html
+gems:
+  - jekyll-redirect-from
