@@ -2,7 +2,7 @@
 layout: post_only
 title: Service Interface and Custom Types
 comments: false
-redirect_from: 2013/08/service-interface-and-custom-types.html
+unused: 2013/08/service-interface-and-custom-types.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

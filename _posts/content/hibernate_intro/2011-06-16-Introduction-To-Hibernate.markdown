@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction To Hibernate
 comments: false
-redirect_from: 2011/06/hibernate-tutorial-01-introduction-to.html
+unused: 2011/06/hibernate-tutorial-01-introduction-to.html
 tags: hibernate intro
 category: hibernate_intro
 ---

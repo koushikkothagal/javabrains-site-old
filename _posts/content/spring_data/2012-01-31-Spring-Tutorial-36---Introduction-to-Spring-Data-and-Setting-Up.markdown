@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction to Spring Data and Setting Up
 date: 2012-01-31 02:01:24 UTC
-redirect_from: 2011/10/spring-tutorial-36-introduction-to.html
+unused: 2011/10/spring-tutorial-36-introduction-to.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support

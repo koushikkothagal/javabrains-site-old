@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding Dependency Injection
 date: 2011-08-10 00:41:10 UTC
-redirect_from: 2011/08/spring-tutorial-01-understanding.html
+unused: 2011/08/spring-tutorial-01-understanding.html
 updated: 2013-06-15 00:41:10 UTC
 comments: false
 tags: spring core

@@ -2,7 +2,7 @@
 layout: post_only
 title: The Autowired Annotation
 date: 2011-08-10 00:59:10 UTC
-redirect_from: 2011/08/spring-tutorial-19-autowired-annotation.html
+unused: 2011/08/spring-tutorial-19-autowired-annotation.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core

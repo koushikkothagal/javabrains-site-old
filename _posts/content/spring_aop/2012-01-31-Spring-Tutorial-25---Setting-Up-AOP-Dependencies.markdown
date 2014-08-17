@@ -2,7 +2,7 @@
 layout: post_only
 title: Setting Up AOP Dependencies
 date: 2012-01-31 02:02:35 UTC
-redirect_from: 2011/08/spring-tutorial-25-setting-up-aop.html
+unused: 2011/08/spring-tutorial-25-setting-up-aop.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

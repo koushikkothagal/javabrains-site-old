@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction to JSTL and the useBean tag
 comments: false
-redirect_from: 2011/06/jsps-and-servlets-tutorial-17.html
+unused: 2011/06/jsps-and-servlets-tutorial-17.html
 tags: servlets_jsps
 category: jsps_intro
 ---

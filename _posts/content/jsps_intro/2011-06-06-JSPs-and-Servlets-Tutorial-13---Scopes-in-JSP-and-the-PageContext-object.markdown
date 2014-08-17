@@ -2,7 +2,7 @@
 layout: post_only
 title: Scopes in JSP and the PageContext object
 comments: false
-redirect_from: 2011/05/jsps-and-servlets-tutorial-13-scopes-in.html
+unused: 2011/05/jsps-and-servlets-tutorial-13-scopes-in.html
 tags: servlets_jsps
 category: jsps_intro
 ---

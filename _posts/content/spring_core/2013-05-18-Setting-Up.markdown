@@ -2,7 +2,7 @@
 layout: post_only
 title: Setting Up
 date: 2011-08-10 00:42:10 UTC
-redirect_from: 2011/08/spring-tutorial-02-setting-up.html
+unused: 2011/08/spring-tutorial-02-setting-up.html
 updated: 2013-05-18 04:17:20 UTC
 comments: false
 tags: spring core

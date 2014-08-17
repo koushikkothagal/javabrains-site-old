@@ -2,7 +2,7 @@
 layout: post_only
 title: Using JDBC without Spring
 date: 2012-01-31 02:02:24 UTC
-redirect_from: 2011/10/spring-tutorial-37-using-jdbc-without.html
+unused: 2011/10/spring-tutorial-37-using-jdbc-without.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support

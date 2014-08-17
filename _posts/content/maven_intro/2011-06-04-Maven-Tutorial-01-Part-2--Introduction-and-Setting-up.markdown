@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction and Setting up Part 2
 comments: false
-redirect_from: 2011/06/maven-tutorial-01-part-2-introduction.html
+unused: 2011/06/maven-tutorial-01-part-2-introduction.html
 category: maven_intro
 ---
 

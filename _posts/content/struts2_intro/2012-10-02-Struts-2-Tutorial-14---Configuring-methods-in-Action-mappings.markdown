@@ -3,7 +3,7 @@ layout: post_only
 title: Configuring methods in Action mappings
 date: 2012-10-02 01:29:38 UTC
 updated: 2012-10-02 01:29:38 UTC
-redirect_from: 2012/10/struts-2-tutorial-14-configuring.html
+unused: 2012/10/struts-2-tutorial-14-configuring.html
 comments: false
 tags: struts2
 category: struts2_intro

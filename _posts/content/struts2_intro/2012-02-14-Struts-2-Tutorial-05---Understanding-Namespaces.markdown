@@ -3,7 +3,7 @@ layout: post_only
 title: Understanding Namespaces
 date: 2012-02-14 08:26:05 UTC
 updated: 2012-02-14 08:26:05 UTC
-redirect_from: 2012/02/struts-2-tutorial-05-understanding.html
+unused: 2012/02/struts-2-tutorial-05-understanding.html
 comments: false
 tags: struts2
 category: struts2_intro

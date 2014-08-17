@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing Code Using the Bean Factory
 date: 2011-08-10 00:44:10 UTC
-redirect_from: 2011/08/spring-tutorial-04-writing-code-using.html
+unused: 2011/08/spring-tutorial-04-writing-code-using.html
 updated: 2013-05-20 21:49:22 UTC
 comments: false
 tags: spring core

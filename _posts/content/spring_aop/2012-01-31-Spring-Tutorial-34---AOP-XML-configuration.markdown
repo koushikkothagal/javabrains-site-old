@@ -2,7 +2,7 @@
 layout: post_only
 title: AOP XML configuration
 date: 2012-01-31 02:11:35 UTC
-redirect_from: 2011/10/spring-tutorial-34-aop-xml.html
+unused: 2011/10/spring-tutorial-34-aop-xml.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

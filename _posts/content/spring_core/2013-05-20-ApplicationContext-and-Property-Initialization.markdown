@@ -2,7 +2,7 @@
 layout: post_only
 title: ApplicationContext and Property Initialization
 date: 2011-08-10 00:45:10 UTC
-redirect_from: 2011/08/spring-tutorial-05-applicationcontext.html
+unused: 2011/08/spring-tutorial-05-applicationcontext.html
 updated: 2013-05-20 21:56:56 UTC
 comments: false
 tags: spring core

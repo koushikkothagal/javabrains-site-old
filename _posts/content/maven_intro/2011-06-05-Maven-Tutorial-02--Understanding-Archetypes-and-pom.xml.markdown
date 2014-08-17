@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding Archetypes and pom.xml
 comments: false
-redirect_from: 2011/06/maven-tutorial-02-understanding.html
+unused: 2011/06/maven-tutorial-02-understanding.html
 category: maven_intro
 ---
 

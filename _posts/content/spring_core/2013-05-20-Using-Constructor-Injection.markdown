@@ -2,7 +2,7 @@
 layout: post_only
 title: Using Constructor Injection
 date: 2011-08-10 00:46:10 UTC
-redirect_from: 2011/08/spring-tutorial-06-using-constructor.html
+unused: 2011/08/spring-tutorial-06-using-constructor.html
 updated: 2013-05-20 22:00:04 UTC
 comments: false
 tags: spring core

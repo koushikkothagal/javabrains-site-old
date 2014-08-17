@@ -3,7 +3,7 @@ layout: post_only
 title: Anatomy of an Interceptor
 date: 2013-04-15 00:42:35 UTC
 updated: 2013-04-15 00:42:35 UTC
-redirect_from: 2013/04/struts2-18.html
+unused: 2013/04/struts2-18.html
 comments: false
 tags: struts2
 category: struts2_intro

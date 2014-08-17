@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding GET and POST
 comments: false
-redirect_from: 2011/05/jsps-and-servlets-tutorial-07.html
+unused: 2011/05/jsps-and-servlets-tutorial-07.html
 tags: servlets_jsps
 category: servlets_intro
 ---

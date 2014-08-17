@@ -2,7 +2,7 @@
 layout: post_only
 title: Retrieving Objects using session.get
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-06-retrieving.html
+unused: 2011/07/hibernate-tutorial-06-retrieving.html
 tags: hibernate intro
 category: hibernate_intro
 ---

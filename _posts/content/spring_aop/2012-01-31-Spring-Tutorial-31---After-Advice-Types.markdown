@@ -2,7 +2,7 @@
 layout: post_only
 title: After Advice Types
 date: 2012-01-31 02:08:35 UTC
-redirect_from: 2011/10/spring-tutorial-31-after-advice-types.html
+unused: 2011/10/spring-tutorial-31-after-advice-types.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

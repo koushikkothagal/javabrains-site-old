@@ -2,7 +2,7 @@
 layout: post_only
 title: hbm2ddl Configuration and Name Annotations
 comments: false
-redirect_from: 2011/06/hibernate-tutorial-04-hbm2ddl.html
+unused: 2011/06/hibernate-tutorial-04-hbm2ddl.html
 tags: hibernate intro
 category: hibernate_intro
 ---

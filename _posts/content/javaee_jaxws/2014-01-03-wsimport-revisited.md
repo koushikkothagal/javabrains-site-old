@@ -1,7 +1,7 @@
 ---
 layout: post_only
 title: wsimport Revisited
-redirect_from: javaee/jaxws/wsimport-revisited.html
+unused: javaee/jaxws/wsimport-revisited.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

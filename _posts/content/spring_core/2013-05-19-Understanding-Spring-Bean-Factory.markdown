@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding Spring Bean Factory
 date: 2011-08-10 00:43:10 UTC
-redirect_from: 2011/08/spring-tutorial-03-understanding-spring.html
+unused: 2011/08/spring-tutorial-03-understanding-spring.html
 updated: 2013-05-19 18:30:37 UTC
 comments: false
 tags: spring core

@@ -2,7 +2,7 @@
 layout: post_only
 title: Configuring Second Level Cache
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-33-configuring.html
+unused: 2011/07/hibernate-tutorial-33-configuring.html
 tags: hibernate run
 category: hibernate_run
 ---

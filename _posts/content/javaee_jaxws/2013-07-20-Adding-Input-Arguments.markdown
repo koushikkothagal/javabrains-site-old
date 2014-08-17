@@ -2,7 +2,7 @@
 layout: post_only
 title: Adding Input Arguments
 comments: false
-redirect_from: 2013/07/adding-input-arguments.html
+unused: 2013/07/adding-input-arguments.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

@@ -3,7 +3,7 @@ layout: post_only
 title: A Tag And A Business Service
 date: 2012-04-08 19:39:09 UTC
 updated: 2012-04-08 19:39:09 UTC
-redirect_from: 2012/04/struts-2-tutorial-06-tag-and-business.html
+unused: 2012/04/struts-2-tutorial-06-tag-and-business.html
 comments: false
 tags: struts2
 category: struts2_intro

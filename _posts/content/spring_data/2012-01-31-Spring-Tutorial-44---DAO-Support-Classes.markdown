@@ -2,7 +2,7 @@
 layout: post_only
 title: DAO Support Classes
 date: 2012-01-31 02:09:24 UTC
-redirect_from: 2011/11/spring-tutorial-44-dao-support-classes.html
+unused: 2011/11/spring-tutorial-44-dao-support-classes.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support

@@ -2,7 +2,7 @@
 layout: post_only
 title: The POST Method and Passing Parameters
 comments: false
-redirect_from: 2011/04/jsps-and-servlets-tutorial-05-post.html
+unused: 2011/04/jsps-and-servlets-tutorial-05-post.html
 tags: servlets_jsps
 category: servlets_intro
 ---

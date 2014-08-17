@@ -3,7 +3,7 @@ layout: post_only
 title: Introduction to Struts 2
 date: 2012-01-31 02:40:36 UTC
 updated: 2012-01-31 02:39:36 UTC
-redirect_from: 2012/01/struts-2-tutorial-02-introduction-to.html
+unused: 2012/01/struts-2-tutorial-02-introduction-to.html
 comments: false
 tags: struts2
 category: struts2_intro

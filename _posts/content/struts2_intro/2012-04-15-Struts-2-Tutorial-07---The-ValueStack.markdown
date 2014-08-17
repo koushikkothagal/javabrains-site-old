@@ -3,7 +3,7 @@ layout: post_only
 title: The ValueStack
 date: 2012-04-15 04:07:07 UTC
 updated: 2012-04-15 04:07:07 UTC
-redirect_from: 2012/04/struts-2-tutorial-07-valuestack.html
+unused: 2012/04/struts-2-tutorial-07-valuestack.html
 comments: false
 tags: struts2
 category: struts2_intro

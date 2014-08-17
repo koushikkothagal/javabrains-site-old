@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing Our First Aspect Part 1
 date: 2012-01-31 02:03:35 UTC
-redirect_from: 2011/08/spring-tutorial-26-writing-our-first.html
+unused: 2011/08/spring-tutorial-26-writing-our-first.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

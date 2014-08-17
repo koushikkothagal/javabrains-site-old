@@ -2,7 +2,7 @@
 layout: post_only
 title: Passing More Parameters
 comments: false
-redirect_from: 2011/05/jsps-and-servlets-tutorial-06-passing.html
+unused: 2011/05/jsps-and-servlets-tutorial-06-passing.html
 tags: servlets_jsps
 category: servlets_intro
 ---

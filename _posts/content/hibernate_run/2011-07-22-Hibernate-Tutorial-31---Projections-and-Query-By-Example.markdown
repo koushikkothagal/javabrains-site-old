@@ -2,7 +2,7 @@
 layout: post_only
 title: Projections and Query By Example
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-31-projections-and.html
+unused: 2011/07/hibernate-tutorial-31-projections-and.html
 tags: hibernate run
 category: hibernate_run
 ---

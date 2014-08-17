@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction to Criteria API
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-29-introduction-to.html
+unused: 2011/07/hibernate-tutorial-29-introduction-to.html
 tags: hibernate run
 category: hibernate_run
 ---

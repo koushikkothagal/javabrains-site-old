@@ -2,7 +2,7 @@
 layout: post_only
 title: Value Types and Embedding Objects
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-08-value-types-and.html
+unused: 2011/07/hibernate-tutorial-08-value-types-and.html
 tags: hibernate intro
 category: hibernate_intro
 ---

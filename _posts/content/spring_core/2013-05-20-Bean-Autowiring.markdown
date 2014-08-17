@@ -2,7 +2,7 @@
 layout: post_only
 title: Bean Autowiring
 date: 2011-08-10 00:50:10 UTC
-redirect_from: 2011/08/spring-tutorial-10-bean-autowiring.html
+unused: 2011/08/spring-tutorial-10-bean-autowiring.html
 updated: 2013-05-20 22:14:20 UTC
 comments: false
 tags: spring core

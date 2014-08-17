@@ -2,7 +2,7 @@
 layout: post_only
 title: Setting up Java EE 7 SDK
 comments: false
-redirect_from: 2013/06/setting-up-java-ee-7-sdk.html
+unused: 2013/06/setting-up-java-ee-7-sdk.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

@@ -2,7 +2,7 @@
 layout: post_only
 title: Cacheing in Hibernate
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-32-cacheing-in.html
+unused: 2011/07/hibernate-tutorial-32-cacheing-in.html
 tags: hibernate run
 category: hibernate_run
 ---

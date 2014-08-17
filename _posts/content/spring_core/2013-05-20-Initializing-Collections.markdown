@@ -2,7 +2,7 @@
 layout: post_only
 title: Initializing Collections
 date: 2011-08-10 00:49:10 UTC
-redirect_from: 2011/08/spring-tutorial-09-initializing.html
+unused: 2011/08/spring-tutorial-09-initializing.html
 updated: 2013-05-20 22:11:59 UTC
 comments: false
 tags: spring core

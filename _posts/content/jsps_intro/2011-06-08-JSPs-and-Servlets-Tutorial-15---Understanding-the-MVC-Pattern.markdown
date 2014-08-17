@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding the MVC Pattern
 comments: false
-redirect_from: 2011/05/jsps-and-servlets-tutorial-15.html
+unused: 2011/05/jsps-and-servlets-tutorial-15.html
 tags: servlets_jsps
 category: jsps_intro
 ---

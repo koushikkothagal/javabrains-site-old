@@ -2,7 +2,7 @@
 layout: post_only
 title: Eclipse Plugin for Maven and Maven Plugin for Eclipse
 comments: false
-redirect_from: 2011/06/maven-tutorial-08-eclipse-plugin-for.html
+unused: 2011/06/maven-tutorial-08-eclipse-plugin-for.html
 category: maven_intro
 ---
 

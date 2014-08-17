@@ -2,7 +2,7 @@
 layout: post_only
 title: Introducing HQL and the Query Object
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-25-introducing-hql.html
+unused: 2011/07/hibernate-tutorial-25-introducing-hql.html
 tags: hibernate run
 category: hibernate_run
 ---

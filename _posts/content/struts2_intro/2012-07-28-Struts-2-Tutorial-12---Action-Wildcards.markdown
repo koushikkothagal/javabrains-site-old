@@ -3,7 +3,7 @@ layout: post_only
 title: Action Wildcards
 date: 2012-07-28 21:07:14 UTC
 updated: 2012-07-28 21:07:14 UTC
-redirect_from: 2012/07/struts-2-tutorial-12-action-wildcards.html
+unused: 2012/07/struts-2-tutorial-12-action-wildcards.html
 comments: false
 tags: struts2
 category: struts2_intro

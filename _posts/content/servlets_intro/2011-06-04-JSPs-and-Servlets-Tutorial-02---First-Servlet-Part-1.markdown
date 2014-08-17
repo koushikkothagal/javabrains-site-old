@@ -2,7 +2,7 @@
 layout: post_only
 title: First Servlet Part 1
 comments: false
-redirect_from: 2011/04/jsps-and-servlets-tutorial-02-first.html
+unused: 2011/04/jsps-and-servlets-tutorial-02-first.html
 tags: servlets_jsps
 category: servlets_intro
 ---

@@ -2,7 +2,7 @@
 layout: post_only
 title: Using JAXB Annotations Part 2
 comments: false
-redirect_from: 2013/09/using-jaxb-annotations-part-2.html
+unused: 2013/09/using-jaxb-annotations-part-2.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

@@ -2,7 +2,7 @@
 layout: post_only
 title: Schema Types and Binding Styles
 comments: false
-redirect_from: 2013/08/schema-types-and-binding-styles.html
+unused: 2013/08/schema-types-and-binding-styles.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

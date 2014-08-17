@@ -2,7 +2,7 @@
 layout: post_only
 title: Setting up
 comments: false
-redirect_from: 2011/04/jsps-and-servlets-tutorial-01-setting.html
+unused: 2011/04/jsps-and-servlets-tutorial-01-setting.html
 tags: servlets_jsps
 category: servlets_intro
 ---
