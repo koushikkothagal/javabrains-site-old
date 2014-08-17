@@ -1,0 +1,18 @@
+---
+---
+{
+  "name": "Maven",
+  "about": "<p>Apache Maven is a software project management and dependency management tool. </p><p>The courses on this page cover concepts and usage scenarios for Apache Maven. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "maven_intro",
+      "name": "Introduction to Maven",
+      "details": "<p>This course is an introduction to the basic features of Apache Maven.  You will learn what Maven is and how it helps managing dependencies in your Java project. You will understand POM configuration, build phases and use plugins.</p>",
+      "tutorials": [
+{% assign course = site.categories["maven_intro"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]}
+    ]
+}

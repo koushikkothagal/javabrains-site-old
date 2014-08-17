@@ -1,0 +1,22 @@
+---
+---
+{
+  "name": "Struts 2",
+  "about": "<p>Apache Struts 2 is an elegant and extensible framework for creating Java web applications. The framework is designed to let developers write web applications using the Model-View-Controller (MVC) pattern. </p><p>The courses on this page cover various concepts and features of the Struts 2 framework. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "struts2_intro",
+      "name": "Beginning Struts 2",
+      "details": "<p>This course provides an introduction to the Struts 2 framework. You will understand the concepts of MVC, and learn to write a web application from scratch using Struts 2.</p>",
+      "tutorials": [
+{% assign course = site.categories["struts2_intro"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]}
+
+    ]
+
+
+
+}

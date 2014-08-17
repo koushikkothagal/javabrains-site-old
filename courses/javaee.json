@@ -1,0 +1,22 @@
+---
+---
+{
+  "name": "Java EE",
+  "about": "<p>Java EE is the platform for Enterprise Java. The EE stands for <b>Enterprise Edition</b> (as opposed to the <b>Standard Edition</b> Java SE, which primarily focuses on desktop and workstation applications). Java EE provides APIs that can be used for Java developers to implement features that Enterprise application typically need. And secondly, it provides a platform to run the applications on. Code written with Java EE APIs will run on any Java EE certified application server.</p><p>The courses on this page cover various technologies and APIs that can be used to write Enterprise Java applications. </p>",
+  "courses": [{
+      "id": "01",
+      "code": "javaee_jaxws",
+      "name": "SOAP Web Services with JAX-WS",
+      "details": "<p>This course introduces you to SOAP Web Services using the JAX-WS standard specification. You will learn what SOAP web services are and how to write them. You will be writing a web service application, deploying, running and testing it on Glassfish. You will also learn to consume SOAP web services.</p>",
+      "tutorials": [
+{% assign course = site.categories["javaee_jaxws"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]}
+
+    ]
+
+
+
+}
