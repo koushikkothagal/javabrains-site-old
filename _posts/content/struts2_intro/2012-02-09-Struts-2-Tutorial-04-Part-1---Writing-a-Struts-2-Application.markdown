@@ -3,7 +3,7 @@ layout: post_only
 title: Writing a Struts 2 Application Part 1
 date: 2012-02-09 18:49:51 UTC
 updated: 2012-02-09 18:49:51 UTC
-redirect_from: 2012/02/struts-2-tutorial-04-part-1-writing.html
+unused: 2012/02/struts-2-tutorial-04-part-1-writing.html
 comments: false
 tags: struts2
 category: struts2_intro

@@ -2,7 +2,7 @@
 layout: post_only
 title: Using ApplicationContextAware
 date: 2011-08-10 00:52:10 UTC
-redirect_from: 2011/08/spring-tutorial-12-using.html
+unused: 2011/08/spring-tutorial-12-using.html
 updated: 2013-05-20 22:27:56 UTC
 comments: false
 tags: spring core

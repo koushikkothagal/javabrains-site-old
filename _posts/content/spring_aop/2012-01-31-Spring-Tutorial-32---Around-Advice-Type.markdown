@@ -2,7 +2,7 @@
 layout: post_only
 title: Around Advice Type
 date: 2012-01-31 02:09:35 UTC
-redirect_from: 2011/10/spring-tutorial-32-around-advice-type.html
+unused: 2011/10/spring-tutorial-32-around-advice-type.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

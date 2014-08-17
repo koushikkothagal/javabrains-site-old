@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing a Web Service - Code and Deploy
 comments: false
-redirect_from: 2013/07/writing-web-service-code-and-deploy.html
+unused: 2013/07/writing-web-service-code-and-deploy.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

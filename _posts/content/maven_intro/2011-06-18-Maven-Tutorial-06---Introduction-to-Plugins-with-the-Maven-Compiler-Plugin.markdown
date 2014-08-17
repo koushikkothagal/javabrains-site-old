@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction to Plugins with the Maven Compiler Plugin
 comments: false
-redirect_from: 2011/06/maven-tutorial-06-introduction-to.html
+unused: 2011/06/maven-tutorial-06-introduction-to.html
 category: maven_intro
 ---
 

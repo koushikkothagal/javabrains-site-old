@@ -3,7 +3,7 @@ layout: post_only
 title: Login Action and Best Practices Part 2
 date: 2012-07-17 02:12:54 UTC
 updated: 2012-07-17 02:09:54 UTC
-redirect_from: 2012/06/struts-2-tutorial-11-login-action-and.html
+unused: 2012/06/struts-2-tutorial-11-login-action-and.html
 comments: false
 tags: struts2
 category: struts2_intro

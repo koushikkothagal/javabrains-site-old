@@ -2,7 +2,7 @@
 layout: post_only
 title: Saving Objects using Hibernate APIs
 comments: false
-redirect_from: 2011/06/hibernate-tutorial-03-part-3-saving.html
+unused: 2011/06/hibernate-tutorial-03-part-3-saving.html
 tags: hibernate intro
 category: hibernate_intro
 ---

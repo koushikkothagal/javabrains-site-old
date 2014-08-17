@@ -3,7 +3,7 @@ layout: post_only
 title: Introducing Interceptors
 date: 2013-02-05 21:39:20 UTC
 updated: 2013-02-05 21:39:20 UTC
-redirect_from: 2013/02/struts-2-tutorial-16-introducing.html
+unused: 2013/02/struts-2-tutorial-16-introducing.html
 comments: false
 tags: struts2
 category: struts2_intro

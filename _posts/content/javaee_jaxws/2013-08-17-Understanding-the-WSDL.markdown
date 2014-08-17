@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding the WSDL
 comments: false
-redirect_from: 2013/08/understanding-wsdl.html
+unused: 2013/08/understanding-wsdl.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

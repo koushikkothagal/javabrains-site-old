@@ -3,7 +3,7 @@ layout: post_only
 title: Setting Up
 date: 2012-01-31 02:41:36 UTC
 updated: 2012-02-20 23:10:06 UTC
-redirect_from: 2012/01/struts-2-tutorial-02-setting-up.html
+unused: 2012/01/struts-2-tutorial-02-setting-up.html
 comments: false
 tags: struts2
 category: struts2_intro

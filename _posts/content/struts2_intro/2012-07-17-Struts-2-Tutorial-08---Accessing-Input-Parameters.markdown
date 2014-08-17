@@ -3,7 +3,7 @@ layout: post_only
 title: Accessing Input Parameters
 date: 2012-07-17 02:09:54 UTC
 updated: 2012-07-17 02:09:54 UTC
-redirect_from: 2012/06/struts-2-tutorial-08-accessing-input.html
+unused: 2012/06/struts-2-tutorial-08-accessing-input.html
 comments: false
 tags: struts2
 category: struts2_intro

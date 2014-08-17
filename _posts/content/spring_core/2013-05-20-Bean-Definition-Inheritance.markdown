@@ -2,7 +2,7 @@
 layout: post_only
 title: Bean Definition Inheritance
 date: 2011-08-10 00:53:10 UTC
-redirect_from: 2011/08/spring-tutorial-13-bean-definition.html
+unused: 2011/08/spring-tutorial-13-bean-definition.html
 updated: 2013-05-20 22:34:35 UTC
 comments: false
 tags: spring core

@@ -1,7 +1,7 @@
 ---           
 layout: post_only
 title: Using SoapUI
-redirect_from: 2013/10/using-soapui.html
+unused: 2013/10/using-soapui.html
 tags: javaee jaxws
 category: javaee_jaxws
 

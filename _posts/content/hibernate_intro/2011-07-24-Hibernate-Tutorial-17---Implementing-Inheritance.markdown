@@ -2,7 +2,7 @@
 layout: post_only
 title: Implementing Inheritance
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-17-implementing.html
+unused: 2011/07/hibernate-tutorial-17-implementing.html
 tags: hibernate intro
 category: hibernate_intro
 ---

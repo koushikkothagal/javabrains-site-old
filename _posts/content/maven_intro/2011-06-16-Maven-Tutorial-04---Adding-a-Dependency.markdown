@@ -2,7 +2,7 @@
 layout: post_only
 title: Adding a Dependency
 comments: false
-redirect_from: 2011/06/maven-tutorial-04-adding-dependency.html
+unused: 2011/06/maven-tutorial-04-adding-dependency.html
 category: maven_intro
 ---
 

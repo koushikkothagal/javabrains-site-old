@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction to Annotations and the Required Annotation
 date: 2011-08-10 00:58:10 UTC
-redirect_from: 2011/08/spring-tutorial-18-introduction-to.html
+unused: 2011/08/spring-tutorial-18-introduction-to.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core

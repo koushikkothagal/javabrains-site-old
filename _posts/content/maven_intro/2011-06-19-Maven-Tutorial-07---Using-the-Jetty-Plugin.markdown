@@ -2,7 +2,7 @@
 layout: post_only
 title: Using the Jetty Plugin
 comments: false
-redirect_from: 2011/06/maven-tutorial-07-using-jetty-plugin.html
+unused: 2011/06/maven-tutorial-07-using-jetty-plugin.html
 category: maven_intro
 ---
 

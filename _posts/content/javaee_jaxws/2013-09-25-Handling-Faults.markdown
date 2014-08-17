@@ -2,7 +2,7 @@
 layout: post_only
 title: Handling Faults
 comments: false
-redirect_from: 2013/09/handling-faults.html
+unused: 2013/09/handling-faults.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

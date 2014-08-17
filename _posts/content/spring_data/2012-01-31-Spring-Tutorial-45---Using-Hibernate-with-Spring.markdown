@@ -2,7 +2,7 @@
 layout: post_only
 title: Using Hibernate with Spring
 date: 2012-01-31 02:10:24 UTC
-redirect_from: 2011/12/spring-tutorial-45-using-hibernate-with.html
+unused: 2011/12/spring-tutorial-45-using-hibernate-with.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support

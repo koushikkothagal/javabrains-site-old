@@ -2,7 +2,7 @@
 layout: post_only
 title: A Web Application Using Maven
 comments: false
-redirect_from: 2011/06/maven-tutorial-05-web-application-using.html
+unused: 2011/06/maven-tutorial-05-web-application-using.html
 category: maven_intro
 ---
 

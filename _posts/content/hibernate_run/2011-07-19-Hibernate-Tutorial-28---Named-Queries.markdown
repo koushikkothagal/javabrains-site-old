@@ -2,7 +2,7 @@
 layout: post_only
 title: Named Queries
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-28-named-queries.html
+unused: 2011/07/hibernate-tutorial-28-named-queries.html
 tags: hibernate run
 category: hibernate_run
 ---

@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding AOP Proxies
 date: 2012-01-31 02:12:35 UTC
-redirect_from: 2011/10/spring-tutorial-35-understanding-aop.html
+unused: 2011/10/spring-tutorial-35-understanding-aop.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

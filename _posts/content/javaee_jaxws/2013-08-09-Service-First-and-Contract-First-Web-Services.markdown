@@ -2,7 +2,7 @@
 layout: post_only
 title: Service First and Contract First Web Services
 comments: false
-redirect_from: 2013/08/service-first-and-contract-first-web.html
+unused: 2013/08/service-first-and-contract-first-web.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

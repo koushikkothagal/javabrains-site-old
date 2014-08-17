@@ -1,7 +1,7 @@
 ---
 layout: post_only
 title: Using Web Service Explorer
-redirect_from: javaee/jaxws/Using-Web-Service-explorer.html
+unused: javaee/jaxws/Using-Web-Service-explorer.html
 tags: javaee jaxws
 category: javaee_jaxws
 

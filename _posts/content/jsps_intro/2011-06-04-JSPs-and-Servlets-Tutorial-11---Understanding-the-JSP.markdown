@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding the JSP
 comments: false
-redirect_from: 2011/05/jsps-and-servlets-tutorial-11.html
+unused: 2011/05/jsps-and-servlets-tutorial-11.html
 tags: servlets_jsps
 category: jsps_intro
 ---

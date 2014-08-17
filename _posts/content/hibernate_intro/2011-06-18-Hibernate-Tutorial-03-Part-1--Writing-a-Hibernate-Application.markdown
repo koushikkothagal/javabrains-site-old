@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing a Hibernate Application
 comments: false
-redirect_from: 2011/06/hibernate-tutorial-03-part-1-writing.html
+unused: 2011/06/hibernate-tutorial-03-part-1-writing.html
 tags: hibernate intro
 category: hibernate_intro
 ---

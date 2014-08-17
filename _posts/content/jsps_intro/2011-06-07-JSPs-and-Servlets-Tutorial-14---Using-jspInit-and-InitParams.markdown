@@ -2,7 +2,7 @@
 layout: post_only
 title: Using jspInit and InitParams
 comments: false
-redirect_from: 2011/05/jsps-and-servlets-tutorial-14-using.html
+unused: 2011/05/jsps-and-servlets-tutorial-14-using.html
 tags: servlets_jsps
 category: jsps_intro
 ---

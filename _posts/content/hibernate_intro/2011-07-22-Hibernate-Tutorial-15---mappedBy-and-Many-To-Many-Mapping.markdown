@@ -2,7 +2,7 @@
 layout: post_only
 title: mappedBy and Many To Many Mapping
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-15-mappedby-and-many.html
+unused: 2011/07/hibernate-tutorial-15-mappedby-and-many.html
 tags: hibernate intro
 category: hibernate_intro
 ---

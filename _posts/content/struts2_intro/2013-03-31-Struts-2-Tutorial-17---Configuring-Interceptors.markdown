@@ -3,7 +3,7 @@ layout: post_only
 title: Configuring Interceptors 
 date: 2013-03-31 00:10:28 UTC
 updated: 2013-03-31 00:10:28 UTC
-redirect_from: 2013/03/how-does-default-interceptor.html
+unused: 2013/03/how-does-default-interceptor.html
 comments: false
 tags: struts2
 category: struts2_intro

@@ -2,7 +2,7 @@
 layout: post_only
 title: Primary Keys
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-07-primary-keys.html
+unused: 2011/07/hibernate-tutorial-07-primary-keys.html
 tags: hibernate intro
 category: hibernate_intro
 ---

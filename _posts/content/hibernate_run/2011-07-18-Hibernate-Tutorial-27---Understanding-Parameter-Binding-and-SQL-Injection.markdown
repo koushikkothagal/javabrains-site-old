@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding Parameter Binding and SQL Injection
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-27-understanding.html
+unused: 2011/07/hibernate-tutorial-27-understanding.html
 tags: hibernate run
 category: hibernate_run
 ---

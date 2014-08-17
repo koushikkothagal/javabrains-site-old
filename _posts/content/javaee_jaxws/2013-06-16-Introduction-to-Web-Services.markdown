@@ -2,7 +2,7 @@
 layout: post_only
 title: Introduction to Web Services
 comments: false
-redirect_from: 2013/06/ws01-introduction-to-web-services.html
+unused: 2013/06/ws01-introduction-to-web-services.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

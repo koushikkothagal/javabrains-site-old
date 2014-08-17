@@ -3,7 +3,7 @@ layout: post_only
 title: Introduction To MVC
 date: 2012-01-31 02:39:36 UTC
 updated: 2012-01-31 02:39:36 UTC
-redirect_from: 2011/12/struts-2-tutorial-01-introduction-to.html
+unused: 2011/12/struts-2-tutorial-01-introduction-to.html
 comments: false
 tags: struts2
 category: struts2_intro

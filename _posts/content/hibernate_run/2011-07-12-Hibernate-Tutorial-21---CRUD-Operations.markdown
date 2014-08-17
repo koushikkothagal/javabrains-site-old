@@ -2,7 +2,7 @@
 layout: post_only
 title: CRUD Operations
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-21-crud-operations.html
+unused: 2011/07/hibernate-tutorial-21-crud-operations.html
 tags: hibernate run
 category: hibernate_run
 ---

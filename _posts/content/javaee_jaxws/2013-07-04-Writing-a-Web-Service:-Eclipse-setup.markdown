@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing a Web Service - Eclipse setup 
 comments: false
-redirect_from: 2013/07/download-soap-web-services-06-writing.html
+unused: 2013/07/download-soap-web-services-06-writing.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

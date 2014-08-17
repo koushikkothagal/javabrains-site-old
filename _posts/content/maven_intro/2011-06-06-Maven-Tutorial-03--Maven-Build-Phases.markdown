@@ -2,7 +2,7 @@
 layout: post_only
 title: Maven Build Phases
 comments: false
-redirect_from: 2011/06/maven-tutorial-03-maven-build-phases.html
+unused: 2011/06/maven-tutorial-03-maven-build-phases.html
 category: maven_intro
 ---
 

@@ -2,7 +2,7 @@
 layout: post_only
 title: Naming Conventions and Custom Advice Annotations
 date: 2012-01-31 02:10:35 UTC
-redirect_from: 2011/10/spring-tutorial-33-naming-conventions.html
+unused: 2011/10/spring-tutorial-33-naming-conventions.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP

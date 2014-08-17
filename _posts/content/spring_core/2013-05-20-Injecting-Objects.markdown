@@ -2,7 +2,7 @@
 layout: post_only
 title: Injecting Objects
 date: 2011-08-10 00:47:10 UTC
-redirect_from: 2011/08/spring-tutorial-07-injecting-objects.html
+unused: 2011/08/spring-tutorial-07-injecting-objects.html
 updated: 2013-05-20 22:05:04 UTC
 comments: false
 tags: spring core

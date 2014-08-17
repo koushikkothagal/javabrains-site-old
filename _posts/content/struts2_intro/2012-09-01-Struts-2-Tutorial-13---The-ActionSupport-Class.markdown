@@ -3,7 +3,7 @@ layout: post_only
 title: The ActionSupport Class
 date: 2012-09-01 01:28:29 UTC
 updated: 2012-09-01 01:28:29 UTC
-redirect_from: 2012/08/struts-2-tutorial-13-actionsupport-class.html
+unused: 2012/08/struts-2-tutorial-13-actionsupport-class.html
 comments: false
 tags: struts2
 category: struts2_intro

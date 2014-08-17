@@ -2,7 +2,7 @@
 layout: post_only
 title: Customizing the WSDL
 comments: false
-redirect_from: 2013/08/customizing-wsdl.html
+unused: 2013/08/customizing-wsdl.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

@@ -2,7 +2,7 @@
 layout: post_only
 title: Persisting Detached Objects
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-24-persisting.html
+unused: 2011/07/hibernate-tutorial-24-persisting.html
 tags: hibernate run
 category: hibernate_run
 ---

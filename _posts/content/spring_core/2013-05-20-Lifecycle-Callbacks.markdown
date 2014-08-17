@@ -2,7 +2,7 @@
 layout: post_only
 title: Lifecycle Callbacks
 date: 2011-08-10 00:54:10 UTC
-redirect_from: 2011/08/spring-tutorial-14-lifecycle-callbacks.html
+unused: 2011/08/spring-tutorial-14-lifecycle-callbacks.html
 updated: 2013-05-20 22:39:24 UTC
 comments: false
 tags: spring core

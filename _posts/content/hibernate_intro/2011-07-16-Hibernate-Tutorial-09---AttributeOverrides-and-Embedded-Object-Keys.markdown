@@ -2,7 +2,7 @@
 layout: post_only
 title: AttributeOverrides and Embedded Object Keys
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-09.html
+unused: 2011/07/hibernate-tutorial-09.html
 tags: hibernate intro
 category: hibernate_intro
 ---

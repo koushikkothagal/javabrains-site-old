@@ -2,7 +2,7 @@
 layout: post_only
 title: Understanding Restrictions
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-30-understanding.html
+unused: 2011/07/hibernate-tutorial-30-understanding.html
 tags: hibernate run
 category: hibernate_run
 ---

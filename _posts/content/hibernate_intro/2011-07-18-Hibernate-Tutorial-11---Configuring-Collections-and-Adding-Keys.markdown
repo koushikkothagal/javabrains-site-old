@@ -2,7 +2,7 @@
 layout: post_only
 title: Configuring Collections and Adding Keys
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-11-configuring.html
+unused: 2011/07/hibernate-tutorial-11-configuring.html
 tags: hibernate intro
 category: hibernate_intro
 ---

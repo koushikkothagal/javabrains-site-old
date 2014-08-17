@@ -2,7 +2,7 @@
 layout: post_only
 title: Event Handling in Spring
 date: 2011-08-10 01:03:10 UTC
-redirect_from: 2011/08/spring-tutorial-23-event-handling-in.html
+unused: 2011/08/spring-tutorial-23-event-handling-in.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core

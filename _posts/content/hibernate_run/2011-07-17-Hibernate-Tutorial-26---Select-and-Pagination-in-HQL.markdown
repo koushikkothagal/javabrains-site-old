@@ -2,7 +2,7 @@
 layout: post_only
 title: Select and Pagination in HQL
 comments: false
-redirect_from: 2011/07/hibernate-tutorial-26-select-and.html
+unused: 2011/07/hibernate-tutorial-26-select-and.html
 tags: hibernate run
 category: hibernate_run
 ---

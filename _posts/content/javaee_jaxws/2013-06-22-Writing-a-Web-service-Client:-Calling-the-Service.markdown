@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing a Web service Client - Calling the Service
 comments: false
-redirect_from: 2013/06/writing-web-service-client-calling.html
+unused: 2013/06/writing-web-service-client-calling.html
 tags: javaee jaxws
 category: javaee_jaxws
 ---

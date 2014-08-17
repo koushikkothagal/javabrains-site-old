@@ -2,7 +2,7 @@
 layout: post_only
 title: Writing a BeanFactoryPostProcessor
 date: 2011-08-10 00:56:10 UTC
-redirect_from: 2011/08/spring-tutorial-16-writing.html
+unused: 2011/08/spring-tutorial-16-writing.html
 updated: 2013-05-20 23:03:17 UTC
 comments: false
 tags: spring core

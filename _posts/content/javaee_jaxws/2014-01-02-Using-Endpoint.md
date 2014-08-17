@@ -1,7 +1,7 @@
 ---
 layout: post_only
 title: Using Endpoint
-redirect_from: javaee/jaxws/Using-Endpoint.html
+unused: javaee/jaxws/Using-Endpoint.html
 tags: javaee jaxws
 category: javaee_jaxws
 

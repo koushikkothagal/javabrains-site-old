@@ -2,7 +2,7 @@
 layout: post_only
 title: Adding Spring and DataSource Configuration
 date: 2012-01-31 02:03:24 UTC
-redirect_from: 2011/10/spring-tutorial-38-adding-spring-and.html
+unused: 2011/10/spring-tutorial-38-adding-spring-and.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support
