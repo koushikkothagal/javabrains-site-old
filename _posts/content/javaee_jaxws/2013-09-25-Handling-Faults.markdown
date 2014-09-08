@@ -4,7 +4,7 @@ title: Handling Faults
 comments: false
 unused: 2013/09/handling-faults.html
 tags: javaee jaxws
-category: javaee_jaxws
+categories: content javaee_jaxws
 ---
 
 Web services return "Fault" messages to denote error scenarios. In this tutorial, we'll throw an exception, generate and examine a fault message. 

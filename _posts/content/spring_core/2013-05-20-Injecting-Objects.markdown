@@ -6,9 +6,9 @@ unused: 2011/08/spring-tutorial-07-injecting-objects.html
 updated: 2013-05-20 22:05:04 UTC
 comments: false
 tags: spring core
-category: spring
+categories: content spring
 topic: core
-category: spring_core
+categories: content spring_core
 ---
 
 In this tutorial, we'll use dependency injection to inject an object dependency to a Spring bean. 

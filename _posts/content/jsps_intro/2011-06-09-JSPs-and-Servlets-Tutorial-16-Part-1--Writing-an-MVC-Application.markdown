@@ -4,7 +4,7 @@ title: Writing an MVC Application Part 1
 comments: false
 unused: 2011/05/jsps-and-servlets-tutorial-16-part-1.html
 tags: servlets_jsps
-category: jsps_intro
+categories: content jsps_intro
 ---
 
 We now set out to write our own MVC application from the scratch.

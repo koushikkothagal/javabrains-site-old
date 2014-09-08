@@ -3,7 +3,7 @@ layout: blank
 title: wsimport Revisited
 redirect_from: javaee/jaxws/wsimport-revisited.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 In this video, we will switch back to the client side and learn more about wsimport, the tool we used to generate client stubs.

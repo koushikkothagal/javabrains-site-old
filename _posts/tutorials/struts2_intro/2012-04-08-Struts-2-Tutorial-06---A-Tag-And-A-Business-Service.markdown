@@ -6,7 +6,7 @@ updated: 2012-04-08 19:39:09 UTC
 redirect_from: 2012/04/struts-2-tutorial-06-tag-and-business.html
 comments: false
 tags: struts2
-dummy: struts2_intro
+categories: tutorials struts2_intro
 
 ---
 

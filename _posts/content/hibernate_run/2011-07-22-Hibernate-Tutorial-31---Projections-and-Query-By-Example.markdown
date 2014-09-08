@@ -4,7 +4,7 @@ title: Projections and Query By Example
 comments: false
 unused: 2011/07/hibernate-tutorial-31-projections-and.html
 tags: hibernate run
-category: hibernate_run
+categories: content hibernate_run
 ---
 
 In this tutorial, we'll learn how to use Projections to fine tune the results of the Criteria API. We'll also use Query By Example (QBE) to easily specify multiple where clauses in a single example object.

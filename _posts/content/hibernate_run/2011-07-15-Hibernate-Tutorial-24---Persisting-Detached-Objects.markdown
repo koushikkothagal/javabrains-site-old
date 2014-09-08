@@ -4,7 +4,7 @@ title: Persisting Detached Objects
 comments: false
 unused: 2011/07/hibernate-tutorial-24-persisting.html
 tags: hibernate run
-category: hibernate_run
+categories: content hibernate_run
 ---
 
 This tutorial explores a special case of object state change: from detached to persistent.

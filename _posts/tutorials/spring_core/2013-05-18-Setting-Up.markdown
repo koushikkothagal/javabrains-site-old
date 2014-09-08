@@ -6,9 +6,9 @@ redirect_from: 2011/08/spring-tutorial-02-setting-up.html
 updated: 2013-05-18 04:17:20 UTC
 comments: false
 tags: spring core
-dummy: spring
+categories: tutorials spring
 topic: core
-dummy: spring_core
+categories: tutorials spring_core
 ---
 
 In this tutorial, we'll learn how to set up our Eclipse development environment to write Spring code.

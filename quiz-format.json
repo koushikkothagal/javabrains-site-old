@@ -1,0 +1,56 @@
+{
+    "tutorial": "Quiz: REST and HTTP",
+    "tutorialNum": "03",
+    "objective" : "In this tutorial, you've learnt how REST and HTTP concepts are closely related. Test your understanding of these concepts by answering the questions in the exercise. If you are stuck, click the 'Watch Video' button to rewatch relevant sections of the video. Good luck!",
+    "questions" : [
+            { "question": "What does REST stand for?",
+              "type" : "text",
+              "details" : "What does REST stand for?",
+              "answer" : "representational state transfer"
+            },
+            { "question": "Who coined the term REST?",
+              "type" : "radio",
+              "details" : "Who coined the term REST?",
+              "options" : ["Ray Donahue", "Roy Fielding", "Stephen Fielding", "None of the above"],
+              "answer" : "Roy Fielding"
+            },
+
+            { "question": "What would be a good RESTful URI for the 'message' resource? Use <code>{messageId}</code> to indicate ID.",
+              "type" : "text",
+              "details" : "Type in the resource URI for the 'message' resource with ID <code>{messageId}</code>.",
+              "answer" : "k"
+            },
+            { "question": "Create a new method called <code>sayHello</code> with empty args and returns void",
+              "type" : "code",
+              "files": [
+                {   "fileName" : "HelloResource.java",
+                    "isLocked" : "false",
+                    "codeStarter": "public class HelloResource",
+                    "codeAnswer": "public class HelloResource {"
+                },
+                {   "fileName" : "web.xml",
+                    "isLocked" : "true",
+                    "codeStarter": "<webapp>",
+                    "codeAnswer": "<webapp>"
+                }
+               ],
+               "focus": 0
+            },
+            { "question": "Create another method called sayHello",
+              "type" : "code",
+              "files": [
+                {   "fileName" : "NewFile.java",
+                    "isLocked" : "false",
+                    "codeStarter": "public class NewFile",
+                    "codeAnswer": "@Service public class NewFile { @Entity private int count; }"
+                },
+                {   "fileName" : "web2.xml",
+                    "isLocked" : "true",
+                    "codeStarter": "<webapp2>",
+                    "codeAnswer": "<webapp2>"
+                }
+               ],
+               "focus": 0
+            }
+    ]
+}

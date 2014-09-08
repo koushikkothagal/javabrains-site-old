@@ -6,7 +6,7 @@ redirect_from: 2011/08/spring-tutorial-23-event-handling-in.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core
-dummy: spring_core
+categories: tutorials spring_core
 ---
 
 We'll now look at Spring's support for Event Handling. We'll write an event listener in this tutorial. I'll also show you how to write custom events and publish them anywhere in the code.

@@ -6,9 +6,9 @@ redirect_from: 2011/08/spring-tutorial-14-lifecycle-callbacks.html
 updated: 2013-05-20 22:39:24 UTC
 comments: false
 tags: spring core
-dummy: spring
+categories: tutorials spring
 topic: core
-dummy: spring_core
+categories: tutorials spring_core
 ---
 
 We'll use two different ways to run methods on initialization and destruction of beans.

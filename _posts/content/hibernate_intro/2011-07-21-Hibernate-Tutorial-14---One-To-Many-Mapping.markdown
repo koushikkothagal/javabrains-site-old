@@ -4,7 +4,7 @@ title: One To Many Mapping
 comments: false
 unused: 2011/07/hibernate-tutorial-14-one-to-many.html
 tags: hibernate intro
-category: hibernate_intro
+categories: content hibernate_intro
 ---
 
 One To Many mapping of entities.

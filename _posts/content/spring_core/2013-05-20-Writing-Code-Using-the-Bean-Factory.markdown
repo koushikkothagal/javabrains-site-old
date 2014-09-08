@@ -6,9 +6,9 @@ unused: 2011/08/spring-tutorial-04-writing-code-using.html
 updated: 2013-05-20 21:49:22 UTC
 comments: false
 tags: spring core
-category: spring
+categories: content spring
 topic: core
-category: spring_core
+categories: content spring_core
 ---
 
 In this tutorial, we'll write code to implement the BeanFactory concept that we learnt in our previous tutorial. We'll write a Spring XML to configure a Spring bean. Then we'll use the BeanFactory to instantiate our bean in the Spring container. 

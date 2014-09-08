@@ -13,7 +13,18 @@
     {% for tut in course %}
 {"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
 {% endfor %}
-        ]}
+        ]},
+        {
+      "id": "02",
+      "code": "javaee_jaxrs",
+      "name": "Developing RESTful APIs with JAX-RS",
+      "details": "<p>This course introduces you to RESTful Web Services using the JAX-RS standard specification. You will learn what RESTful web services are and how to write them. You will be writing a sample RESTful web service from scratch, design the APIs, implement it using Jersey and run it on Tomcat. </p>",
+      "tutorials": [
+{% assign course = site.categories["javaee_jaxrs"] | where:"layout","blank" | sort: 'date' %}
+    {% for tut in course %}
+{"id": "{{forloop.index}}","name": "{{tut.title}}","href": "{{tut.url}}"}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+        ]}      
 
     ]
 

@@ -3,7 +3,7 @@ layout: blank
 title: Using SoapUI
 redirect_from: 2013/10/using-soapui.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 
 ---
 

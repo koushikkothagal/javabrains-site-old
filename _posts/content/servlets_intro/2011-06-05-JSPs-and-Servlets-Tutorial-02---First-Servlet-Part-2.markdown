@@ -4,7 +4,7 @@ title: First Servlet Part 2
 comments: false
 unused: 2011/04/jsps-and-servlets-tutorial-02-first_29.html
 tags: servlets_jsps
-category: servlets_intro
+categories: content servlets_intro
 ---
 
 Creating and running our first Servlet.

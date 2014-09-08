@@ -6,7 +6,7 @@ unused: 2011/08/spring-tutorial-19-autowired-annotation.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core
-category: spring_core
+categories: content spring_core
 ---
 
 In this tutorial, we'll use the Autowired annotation to wire up dependencies. We'll learn how to add dependencies by type and name. We'll also use Qualifiers to narrow down dependency contenders.

@@ -6,9 +6,9 @@ redirect_from: 2011/08/spring-tutorial-03-understanding-spring.html
 updated: 2013-05-19 18:30:37 UTC
 comments: false
 tags: spring core
-dummy: spring
+categories: tutorials spring
 topic: core
-dummy: spring_core
+categories: tutorials spring_core
 ---
 
 In this tutorial, we'll discuss the role of Spring as a bean container. We'll also have a quick discussion on the Factory pattern, and I'll introduce you to the Spring Bean Factory object.

@@ -4,7 +4,7 @@ title: Value Types and Embedding Objects
 comments: false
 unused: 2011/07/hibernate-tutorial-08-value-types-and.html
 tags: hibernate intro
-category: hibernate_intro
+categories: content hibernate_intro
 ---
 
 We'll learn the difference between Entity type objects and Value type objects. We'll use the `@Embeddable` annotation to embed a value type object into our Entity class.

@@ -1,0 +1,140 @@
+---
+---
+
+{% assign postTag = page.categories[1] %}
+{% for course in site.data.courselist.course %}
+    {% if course.tag == postTag %}
+        {% assign courseName = course.name %}
+        {% assign techName = course.tech %}
+        {% assign courseUrl = course.url %}
+        {% assign techUrl = course.techUrl %}
+    {% endif %}
+{% endfor %}
+{% assign course1 = site.categories[postTag] | where:"layout","blank" | sort: 'date' %}
+{% assign the_starry_counter = '' %}
+{% for tut in course1 %}
+    {% capture temp %}{{ the_starry_counter }}*{% endcapture %}
+  	{% assign the_starry_counter = temp %}
+{% capture mainTutPageUrl %}{{ page.url | replace_first:'/content/','/tutorials/' }}{% endcapture %}
+    {% if tut.url contains mainTutPageUrl %}
+        {% if forloop.index < 10 %}
+                {% capture videoNumber %} {{ forloop.index | prepend:'0' }}  {% endcapture %}
+        {% else %}
+            {% assign videoNumber = forloop.index %}
+        {% endif %}
+        {% if forloop.last %}
+            {% assign lastVideo = true %}
+        {% else %}
+            {% if forloop.index < 9 %}
+                {% capture nextVideoNumber %} {{ forloop.index | plus:1 | prepend:'0' }}  {% endcapture %}
+            {% else %}
+                {% assign nextVideoNumber = forloop.index | plus:1 %}
+            {% endif %}
+
+
+            {% assign nextVideo = course1[the_starry_counter.size] %}
+    	{% endif %}
+    	{% if forloop.first %}
+            {% assign firstVideo = true %}
+        {% else %}
+            {% capture starry_prev_counter %}{{ the_starry_counter | remove_first:'***' }} {% endcapture %}
+            {% if forloop.index0 < 10 %}
+                {% capture prevVideoNumber %} {{ forloop.index0 | prepend:'0' }}  {% endcapture %}
+            {% else %}
+                {% assign prevVideoNumber = forloop.index0 %}
+            {% endif %}
+            {% assign prevVideo = course1[starry_prev_counter.size] %}
+    	{% endif %}
+    {% endif %}
+{% endfor %}
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=309551445726793&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+                                     
+                                     
+<div class="container pad" style="margin-top: 60px;">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="title">Coming Soon</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="demo-panel-title text-center"><span style="font-size: 3em" class="glyphicon glyphicon-info-sign"></span> </h3>
+        </div>
+        <div class="col-md-8">
+            <div class="right-content">
+                <p>This course is currently in progress. I am in the process of creating and uploading tutorials. Please check back for updates.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <h3 class="demo-panel-title text-center">Subscribe</h3>
+        </div>
+        <div class="col-md-8">
+            <div class="right-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <p>Subscribe to Java Brains to be notified when new tutorials are published.</p>
+                    </div>
+                    <div class="row text-left">
+                        <div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+                            <a class="hi-icon hi-icon-facebook" href="https://www.facebook.com/javabrains" target="_blank">Facebook</a>
+                            <a class="hi-icon hi-icon-gplus" href="https://plus.google.com/101241060481722039118/posts" target="_blank">Google Plus</a>
+                            <a class="hi-icon hi-icon-twitter" href="http://twitter.com/Java_Brains" target="_blank">Twitter</a>
+                            
+                        </div>
+                    </div>
+                </div>    
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+        </div>
+
+            
+        </div>                                     
+                                     
+                                     
+<div id="prevnext">
+<nav class="nav-growpop">
+    {% if prevVideo %}
+        <a class="prev" href="{{prevVideo.url}}">
+            <span class="icon-wrap fa fa-arrow-left"></span>
+            <div>
+                <span>Previous</span>
+                <p>{{prevVideoNumber}}</p>
+                <h3>{{prevVideo.title}}</h3>
+
+
+            </div>
+        </a>
+    {% endif %}
+     {% if nextVideo %}
+        <a class="next" href="{{nextVideo.url}}">
+            <span class="icon-wrap fa fa-arrow-right"></span>
+            <div>
+                <span>Next</span>
+                <p>{{nextVideoNumber}}</p>
+                <h3>{{nextVideo.title}}</h3>
+
+
+            </div>
+        </a>
+    {% endif %}
+    </nav>
+</div>

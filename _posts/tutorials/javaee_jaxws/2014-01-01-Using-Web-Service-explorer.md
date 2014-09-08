@@ -3,7 +3,7 @@ layout: blank
 title: Using Web Service Explorer
 redirect_from: javaee/jaxws/Using-Web-Service-explorer.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 
 ---
 

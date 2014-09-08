@@ -6,7 +6,7 @@ updated: 2012-04-15 04:07:07 UTC
 redirect_from: 2012/04/struts-2-tutorial-07-valuestack.html
 comments: false
 tags: struts2
-dummy: struts2_intro
+categories: tutorials struts2_intro
 
 ---
 

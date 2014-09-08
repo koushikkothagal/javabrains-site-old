@@ -6,9 +6,9 @@ unused: 2011/08/spring-tutorial-13-bean-definition.html
 updated: 2013-05-20 22:34:35 UTC
 comments: false
 tags: spring core
-category: spring
+categories: content spring
 topic: core
-category: spring_core
+categories: content spring_core
 ---
 
 In this tutorial, we'll learn what bean definition inheritance is, and how to configure a parent bean definition and have children beans inherit the bean definitions. 

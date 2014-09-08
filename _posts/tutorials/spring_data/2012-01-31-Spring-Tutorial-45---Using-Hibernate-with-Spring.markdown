@@ -6,7 +6,7 @@ redirect_from: 2011/12/spring-tutorial-45-using-hibernate-with.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support
-dummy: spring_data
+categories: tutorials spring_data
 ---
 
 In this video, we'll learn how to integrate the Hibernate framework in our Spring application. We'll create a SessionFactory as a Spring singleton and use that in our DAO class to work with the database.

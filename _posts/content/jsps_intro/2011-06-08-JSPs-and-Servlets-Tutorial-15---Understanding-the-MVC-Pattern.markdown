@@ -4,7 +4,7 @@ title: Understanding the MVC Pattern
 comments: false
 unused: 2011/05/jsps-and-servlets-tutorial-15.html
 tags: servlets_jsps
-category: jsps_intro
+categories: content jsps_intro
 ---
 
 Introduction and explanation of the Model-View-Controller pattern.

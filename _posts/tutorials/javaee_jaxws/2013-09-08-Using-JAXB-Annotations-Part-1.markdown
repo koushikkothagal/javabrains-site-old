@@ -4,7 +4,7 @@ title: Using JAXB Annotations Part 1
 comments: false
 redirect_from: 2013/09/using-jaxb-annotations-part-1.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 In this tutorial we'll understand how an XML binding framework like JAXB works to help convert our object instances to XML. 

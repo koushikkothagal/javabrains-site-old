@@ -6,7 +6,7 @@ unused: 2011/08/spring-tutorial-24-introduction-to-aop.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP
-category: spring_aop
+categories: content spring_aop
 ---
 
 This video provides a brief introduction to Aspect Oriented Programming concepts.

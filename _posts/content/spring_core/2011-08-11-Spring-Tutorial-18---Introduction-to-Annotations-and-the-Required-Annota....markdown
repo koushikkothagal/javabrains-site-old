@@ -6,7 +6,7 @@ unused: 2011/08/spring-tutorial-18-introduction-to.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core
-category: spring_core
+categories: content spring_core
 ---
 
 Here we'll have our first look at Spring annotations. We'll understand and implement the Required annotation, and we'll also learn how it's actually a BeanPostProcessor that's working behind the scenes.

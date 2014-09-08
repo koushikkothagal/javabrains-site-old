@@ -4,7 +4,7 @@ title: Service Interface and Custom Types
 comments: false
 redirect_from: 2013/08/service-interface-and-custom-types.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 We'll make a couple of changes to the sample web service we've been developing all along. First, we will see what happens when a custom Java data type needs to be exchanged as a part of a web service operation. Then, we'll create a web service endpoint interface that our class implements. 

@@ -6,7 +6,7 @@ unused: 2011/08/spring-tutorial-20-some-jsr-250.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core
-category: spring_core
+categories: content spring_core
 ---
 
 We'll learn and implement three JSR-250 annotations that Spring supports:Resource, PostConstruct and PreDestroy.

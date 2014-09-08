@@ -4,7 +4,7 @@ title: Introduction to Web Services
 comments: false
 redirect_from: 2013/06/ws01-introduction-to-web-services.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 Welcome to this tutorial course on SOAP web services in Java. We'll start with an introduction to web services. We'll understand what they are and how they are useful.

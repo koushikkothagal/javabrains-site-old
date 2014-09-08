@@ -4,7 +4,7 @@ title: AttributeOverrides and Embedded Object Keys
 comments: false
 unused: 2011/07/hibernate-tutorial-09.html
 tags: hibernate intro
-category: hibernate_intro
+categories: content hibernate_intro
 ---
 
 In this video, we'll learn how to override configuration inside embedded objects, and we'll also explore object keys.

@@ -6,7 +6,7 @@ redirect_from: 2011/10/spring-tutorial-38-adding-spring-and.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support
-dummy: spring_data
+categories: tutorials spring_data
 ---
 
 We'll now add the Spring framework to our JDBC project. We'll add dependency injection to our Main and DAO class. We'll also learn how to configure DataSource as a Spring bean and supply connection parameters to it in the XML file.

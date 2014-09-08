@@ -4,7 +4,7 @@ title: Understanding Restrictions
 comments: false
 unused: 2011/07/hibernate-tutorial-30-understanding.html
 tags: hibernate run
-category: hibernate_run
+categories: content hibernate_run
 ---
 
 Understanding how to apply restrictions to our queries when using Criteria.

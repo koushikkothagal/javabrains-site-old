@@ -6,7 +6,7 @@ updated: 2012-04-08 19:39:09 UTC
 unused: 2012/04/struts-2-tutorial-06-tag-and-business.html
 comments: false
 tags: struts2
-category: struts2_intro
+categories: content struts2_intro
 
 ---
 

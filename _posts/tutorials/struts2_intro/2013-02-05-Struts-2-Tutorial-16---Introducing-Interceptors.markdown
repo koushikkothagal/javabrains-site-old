@@ -6,7 +6,7 @@ updated: 2013-02-05 21:39:20 UTC
 redirect_from: 2013/02/struts-2-tutorial-16-introducing.html
 comments: false
 tags: struts2
-dummy: struts2_intro
+categories: tutorials struts2_intro
 ---
 
 In this tutorial, we'll discuss one of the most important concepts in Struts 2: Interceptors. We will understand what interceptors are and how they've been working all along in our Struts 2 application.
