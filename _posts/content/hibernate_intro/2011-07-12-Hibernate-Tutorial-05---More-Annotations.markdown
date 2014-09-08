@@ -4,7 +4,7 @@ title: More Annotations
 comments: false
 unused: 2011/07/hibernate-tutorial-05-more-annotations.html
 tags: hibernate intro
-category: hibernate_intro
+categories: content hibernate_intro
 ---
 
 We'll try out a few more annotations to configure our entity class.

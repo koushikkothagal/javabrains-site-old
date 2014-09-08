@@ -4,7 +4,7 @@ title: Using Model object in the MVC Application
 comments: false
 redirect_from: 2011/06/jsps-and-servlets-tutorial-16-part-3.html
 tags: servlets_jsps
-dummy: jsps_intro
+categories: tutorials jsps_intro
 ---
 
 We'll introduce the Model object to pass data between layers.

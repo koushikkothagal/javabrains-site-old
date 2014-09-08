@@ -3,7 +3,7 @@ layout: blank
 title: Using Endpoint
 redirect_from: javaee/jaxws/Using-Endpoint.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 
 ---
 

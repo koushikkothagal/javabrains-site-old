@@ -1,0 +1,208 @@
+---
+---
+
+{% comment %} Find current course details {% endcomment %}
+{% assign postTag = page.categories[1] %}
+{% for course in site.data.courselist.course %}
+    {% if course.tag == postTag %}
+        {% assign courseName = course.name %}
+        {% assign techName = course.tech %}
+        {% assign courseUrl = course.url %}
+        {% assign techUrl = course.techUrl %}
+    {% endif %}
+{% endfor %}
+
+
+{% comment %} Find previous and next videos {% endcomment %}
+{% assign firstVideo = true %}
+{% assign prevVideo = page.previous %}
+{% for i in (1..100) %}
+    {% if prevVideo.categories[1] == postTag and prevVideo.layout == 'blank' and prevVideo.title != page.title %}
+        {% assign firstVideo = false %}
+        {% break %} 
+    {% endif %}
+    {% assign prevVideo = prevVideo.previous %}
+{% endfor %}
+
+{% assign lastVideo = true %}
+{% assign nextVideo = page.next %}
+{% for i in (1..100) %}
+    {% if nextVideo.categories[1] == postTag and nextVideo.layout == 'blank' and nextVideo.title != page.title %}
+        {% assign lastVideo = false %}
+        {% break %} 
+    {% endif %}
+    {% assign nextVideo = nextVideo.next %}
+{% endfor %}
+
+
+{% comment %} Find position of current, prev and next videos, to show sl numbers {% endcomment %}
+{% assign course1 = site.categories[postTag] | where:"layout","blank" | sort: 'date' %}
+{% for tut in course1 %}
+    {% capture mainTutPageUrl %}{{ page.url | replace_first:'/content/','/tutorials/' }}{% endcapture %}
+    {% if tut.url contains mainTutPageUrl %}
+        {% if forloop.index < 10 %}
+                {% capture videoNumber %} {{ forloop.index | prepend:'0' }}  {% endcapture %}
+        {% else %}
+            {% assign videoNumber = forloop.index %}
+        {% endif %}
+        {% if forloop.last %}
+            {% assign lastVideo = true %}
+        {% else %}
+            {% if forloop.index < 9 %}
+                {% capture nextVideoNumber %} {{ forloop.index | plus:1 | prepend:'0' }}  {% endcapture %}
+            {% else %}
+                {% assign nextVideoNumber = forloop.index | plus:1 %}
+            {% endif %}
+    	{% endif %}
+    	{% if forloop.first %}
+            {% assign firstVideo = true %}
+        {% else %}
+            {% if forloop.index0 < 10 %}
+                {% capture prevVideoNumber %} {{ forloop.index0 | prepend:'0' }}  {% endcapture %}
+            {% else %}
+                {% assign prevVideoNumber = forloop.index0 %}
+            {% endif %}
+    	{% endif %}
+    {% endif %}
+{% endfor %}
+                                         
+    <div class="container-fluid page" ng-init="initData('/{{page.dataFile}}')" ng-controller="QuizCtrl">
+        <div class="row page-row">
+
+            <div class="left col-md-6 pad">
+                <article>
+                    <!-- Top headers -->
+                    <p class="heading dotted-underline">Exercise</p>
+                    <h1 class="sl-title pad">
+                        <span>{( data.tutorialNum )}</span> {( data.tutorial )}
+                    </h1>
+                    <p class="regular-prose pad">{( data.objective )}</p>
+                    <div class="pad">
+                        <ol class="question-indicators">
+                            <li ng-class="{'completed': isQuestionComplete($index), 'current': $index == qIndex}"
+                                ng-click="moveToQuestion($index)"
+                                ng-repeat="a in range(data.questions.length) track by $index"></li>
+
+                        </ol>
+                    </div>
+
+                    <!-- Current question -->
+                    <div class="question-container pad">
+                        <div ng-repeat="a in range(data.questions.length) track by $index"
+                             class="question-current pad fadein "
+                             ng-class="{'green-border ' : isQuestionComplete($index),
+                                        'gray-border  '   : !isQuestionComplete($index)}"
+                             ng-show="$index==qIndex">
+                            <span ng-if="isQuestionComplete($index)" class="fa fa-check-square-o fa-5x green zoomin pull-right"></span>
+                            <p class="objective-current underline"
+                               ng-class="{'green' : isQuestionComplete($index),
+                                          'red'   : !isQuestionComplete($index)}">
+                                Exercise {($index + 1 )}
+                            </p>
+                            <p class="small-prose" ng-bind-html="data.questions[$index].question"></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 right">
+                <div ng-if="isCodingQuestion(currentQuestion)">
+                    <ul class="nav nav-tabs">
+                        <li ng-repeat="file in currentQuestion.files" ng-class="{active: isCurrentWindow($index)}">
+                            <a href="#" ng-click="setWindow($index)">
+                                <span ng-show="file.isLocked" class="fa fa-lock"></span>&nbsp; {(file.fileName)}
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div ui-ace="{
+                          useWrapMode : false,
+                          showGutter: true,
+                          showPrintMargin: false,
+                          theme:'xcode',
+                          mode: '{(getMode(file))}',
+                          onChange: aceChanged() }"
+                         ng-repeat="file in currentQuestion.files"
+                         ng-show="isCurrentWindow({($index)})"
+                         readonly="{(file.isLocked)}"
+                         ng-model="file.codeStarter"
+                         class="code-editor">
+                    </div>
+
+                </div>
+
+                <div ng-if="!isCodingQuestion(currentQuestion)" class="quiz-form">
+                    <div class="container-fluid">
+                        <div class="row" style="margin-top: 20px">
+                            <div class="col-md-offset-2 col-md-10 col-lg-offset-3 col-lg-8">
+                                <div class="col-sm-12 quiz-current pad">
+                                    <div class="container-fluid text-left" style="margin-bottom: 20px;">
+                                        <h1>Question</h1>
+                                    </div>
+                                    <figure class="pull-right">
+                                        <i class="fa fa-question-circle red" style="font-size: 7em;margin:-70px -10px 0 10px;"></i>
+                                    </figure>
+                                    <p class="question" ng-bind-html="currentQuestion.details"></p>
+                                    <input ng-if="currentQuestion.type === 'text'" type="text" class="form-control input-lg" ng-model="currentQuestion.userInput" ng-change="inputChanged()" placeholder="Type here">
+                                    <div ng-if="currentQuestion.type === 'radio'" class="btn-group-vertical radio-quiz">
+                                        <button ng-click="radioClicked(option)" ng-repeat="option in currentQuestion.options" type="button" class="btn btn-default btn-lg" style="margin:auto;">{(option)}</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <div id="youtubeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/mKjvKPlb1rA"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slidesModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/mKjvKPlb1rA"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <nav id="toolbar" class="navbar navbar-default navbar-fixed-bottom no-bg no-border" role="navigation">
+        <div class="container-fluid">
+
+            <a href="{{prevVideo.url}}" type="button" class="btn btn-default tool-btn">
+                <span class="fa fa-arrow-left"></span> &nbsp; Back
+            </a>
+            <button type="button" class="btn btn-default tool-btn" data-toggle="modal" data-target="#youtubeModal">
+                <span class="fa fa-video-camera"></span> &nbsp; Video
+            </button>
+            <button type="button" class="btn btn-default tool-btn" data-toggle="modal" data-target="#slidesModal">
+                <span class="fa fa-file-pdf-o"></span> &nbsp; Slides
+            </button>
+            <a href="{{nextVideo.url}}" type="button" class="btn btn-default tool-btn pull-right">
+                <span class="fa fa-arrow-right"></span> &nbsp; Continue
+            </a>
+        </div>
+    </nav>
+
+

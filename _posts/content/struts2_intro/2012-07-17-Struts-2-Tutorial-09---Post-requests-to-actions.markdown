@@ -6,7 +6,7 @@ updated: 2012-07-17 02:09:54 UTC
 unused: 2012/06/struts-tutorial-09-post-requests-to.html
 comments: false
 tags: struts2
-category: struts2_intro
+categories: content struts2_intro
 
 ---
 

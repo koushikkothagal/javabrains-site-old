@@ -64,3 +64,9 @@ course:
       url:      /javaee.html#javaee_jaxws
       tech:     Java EE
       techUrl:  /javaee.html
+      
+    - tag:      javaee_jaxrs
+      name:     Developing RESTful APIs with JAX-RS
+      url:      /javaee.html#javaee_jaxrs
+      tech:     Java EE
+      techUrl:  /javaee.html  

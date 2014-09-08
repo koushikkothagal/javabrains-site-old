@@ -6,7 +6,7 @@ redirect_from: 2011/08/spring-tutorial-25-setting-up-aop.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP
-dummy: spring_aop
+categories: tutorials spring_aop
 ---
 
 In this tutorial, we'll add the additional dependencies required for Spring AOP and we'll configure our project's class path with these dependencies.

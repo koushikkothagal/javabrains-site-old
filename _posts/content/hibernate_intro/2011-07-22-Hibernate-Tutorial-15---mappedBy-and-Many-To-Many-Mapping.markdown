@@ -4,7 +4,7 @@ title: mappedBy and Many To Many Mapping
 comments: false
 unused: 2011/07/hibernate-tutorial-15-mappedby-and-many.html
 tags: hibernate intro
-category: hibernate_intro
+categories: content hibernate_intro
 ---
 
 Many to Many mapping of entities.

@@ -4,7 +4,7 @@ title: Using JAXB Annotations Part 2
 comments: false
 redirect_from: 2013/09/using-jaxb-annotations-part-2.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 Let's now add some JAXB annotations to our Model class to customize the resulting XML. 

@@ -3,7 +3,7 @@ layout: post_only
 title: Using Endpoint
 unused: javaee/jaxws/Using-Endpoint.html
 tags: javaee jaxws
-category: javaee_jaxws
+categories: content javaee_jaxws
 
 ---
 

@@ -3,7 +3,7 @@ layout: post_only
 title: Using SoapUI
 unused: 2013/10/using-soapui.html
 tags: javaee jaxws
-category: javaee_jaxws
+categories: content javaee_jaxws
 
 ---
 

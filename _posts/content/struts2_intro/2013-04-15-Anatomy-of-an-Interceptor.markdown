@@ -6,7 +6,7 @@ updated: 2013-04-15 00:42:35 UTC
 unused: 2013/04/struts2-18.html
 comments: false
 tags: struts2
-category: struts2_intro
+categories: content struts2_intro
 ---
 
 In this tutorial, we'll learn what the Struts 2 interceptor class contains. We'll understand how the flow of control is achieved, and how the framework makes the flexible "plug-anywhere" configuration of interceptors possible.

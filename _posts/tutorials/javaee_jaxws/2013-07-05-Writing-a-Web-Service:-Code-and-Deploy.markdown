@@ -4,7 +4,7 @@ title: Writing a Web Service - Code and Deploy
 comments: false
 redirect_from: 2013/07/writing-web-service-code-and-deploy.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 We'll now convert the simple Java class in the previous tutorial into a web service, deploy it to Glassfish, and test it by submitting a SOAP request to get a SOAP response. 

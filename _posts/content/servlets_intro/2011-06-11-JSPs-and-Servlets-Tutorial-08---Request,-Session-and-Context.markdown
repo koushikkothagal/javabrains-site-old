@@ -4,7 +4,7 @@ title: Request, Session and Context
 comments: false
 unused: 2011/05/jsps-and-servlets-tutorial-08-request.html
 tags: servlets_jsps
-category: servlets_intro
+categories: content servlets_intro
 ---
 
 This two part tutorial introduces scopes and the Request, Session and Context objects.

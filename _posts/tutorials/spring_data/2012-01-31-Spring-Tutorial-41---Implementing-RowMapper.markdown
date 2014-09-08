@@ -6,7 +6,7 @@ redirect_from: 2011/10/spring-tutorial-41-implementing.html
 updated: 2012-01-31 02:39:24 UTC
 comments: false
 tags: Spring Data Support
-dummy: spring_data
+categories: tutorials spring_data
 ---
 
 In this tutorial, we implement a custom RowMapper class to map our domain objects. We then use this class to write fetch methods that return custom model objects.

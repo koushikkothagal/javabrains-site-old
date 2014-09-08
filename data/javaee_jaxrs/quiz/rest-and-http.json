@@ -1,0 +1,37 @@
+{
+    "tutorial": "Quiz: REST and HTTP",
+    "tutorialNum": "03",
+    "objective" : "In this tutorial, you've learnt how REST and HTTP concepts are closely related. Test your understanding of these concepts by answering the questions in the exercise. If you are stuck, click the 'Watch Video' button to rewatch relevant sections of the video. Good luck!",
+    "questions" : [
+            { "question": "What does REST stand for?",
+              "type" : "text",
+              "details" : "What does REST stand for?",
+              "answer" : "representational state transfer"
+            },
+            { "question": "Who coined the term REST?",
+              "type" : "radio",
+              "details" : "Who coined the term REST?",
+              "options" : ["Ray Donahue", "Roy Fielding", "Stephen Fielding", "None of the above"],
+              "answer" : "Roy Fielding"
+            },
+
+            { "question": "Which one of these HTTP methods would you use to make the client request data from the server?",
+              "type" : "radio",
+              "details" : "Which one of these HTTP methods would you use to make the client request data from the server?",
+              "options" : ["GET", "PUT", "POST", "DELETE"],
+              "answer" : "GET"
+            },
+            { "question": "Which one of these HTTP methods would you use to make the client submit data to the server?",
+              "type" : "radio",
+              "details" : "Which one of these HTTP methods would you use to make the client submit data to the server?",
+              "options" : ["DELETE", "HEAD", "POST", "GET"],
+              "answer" : "POST"
+            },
+            { "question": "Let's say you handle a request in your web service and there is an error while you process it on the server. Which status code would you return?",
+              "type" : "radio",
+              "details" : "Which of these status codes would you return if there is a processing error on the server?",
+              "options" : ["200", "300", "400", "500"],
+              "answer" : "500"
+            }
+    ]
+}

@@ -6,7 +6,7 @@ redirect_from: 2011/08/spring-tutorial-22-using-messagesource.html
 updated: 2011-08-11 04:23:07 UTC
 comments: false
 tags: spring core
-dummy: spring_core
+categories: tutorials spring_core
 ---
 
 In this tutorial, we'll use the MessageSource interface to retrieve messages out of property files.

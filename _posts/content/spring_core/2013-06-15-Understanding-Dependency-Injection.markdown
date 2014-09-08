@@ -6,7 +6,7 @@ unused: 2011/08/spring-tutorial-01-understanding.html
 updated: 2013-06-15 00:41:10 UTC
 comments: false
 tags: spring core
-category: spring_core
+categories: content spring_core
 ---
 
 In this tutorial, we'll understand the concept of Dependency Injection and how it simplifies managing dependencies between objects.

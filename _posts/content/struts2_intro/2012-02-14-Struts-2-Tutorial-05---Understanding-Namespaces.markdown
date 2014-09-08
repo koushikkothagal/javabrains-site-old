@@ -6,7 +6,7 @@ updated: 2012-02-14 08:26:05 UTC
 unused: 2012/02/struts-2-tutorial-05-understanding.html
 comments: false
 tags: struts2
-category: struts2_intro
+categories: content struts2_intro
 
 ---
 

@@ -6,7 +6,7 @@ unused: 2011/10/spring-tutorial-31-after-advice-types.html
 updated: 2012-01-31 02:38:35 UTC
 comments: false
 tags: Spring AOP
-category: spring_aop
+categories: content spring_aop
 ---
 
 We'll learn about the After Advice types: `After` (finally), `AfterReturning` and `AfterThrowing`.

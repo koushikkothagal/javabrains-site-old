@@ -4,7 +4,7 @@ title: Adding Input Arguments
 comments: false
 redirect_from: 2013/07/adding-input-arguments.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 We'll add an operation to our web service that takes input arguments to achieve both sending and receiving data from the web service. 

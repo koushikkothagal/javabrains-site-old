@@ -1,6 +1,6 @@
 ---
 ---
-
+{% comment %} Find current course details {% endcomment %}
 {% assign postTag = page.categories[1] %}
 {% for course in site.data.courselist.course %}
     {% if course.tag == postTag %}
@@ -10,12 +10,34 @@
         {% assign techUrl = course.techUrl %}
     {% endif %}
 {% endfor %}
+
+
+{% comment %} Find previous and next videos {% endcomment %}
+{% assign firstVideo = true %}
+{% assign prevVideo = page.previous %}
+{% for i in (1..100) %}
+    {% if prevVideo.categories[1] == postTag and prevVideo.layout == 'blank' and prevVideo.title != page.title %}
+        {% assign firstVideo = false %}
+        {% break %} 
+    {% endif %}
+    {% assign prevVideo = prevVideo.previous %}
+{% endfor %}
+
+{% assign lastVideo = true %}
+{% assign nextVideo = page.next %}
+{% for i in (1..100) %}
+    {% if nextVideo.categories[1] == postTag and nextVideo.layout == 'blank' and nextVideo.title != page.title %}
+        {% assign lastVideo = false %}
+        {% break %} 
+    {% endif %}
+    {% assign nextVideo = nextVideo.next %}
+{% endfor %}
+
+
+{% comment %} Find position of current, prev and next videos, to show sl numbers {% endcomment %}
 {% assign course1 = site.categories[postTag] | where:"layout","blank" | sort: 'date' %}
-{% assign the_starry_counter = '' %}
 {% for tut in course1 %}
-    {% capture temp %}{{ the_starry_counter }}*{% endcapture %}
-  	{% assign the_starry_counter = temp %}
-{% capture mainTutPageUrl %}{{ page.url | replace_first:'/content/','/tutorials/' }}{% endcapture %}
+    {% capture mainTutPageUrl %}{{ page.url | replace_first:'/content/','/tutorials/' }}{% endcapture %}
     {% if tut.url contains mainTutPageUrl %}
         {% if forloop.index < 10 %}
                 {% capture videoNumber %} {{ forloop.index | prepend:'0' }}  {% endcapture %}
@@ -30,25 +52,21 @@
             {% else %}
                 {% assign nextVideoNumber = forloop.index | plus:1 %}
             {% endif %}
-
-
-            {% assign nextVideo = course1[the_starry_counter.size] %}
     	{% endif %}
     	{% if forloop.first %}
             {% assign firstVideo = true %}
         {% else %}
-            {% capture starry_prev_counter %}{{ the_starry_counter | remove_first:'***' }} {% endcapture %}
             {% if forloop.index0 < 10 %}
                 {% capture prevVideoNumber %} {{ forloop.index0 | prepend:'0' }}  {% endcapture %}
             {% else %}
                 {% assign prevVideoNumber = forloop.index0 %}
             {% endif %}
-            {% assign prevVideo = course1[starry_prev_counter.size] %}
     	{% endif %}
     {% endif %}
 {% endfor %}
+                                     
 <header class="text-center">
-    <div>
+    <div style="max-width:30%;margin:auto">
         <span id="topic-link-span" class="dd"><a id="topic-link" href="{{courseUrl}}">{{courseName}}</a></span>
     </div>
     <h1 class="video-number">{{videoNumber | remove: ' '}}</h1>
@@ -62,7 +80,7 @@
 
 <div id="prevnext">
 <nav class="nav-growpop">
-    {% if prevVideo %}
+    {% unless firstVideo %}
         <a class="prev" href="{{prevVideo.url}}">
             <span class="icon-wrap fa fa-arrow-left"></span>
             <div>
@@ -73,8 +91,8 @@
 
             </div>
         </a>
-    {% endif %}
-     {% if nextVideo %}
+    {% endunless %}
+     {% unless lastVideo %}
         <a class="next" href="{{nextVideo.url}}">
             <span class="icon-wrap fa fa-arrow-right"></span>
             <div>
@@ -85,6 +103,6 @@
 
             </div>
         </a>
-    {% endif %}
+    {% endunless %}
     </nav>
 </div>

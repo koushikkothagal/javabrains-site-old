@@ -4,7 +4,7 @@ title: Coding To Interfaces
 date: 2011-08-10 00:57:10 UTC
 updated: 2011-08-11 04:23:07 UTC
 comments: false
-dummy: spring_core
+categories: tutorials spring_core
 redirect_from: 2011/08/spring-tutorial-17-coding-to-interfaces.html
 ---
 

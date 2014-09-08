@@ -4,7 +4,7 @@ title: Understanding init, service and ServletConfig
 comments: false
 unused: 2011/05/jsps-and-servlets-tutorial-09.html
 tags: servlets_jsps
-category: servlets_intro
+categories: content servlets_intro
 ---
 
 In this three part tutorial, we understand how a servlet is initialized, the methods that get called and the objects used on initialization and execution.

@@ -4,7 +4,7 @@ title: Writing a Web Service - Eclipse setup
 comments: false
 redirect_from: 2013/07/download-soap-web-services-06-writing.html
 tags: javaee jaxws
-dummy: javaee_jaxws
+categories: tutorials javaee_jaxws
 ---
 
 In this tutorial, we'll setup the new Eclipse Kepler, configure Glassfish and start writing the web application with which we intend to create a web service.

@@ -6,9 +6,9 @@ unused: 2011/08/spring-tutorial-05-applicationcontext.html
 updated: 2013-05-20 21:56:56 UTC
 comments: false
 tags: spring core
-category: spring
+categories: content spring
 topic: core
-category: spring_core
+categories: content spring_core
 ---
 
 We'll first replace the BeanFactory with the more powerful ApplicationContext. We'll then make Spring initialize a property of an object by specifying the value in the configuration XML. 
