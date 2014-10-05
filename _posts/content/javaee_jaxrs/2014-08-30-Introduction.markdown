@@ -6,6 +6,8 @@ categories: content javaee_jaxrs
 
 Welcome to this course. This tutorial introduces you to REST APIs and explains some basic concepts.
 
+{% include youtube.html param="xkKcdK1u95s" %}
+
 ## Welcome
 
 Hello! Welcome to this course on Developing RESTful APIs with JAX-RS. I'm Koushik Kothagal, and in this course, I'll teach you how to write RESTful web service applications using JAX-RS.
