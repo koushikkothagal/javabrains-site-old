@@ -4,7 +4,9 @@ title: REST and HTTP
 categories: content javaee_jaxrs
 ---
 
-In this tutorial, we will learn some HTTP concepts that have inspired REST.
+In this tutorial, we will learn some HTTP concepts that have influenced REST.
+
+{% include youtube.html param="RuICubxGvj4" %}
 
 ## REST and HTTP
 
@@ -42,7 +44,7 @@ If you are accessing a website, you’ll probably get some HTML that explains th
 
 ## Content types
 
-Finally, let’s look at the format of the messages. Let’s say you submit some data to the server as a POST request. There is no specification that strictly enforces what the format of the data should be. It could be XML, JSON or some other format. How can the server even identify what kind of data is sent? Similarly, how does the client know what data format is returned by the server? The answer is again a header value called `Content-Type`. Like I mentioned, the headers contain a lot of metadata, and one of the metadata values it can contain is the format of the message. There are standard predefined content type values, like text/xml for XML content or application/json for JSON content. A message that’s send with the right content type is easily readable by the server and the client. What’s really interesting is that the same API can send back data in multiple different formats, and the actual format it chooses depends on what the client wants. This happens by a process called content negotiation, which is another powerful feature that you can use when developing RESTful web services.
+Finally, let’s look at the format of the messages. Let’s say you submit some data to the server as a POST request. There is no specification that strictly enforces what the format of the data should be. It could be XML, JSON or some other format. How can the server even identify what kind of data is sent? Similarly, how does the client know what data format is returned by the server? The answer is again a header value called `Content-Type`. Like I mentioned, the headers contain a lot of metadata, and one of the metadata values it can contain is the format of the message. There are standard predefined content type values, like `text/xml` for XML content or `application/json` for JSON content. A message that’s send with the right content type is easily readable by the server and the client. What’s really interesting is that the same API can send back data in multiple different formats, and the actual format it chooses depends on what the client wants. This happens by a process called content negotiation, which is another powerful feature that you can use when developing RESTful web services.
 
 ## Summary
 

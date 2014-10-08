@@ -163,13 +163,13 @@
                     </div>
                     <div class="modal-body">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/mKjvKPlb1rA"></iframe>
+                            <iframe class="embed-responsive-item" src="{{page.video}}"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="slidesModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <!--<div id="slidesModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header no-border">
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
 
     </div>
@@ -196,13 +196,40 @@
             <button type="button" class="btn btn-default tool-btn" data-toggle="modal" data-target="#youtubeModal">
                 <span class="fa fa-video-camera"></span> &nbsp; Video
             </button>
-            <button type="button" class="btn btn-default tool-btn" data-toggle="modal" data-target="#slidesModal">
+            <!--<button type="button" class="btn btn-default tool-btn" data-toggle="modal" data-target="#slidesModal">
                 <span class="fa fa-file-pdf-o"></span> &nbsp; Slides
-            </button>
+            </button>-->
             <a href="{{nextVideo.url}}" type="button" class="btn btn-default tool-btn pull-right">
                 <span class="fa fa-arrow-right"></span> &nbsp; Continue
             </a>
         </div>
     </nav>
 
+<div id="prevnext">
+<nav class="nav-growpop">
+    {% unless firstVideo %}
+        <a class="prev" href="{{prevVideo.url}}">
+            <span class="icon-wrap fa fa-arrow-left"></span>
+            <div>
+                <span>Previous</span>
+                <p>{{prevVideoNumber}}</p>
+                <h3>{{prevVideo.title}}</h3>
 
+
+            </div>
+        </a>
+    {% endunless %}
+     {% unless lastVideo %}
+        <a class="next" href="{{nextVideo.url}}">
+            <span class="icon-wrap fa fa-arrow-right"></span>
+            <div>
+                <span>Next</span>
+                <p>{{nextVideoNumber}}</p>
+                <h3>{{nextVideo.title}}</h3>
+
+
+            </div>
+        </a>
+    {% endunless %}
+    </nav>
+</div>
