@@ -1,5 +1,5 @@
 ---           
 layout: blank
-title: REST and HTTP
+title: Answers
 categories: tutorials javaee_jaxrs
 ---

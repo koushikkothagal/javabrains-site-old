@@ -32,6 +32,24 @@
               "details" : "Which of these status codes would you return if there is a processing error on the server?",
               "options" : ["200", "300", "400", "500"],
               "answer" : "500"
+            },
+            { "question": "Let's say you get a request for an item that's not available in the database. Which status code would you return?",
+              "type" : "radio",
+              "details" : "Which of these status codes would you return if a resource is not available on the server?",
+              "options" : ["202", "303", "404", "500"],
+              "answer" : "404"
+            },
+            { "question": "When returning response in XML format, what would be the content type header value you'd need to set in the response?",
+              "type" : "radio",
+              "details" : "Choose the content type value for an XML response.",
+              "options" : ["text/xml", "xml/html", "xml/xhtml", "None of the above"],
+              "answer" : "text/xml"
+            },
+            { "question": "When returning response in JSON format, what would be the content type header value you'd need to set in the response?",
+              "type" : "radio",
+              "details" : "Choose the content type value for a JSON response.",
+              "options" : ["text/json", "xml/json", "application/json", "None of the above"],
+              "answer" : "application/json"
             }
     ]
 }
