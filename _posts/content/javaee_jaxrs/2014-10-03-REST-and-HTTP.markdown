@@ -55,4 +55,4 @@ This was a broad overview of some of the important points about RESTful web serv
 3. The response needs to return the right HTTP status codes
 4. All requests and responses need to have the right `Content-Type` header set so that the format of the messages are well understood by everyone.
 
-In the next tutorial, we’ll put these concepts into practice by implementing a RESTful API of our own. These are going to be tutorials on API design. We'll understand the principles behind good RESTful API design and 
+In the next tutorial, we’ll put these concepts into practice by implementing a RESTful API of our own. These are going to be tutorials on API design. We'll understand the principles behind good RESTful API design and start designing a RESTful API for the Messenger application
