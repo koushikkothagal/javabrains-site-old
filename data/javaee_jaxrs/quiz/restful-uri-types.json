@@ -1,0 +1,23 @@
+{
+    "tutorial": "Quiz: Collection URIs",
+    "tutorialNum": "09",
+    "objective" : "In this tutorial, you've learnt what collection URIs are and how they are different from instance URIs. Try designing a few collection URIs.",
+    "questions" : [
+            { "question": "Let's say you have <code>Category</code> as an entity that represents all the product categories on the site. What would be a RESTful URI to look up all categories?",
+              "type" : "text",
+              "details" : "Type in a RESTful URI that refers to all categories.",
+              "answer" : "/categories"
+            },
+            { "question": "The site also has a <code>Product</code> entity. This has been designed to be a first level entity like <code>Category</code>. What would be a good RESTful URI for all products?",
+              "type" : "text",
+              "details" : "What would be a good RESTful URI for all products?",
+              "answer" : "/products"
+            },
+
+            { "question": "If the <code>Product</code> entity were to have been designed as a sub-resource under the <code>Category</code> entity, what would the URI for <code>Product</code> be? Enter <code>{categoryId}</code> for the category ID.",
+              "type" : "text",
+              "details" : "What would be a RESTful URI for all <code>Product</code>s if it were a sub-resource of <code>Category</code>?",
+              "answer" : "/categories/{categoryid}/products"
+            }
+    ]
+}
