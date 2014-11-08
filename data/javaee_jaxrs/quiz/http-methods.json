@@ -1,0 +1,34 @@
+{
+    "tutorial": "Quiz: HTTP Methods",
+    "tutorialNum": "12",
+    "objective" : "In this tutorial, you've learnt what methods to choose for different RESTful operations. Apply what you've learnt to a completely different type of application: an online shopping application. Let's say you need to build RESTful URIs for various resources in the online shopping site. What would your choices of URIs and methods be?",
+    "questions" : [
+            { "question": "Which of these is a good choice for getting a list of Categories?",
+              "type" : "radio",
+              "details" : "Which of these is a good choice for getting a list of Categories?",
+              "options" : ["GET -> /categories", "PUT -> /categories", "DELETE -> /categories", "None of the above"],
+              "answer" : "GET -> /categories"
+            },
+        
+            { "question": "Which of these is a good choice for deleting a Product instance?",
+              "type" : "radio",
+              "details" : "Which of these is a good choice for deleting a Product instance?",
+              "options" : ["DELETE -> /products", "DELETE -> /products/id", "GET -> /products/id/delete", "None of the above"],
+              "answer" : "DELETE -> /products/id"
+            },
+            { "question": "Which of these is a good choice for updating a Product instance?",
+              "type" : "radio",
+              "details" : "Which of these is a good choice for updating a Product instance?",
+              "options" : ["POST -> /products", "POST -> /products/id", "PUT -> /products/id", "None of the above"],
+              "answer" : "PUT -> /products/id"
+            },
+            { "question": "Which of these is a good choice for creating a new Product?",
+              "type" : "radio",
+              "details" : "Which of these is a good choice for creating a new Product?",
+              "options" : ["POST -> /products", "POST -> /products/id", "PUT -> /products/id", "None of the above"],
+              "answer" : "POST -> /products"
+            }
+
+            
+    ]
+}
